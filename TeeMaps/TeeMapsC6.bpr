@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="TeeMapsC6.exe"/>
+    <OBJFILES value="TeeMapsC6.obj UnitTestSHP.obj"/>
+    <RESFILES value="TeeMapsC6.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) UnitTestSHP.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="visualclx.lib dbxcds.lib cds.lib bdecds.lib bcbsmp.lib adortl.lib xmlrtl.lib"/>
+    <SPARELIBS value="Vcl.lib vclx.lib vcldb.lib bdertl.lib vcldbx.lib tee9c6.lib teedb9c6.lib 
+      teeui9c6.lib teepro9c6.lib teelanguage9c6.lib teeimage9c6.lib rtl.lib 
+      dbrtl.lib xmlrtl.lib bdertl.lib 
+      vclie.lib adortl.lib bcbsmp.lib visualclx.lib TeeGL9c6.lib"/>
+    <PACKAGES value="Vcl.bpi Vclx.bpi Vcldb.bpi bdertl.bpi vcldbx.bpi bcbie.bpi vclie.bpi 
+      inetdb.bpi inet.bpi Tee9c6.bpi TeeDB9c6.bpi TeeUI9c6.bpi TeePro9c6.bpi 
+      TeeLanguage9c6.bpi TeeImage9c6.bpi rtl.bpi dbrtl.bpi TeeGL9c6.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="TeeMapsC6.cpp"/>
+    <INCLUDEPATH value="$(TEEINCPATH);$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(TEELIBPATH);$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- 
+      -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$C- -$A8 -I$(TEEINCPATH) -U$(TEELIBPATH) -Q -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="TeeMapsC6.cpp" FORMNAME="" UNITNAME="TeeMapsC6" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TeeMapsC6.res" FORMNAME="" UNITNAME="TeeMapsC6" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UnitTestSHP.pas" FORMNAME="Form1" UNITNAME="Unittestshp" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Steema Software
+FileDescription=TeeMaps
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=Copyright 2003-2011 by Steema Software
+LegalTrademarks=
+OriginalFilename=
+ProductName=TeeMaps
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+
+[HistoryLists\hlIncludePath]
+
+[HistoryLists\hlLibraryPath]
+
+[HistoryLists\hlDebugSourcePath]
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+  </IDEOPTIONS>
+</PROJECT>
