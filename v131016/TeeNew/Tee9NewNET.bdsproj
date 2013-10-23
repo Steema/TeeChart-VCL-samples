@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality" Type="String">DelphiDotNet.Personality</Option>
+			<Option Name="ProjectType" Type="String"></Option>
+			<Option Name="Version" Type="String">1.0</Option>
+			<Option Name="GUID" Type="String">{9F4AE0C5-D774-46FF-868C-6CFD8F176E44}</Option>
+		</Option>
+	</PersonalityInfo>
+	<DelphiDotNet.Personality>
+		<Source>
+			<Source Name="MainSource" Type="String">Tee9new.dpr</Source>
+		</Source>
+		<FileVersion>
+			<FileVersion Name="Version" Type="String">8.0</FileVersion>
+		</FileVersion>
+		<Compiler>
+			<Compiler Name="A" Type="Integer">8</Compiler>
+			<Compiler Name="B" Type="Integer">0</Compiler>
+			<Compiler Name="C" Type="Integer">0</Compiler>
+			<Compiler Name="D" Type="Integer">1</Compiler>
+			<Compiler Name="E" Type="Integer">0</Compiler>
+			<Compiler Name="F" Type="Integer">0</Compiler>
+			<Compiler Name="G" Type="Integer">1</Compiler>
+			<Compiler Name="H" Type="Integer">1</Compiler>
+			<Compiler Name="I" Type="Integer">1</Compiler>
+			<Compiler Name="J" Type="Integer">0</Compiler>
+			<Compiler Name="K" Type="Integer">0</Compiler>
+			<Compiler Name="L" Type="Integer">1</Compiler>
+			<Compiler Name="M" Type="Integer">0</Compiler>
+			<Compiler Name="N" Type="Integer">1</Compiler>
+			<Compiler Name="O" Type="Integer">1</Compiler>
+			<Compiler Name="P" Type="Integer">1</Compiler>
+			<Compiler Name="Q" Type="Integer">0</Compiler>
+			<Compiler Name="R" Type="Integer">0</Compiler>
+			<Compiler Name="S" Type="Integer">0</Compiler>
+			<Compiler Name="T" Type="Integer">0</Compiler>
+			<Compiler Name="U" Type="Integer">0</Compiler>
+			<Compiler Name="V" Type="Integer">1</Compiler>
+			<Compiler Name="W" Type="Integer">1</Compiler>
+			<Compiler Name="X" Type="Integer">1</Compiler>
+			<Compiler Name="Y" Type="Integer">2</Compiler>
+			<Compiler Name="Z" Type="Integer">1</Compiler>
+			<Compiler Name="ShowHints" Type="Boolean">True</Compiler>
+			<Compiler Name="ShowWarnings" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitAliases" Type="String">WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;</Compiler>
+			<Compiler Name="NamespacePrefix" Type="String">Borland.Vcl</Compiler>
+			<Compiler Name="SymbolDeprecated" Type="Boolean">True</Compiler>
+			<Compiler Name="SymbolLibrary" Type="Boolean">True</Compiler>
+			<Compiler Name="SymbolPlatform" Type="Boolean">False</Compiler>
+			<Compiler Name="SymbolExperimental" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitLibrary" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitPlatform" Type="Boolean">False</Compiler>
+			<Compiler Name="UnitDeprecated" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitExperimental" Type="Boolean">True</Compiler>
+			<Compiler Name="HResultCompat" Type="Boolean">True</Compiler>
+			<Compiler Name="HidingMember" Type="Boolean">True</Compiler>
+			<Compiler Name="HiddenVirtual" Type="Boolean">True</Compiler>
+			<Compiler Name="Garbage" Type="Boolean">True</Compiler>
+			<Compiler Name="BoundsError" Type="Boolean">True</Compiler>
+			<Compiler Name="ZeroNilCompat" Type="Boolean">True</Compiler>
+			<Compiler Name="StringConstTruncated" Type="Boolean">True</Compiler>
+			<Compiler Name="ForLoopVarVarPar" Type="Boolean">True</Compiler>
+			<Compiler Name="TypedConstVarPar" Type="Boolean">True</Compiler>
+			<Compiler Name="AsgToTypedConst" Type="Boolean">True</Compiler>
+			<Compiler Name="CaseLabelRange" Type="Boolean">True</Compiler>
+			<Compiler Name="ForVariable" Type="Boolean">True</Compiler>
+			<Compiler Name="ConstructingAbstract" Type="Boolean">True</Compiler>
+			<Compiler Name="ComparisonFalse" Type="Boolean">True</Compiler>
+			<Compiler Name="ComparisonTrue" Type="Boolean">True</Compiler>
+			<Compiler Name="ComparingSignedUnsigned" Type="Boolean">True</Compiler>
+			<Compiler Name="CombiningSignedUnsigned" Type="Boolean">True</Compiler>
+			<Compiler Name="UnsupportedConstruct" Type="Boolean">True</Compiler>
+			<Compiler Name="FileOpen" Type="Boolean">True</Compiler>
+			<Compiler Name="FileOpenUnitSrc" Type="Boolean">True</Compiler>
+			<Compiler Name="BadGlobalSymbol" Type="Boolean">True</Compiler>
+			<Compiler Name="DuplicateConstructorDestructor" Type="Boolean">True</Compiler>
+			<Compiler Name="InvalidDirective" Type="Boolean">True</Compiler>
+			<Compiler Name="PackageNoLink" Type="Boolean">True</Compiler>
+			<Compiler Name="PackageThreadVar" Type="Boolean">True</Compiler>
+			<Compiler Name="ImplicitImport" Type="Boolean">True</Compiler>
+			<Compiler Name="HPPEMITIgnored" Type="Boolean">True</Compiler>
+			<Compiler Name="NoRetVal" Type="Boolean">True</Compiler>
+			<Compiler Name="UseBeforeDef" Type="Boolean">True</Compiler>
+			<Compiler Name="ForLoopVarUndef" Type="Boolean">True</Compiler>
+			<Compiler Name="UnitNameMismatch" Type="Boolean">True</Compiler>
+			<Compiler Name="NoCFGFileFound" Type="Boolean">True</Compiler>
+			<Compiler Name="MessageDirective" Type="Boolean">True</Compiler>
+			<Compiler Name="ImplicitVariants" Type="Boolean">True</Compiler>
+			<Compiler Name="UnicodeToLocale" Type="Boolean">True</Compiler>
+			<Compiler Name="LocaleToUnicode" Type="Boolean">True</Compiler>
+			<Compiler Name="ImagebaseMultiple" Type="Boolean">True</Compiler>
+			<Compiler Name="SuspiciousTypecast" Type="Boolean">True</Compiler>
+			<Compiler Name="PrivatePropAccessor" Type="Boolean">True</Compiler>
+			<Compiler Name="UnsafeType" Type="Boolean">True</Compiler>
+			<Compiler Name="UnsafeCode" Type="Boolean">True</Compiler>
+			<Compiler Name="UnsafeCast" Type="Boolean">True</Compiler>
+			<Compiler Name="OptionTruncated" Type="Boolean">True</Compiler>
+			<Compiler Name="WideCharReduced" Type="Boolean">True</Compiler>
+			<Compiler Name="GenerateDocumentation" Type="Boolean">False</Compiler>
+			<Compiler Name="DefaultNamespace" Type="String"></Compiler>
+			<Compiler Name="DuplicatesIgnored" Type="Boolean">True</Compiler>
+		</Compiler>
+		<Linker>
+			<Linker Name="MapFile" Type="Integer">0</Linker>
+			<Linker Name="OutputObjs" Type="Integer">0</Linker>
+			<Linker Name="ConsoleApp" Type="Integer">1</Linker>
+			<Linker Name="DebugInfo" Type="Boolean">True</Linker>
+			<Linker Name="RemoteSymbols" Type="Boolean">False</Linker>
+			<Linker Name="MinStackSize" Type="Integer">4096</Linker>
+			<Linker Name="MaxStackSize" Type="Integer">1048576</Linker>
+			<Linker Name="ImageBase" Type="Integer">4194304</Linker>
+			<Linker Name="ExeDescription" Type="String"></Linker>
+			<Linker Name="GenerateDRC" Type="Boolean">False</Linker>
+		</Linker>
+		<Directories>
+			<Directories Name="OutputDir" Type="String"></Directories>
+			<Directories Name="UnitOutputDir" Type="String"></Directories>
+			<Directories Name="PackageDLLOutputDir" Type="String"></Directories>
+			<Directories Name="PackageDCPOutputDir" Type="String"></Directories>
+			<Directories Name="SearchPath" Type="String">e:\program files\common files\borland shared\bds\shared assemblies\3.0;$(TCROOT)\TeeChartVCL\Sources</Directories>
+			<Directories Name="Packages" Type="String">Borland.VclX;Borland.VclRtl;Borland.VclDbRtl;Borland.VclBdeRtl;Borland.Vcl;Borland.Delphi;Borland.VclDbCtrls</Directories>
+			<Directories Name="Conditionals" Type="String"></Directories>
+			<Directories Name="DebugSourceDirs" Type="String"></Directories>
+			<Directories Name="UsePackages" Type="Boolean">True</Directories>
+		</Directories>
+		<Parameters>
+			<Parameters Name="RunParams" Type="String"></Parameters>
+			<Parameters Name="HostApplication" Type="String"></Parameters>
+			<Parameters Name="Launcher" Type="String"></Parameters>
+			<Parameters Name="UseLauncher" Type="Boolean">False</Parameters>
+			<Parameters Name="DebugCWD" Type="String"></Parameters>
+			<Parameters Name="RemoteHost" Type="String"></Parameters>
+			<Parameters Name="RemotePath" Type="String"></Parameters>
+			<Parameters Name="RemoteLauncher" Type="String"></Parameters>
+			<Parameters Name="RemoteCWD" Type="String"></Parameters>
+			<Parameters Name="RemoteDebug" Type="Boolean">False</Parameters>
+		</Parameters>
+		<VersionInfo>
+			<VersionInfo Name="IncludeVerInfo" Type="Boolean">True</VersionInfo>
+			<VersionInfo Name="AutoIncBuild" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="MajorVer" Type="Integer">8</VersionInfo>
+			<VersionInfo Name="MinorVer" Type="Integer">0</VersionInfo>
+			<VersionInfo Name="Release" Type="Integer">0</VersionInfo>
+			<VersionInfo Name="Build" Type="Integer">46</VersionInfo>
+			<VersionInfo Name="Debug" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="PreRelease" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="Special" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="Private" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="DLL" Type="Boolean">False</VersionInfo>
+			<VersionInfo Name="Locale" Type="Integer">1033</VersionInfo>
+			<VersionInfo Name="CodePage" Type="Integer">1252</VersionInfo>
+		</VersionInfo>
+		<VersionInfoKeys>
+			<VersionInfoKeys Name="CompanyName" Type="String">Steema Software</VersionInfoKeys>
+			<VersionInfoKeys Name="FileDescription" Type="String">TeeNew</VersionInfoKeys>
+			<VersionInfoKeys Name="FileVersion" Type="String">8.0.0.46</VersionInfoKeys>
+			<VersionInfoKeys Name="InternalName" Type="String"></VersionInfoKeys>
+			<VersionInfoKeys Name="LegalCopyright" Type="String">Copyright (c) 2001-2006 by David Berneda</VersionInfoKeys>
+			<VersionInfoKeys Name="LegalTrademarks" Type="String"></VersionInfoKeys>
+			<VersionInfoKeys Name="OriginalFilename" Type="String"></VersionInfoKeys>
+			<VersionInfoKeys Name="ProductName" Type="String">TeeChart Pro</VersionInfoKeys>
+			<VersionInfoKeys Name="ProductVersion" Type="String">8.0.0.0</VersionInfoKeys>
+			<VersionInfoKeys Name="Comments" Type="String">www.steema.com</VersionInfoKeys>
+		</VersionInfoKeys>
+		<Language>
+			<Language Name="ActiveLang" Type="String"></Language>
+			<Language Name="ProjectLang" Type="String">$00000000</Language>
+			<Language Name="RootDir" Type="String"></Language>
+		</Language>  
+    
+    <FileList>
+      <File FileName="e:\program files\common files\borland shared\bds\shared assemblies\3.0\Borland.VclDbCtrls.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="Borland.VclDbCtrls" AssemblyName="Borland.VclDbCtrls" Version="9.0.1777.31711" LinkUnits="False"/>
+      <File FileName="e:\program files\common files\borland shared\bds\shared assemblies\3.0\Borland.Delphi.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="Borland.Delphi" AssemblyName="Borland.Delphi" Version="9.0.1777.31711" LinkUnits="False"/>
+      <File FileName="e:\program files\common files\borland shared\bds\shared assemblies\3.0\Borland.Vcl.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="Borland.Vcl" AssemblyName="Borland.Vcl" Version="9.0.1777.31711" LinkUnits="False"/>
+      <File FileName="e:\program files\common files\borland shared\bds\shared assemblies\3.0\Borland.VclBdeRtl.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="Borland.VclBdeRtl" AssemblyName="Borland.VclBdeRtl" Version="9.0.1777.31711" LinkUnits="False"/>
+      <File FileName="e:\program files\common files\borland shared\bds\shared assemblies\3.0\Borland.VclDbRtl.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="Borland.VclDbRtl" AssemblyName="Borland.VclDbRtl" Version="9.0.1777.31711" LinkUnits="False"/>
+      <File FileName="e:\program files\common files\borland shared\bds\shared assemblies\3.0\Borland.VclRtl.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="Borland.VclRtl" AssemblyName="Borland.VclRtl" Version="9.0.1777.31711" LinkUnits="False"/>
+      <File FileName="e:\program files\common files\borland shared\bds\shared assemblies\3.0\Borland.VclX.dll" ContainerId="DelphiDotNetAssemblyCompiler" ModuleName="Borland.VclX" AssemblyName="Borland.VclX" Version="9.0.1777.31711" LinkUnits="False"/>
+      <File FileName="" ContainerId="" ModuleName="Forms"/>
+      <File FileName="Main.pas" ContainerId="" ModuleName="Main"/>
+      <File FileName="Base.pas" ContainerId="" ModuleName="Base"/>
+      <File FileName="Welcome.pas" ContainerId="" ModuleName="Welcome"/>
+      <File FileName="Gradient_MidColor.pas" ContainerId="" ModuleName="Gradient_MidColor"/>
+      <File FileName="Canvas_OrthoAngle.pas" ContainerId="" ModuleName="Canvas_OrthoAngle"/>
+      <File FileName="BackWall_Gradient.pas" ContainerId="" ModuleName="BackWall_Gradient"/>
+      <File FileName="Legend_Image.pas" ContainerId="" ModuleName="Legend_Image"/>
+      <File FileName="Chart_SubTitles.pas" ContainerId="" ModuleName="Chart_SubTitles"/>
+      <File FileName="Base_CustomPos.pas" ContainerId="" ModuleName="Base_CustomPos"/>
+      <File FileName="Legend_GenFormat.pas" ContainerId="" ModuleName="Legend_GenFormat"/>
+      <File FileName="Axis_Behind.pas" ContainerId="" ModuleName="Axis_Behind"/>
+      <File FileName="Axis_Custom.pas" ContainerId="" ModuleName="Axis_Custom"/>
+      <File FileName="AxisTitle_Visible.pas" ContainerId="" ModuleName="AxisTitle_Visible"/>
+      <File FileName="Axis_Millisec.pas" ContainerId="" ModuleName="Axis_Millisec"/>
+      <File FileName="Axis_Exponent.pas" ContainerId="" ModuleName="Axis_Exponent"/>
+      <File FileName="Axis_MinorGrid.pas" ContainerId="" ModuleName="Axis_MinorGrid"/>
+      <File FileName="Legend_CustomPos.pas" ContainerId="" ModuleName="Legend_CustomPos"/>
+      <File FileName="Title_CustomPos.pas" ContainerId="" ModuleName="Title_CustomPos"/>
+      <File FileName="Legend_Widths.pas" ContainerId="" ModuleName="Legend_Widths"/>
+      <File FileName="Legend_CheckBox.pas" ContainerId="" ModuleName="Legend_CheckBox"/>
+      <File FileName="BackWall_Image.pas" ContainerId="" ModuleName="BackWall_Image"/>
+      <File FileName="Legend_VertSpa.pas" ContainerId="" ModuleName="Legend_VertSpa"/>
+      <File FileName="Legend_Symbol.pas" ContainerId="" ModuleName="Legend_Symbol"/>
+      <File FileName="Legend_TextStyle.pas" ContainerId="" ModuleName="Legend_TextStyle"/>
+      <File FileName="Legend_CurrentPage.pas" ContainerId="" ModuleName="Legend_CurrentPage"/>
+      <File FileName="Legend_FontColor.pas" ContainerId="" ModuleName="Legend_FontColor"/>
+      <File FileName="Marks_GenFormat.pas" ContainerId="" ModuleName="Marks_GenFormat"/>
+      <File FileName="Chart_OnBeforeDraw.pas" ContainerId="" ModuleName="Chart_OnBeforeDraw"/>
+      <File FileName="Zoom_Direction.pas" ContainerId="" ModuleName="Zoom_Direction"/>
+      <File FileName="Zoom_MinPix.pas" ContainerId="" ModuleName="Zoom_MinPix"/>
+      <File FileName="Zoom_Pen.pas" ContainerId="" ModuleName="Zoom_Pen"/>
+      <File FileName="Marks_Shadow.pas" ContainerId="" ModuleName="Marks_Shadow"/>
+      <File FileName="Marks_Angle.pas" ContainerId="" ModuleName="Marks_Angle"/>
+      <File FileName="Marks_DrawEvery.pas" ContainerId="" ModuleName="Marks_DrawEvery"/>
+      <File FileName="Marks_XYStyle.pas" ContainerId="" ModuleName="Marks_XYStyle"/>
+      <File FileName="Marks_Multi.pas" ContainerId="" ModuleName="Marks_Multi"/>
+      <File FileName="Marks_Positions.pas" ContainerId="" ModuleName="Marks_Positions"/>
+      <File FileName="Title_GenFormat.pas" ContainerId="" ModuleName="Title_GenFormat"/>
+      <File FileName="Series_Depth.pas" ContainerId="" ModuleName="Series_Depth"/>
+      <File FileName="Line_Stack.pas" ContainerId="" ModuleName="Line_Stack"/>
+      <File FileName="Bar_SideAll.pas" ContainerId="" ModuleName="Bar_SideAll"/>
+      <File FileName="Bar_Image.pas" ContainerId="" ModuleName="Bar_Image"/>
+      <File FileName="Bar_Gradient.pas" ContainerId="" ModuleName="Bar_Gradient"/>
+      <File FileName="Bar_StackGroup.pas" ContainerId="" ModuleName="Bar_StackGroup"/>
+      <File FileName="Surface_Sides.pas" ContainerId="" ModuleName="Surface_Sides"/>
+      <File FileName="Surface_Smooth.pas" ContainerId="" ModuleName="Surface_Smooth"/>
+      <File FileName="Surface_Irregular.pas" ContainerId="" ModuleName="Surface_Irregular"/>
+      <File FileName="Surface_WirePalette.pas" ContainerId="" ModuleName="Surface_WirePalette"/>
+      <File FileName="Pie_Multi.pas" ContainerId="" ModuleName="Pie_Multi"/>
+      <File FileName="Pie_Shadow.pas" ContainerId="" ModuleName="Pie_Shadow"/>
+      <File FileName="Pie_Semi.pas" ContainerId="" ModuleName="Pie_Semi"/>
+      <File FileName="Shape_Image.pas" ContainerId="" ModuleName="Shape_Image"/>
+      <File FileName="Shape_VertAlign.pas" ContainerId="" ModuleName="Shape_VertAlign"/>
+      <File FileName="Polar_ClockWise.pas" ContainerId="" ModuleName="Polar_ClockWise"/>
+      <File FileName="WindRose_AngleInc.pas" ContainerId="" ModuleName="WindRose_AngleInc"/>
+      <File FileName="Point3D_Event.pas" ContainerId="" ModuleName="Point3D_Event"/>
+      <File FileName="Clock_Editors.pas" ContainerId="" ModuleName="Clock_Editors"/>
+      <File FileName="Contour_Levels.pas" ContainerId="" ModuleName="Contour_Levels"/>
+      <File FileName="ColorGrid_Series.pas" ContainerId="" ModuleName="ColorGrid_Series"/>
+      <File FileName="Chart_Gallery.pas" ContainerId="" ModuleName="Chart_Gallery"/>
+      <File FileName="Chart_SubGallery.pas" ContainerId="" ModuleName="Chart_SubGallery"/>
+      <File FileName="Chart_Transparent.pas" ContainerId="" ModuleName="Chart_Transparent"/>
+      <File FileName="Editor_Color.pas" ContainerId="" ModuleName="Editor_Color"/>
+      <File FileName="TeeCustomShape.pas" ContainerId="" ModuleName="TeeCustomShape"/>
+      <File FileName="Tool_Cursor.pas" ContainerId="" ModuleName="Tool_Cursor"/>
+      <File FileName="Tool_DragMarks.pas" ContainerId="" ModuleName="Tool_DragMarks"/>
+      <File FileName="Tool_AxisArrow.pas" ContainerId="" ModuleName="Tool_AxisArrow"/>
+      <File FileName="Tools_DrawLine.pas" ContainerId="" ModuleName="Tools_DrawLine"/>
+      <File FileName="Tools_Nearest.pas" ContainerId="" ModuleName="Tools_Nearest"/>
+      <File FileName="Polar_LabelsInside.pas" ContainerId="" ModuleName="Polar_LabelsInside"/>
+      <File FileName="Series3D_RangePalette.pas" ContainerId="" ModuleName="Series3D_RangePalette"/>
+      <File FileName="ColorGrid_Transparent.pas" ContainerId="" ModuleName="ColorGrid_Transparent"/>
+      <File FileName="Candle_CustomColors.pas" ContainerId="" ModuleName="Candle_CustomColors"/>
+      <File FileName="Pointer_DrawCanvas.pas" ContainerId="" ModuleName="Pointer_DrawCanvas"/>
+      <File FileName="Series_Designer.pas" ContainerId="" ModuleName="Series_Designer"/>
+      <File FileName="Export_Charts.pas" ContainerId="" ModuleName="Export_Charts"/>
+      <File FileName="Changes_Misc.pas" ContainerId="" ModuleName="Changes_Misc"/>
+      <File FileName="Changes_Package.pas" ContainerId="" ModuleName="Changes_Package"/>
+      <File FileName="Area_Stairs.pas" ContainerId="" ModuleName="Area_Stairs"/>
+      <File FileName="Chart_ListBox.pas" ContainerId="" ModuleName="Chart_ListBox"/>
+      <File FileName="Chart_Commander.pas" ContainerId="" ModuleName="Chart_Commander"/>
+      <File FileName="Donut_Series.pas" ContainerId="" ModuleName="Donut_Series"/>
+      <File FileName="TriSurface_Series.pas" ContainerId="" ModuleName="TriSurface_Series"/>
+      <File FileName="Histogram_Series.pas" ContainerId="" ModuleName="Histogram_Series"/>
+      <File FileName="HorizLine_Series.pas" ContainerId="" ModuleName="HorizLine_Series"/>
+      <File FileName="BarJoin_Series.pas" ContainerId="" ModuleName="BarJoin_Series"/>
+      <File FileName="HighLow_Series.pas" ContainerId="" ModuleName="HighLow_Series"/>
+      <File FileName="WaterFall_Series.pas" ContainerId="" ModuleName="WaterFall_Series"/>
+      <File FileName="BoxPlot_Series.pas" ContainerId="" ModuleName="BoxPlot_Series"/>
+      <File FileName="ChartEditor_Dialog.pas" ContainerId="" ModuleName="ChartEditor_Dialog"/>
+      <File FileName="Stochastic_Function.pas" ContainerId="" ModuleName="Stochastic_Function"/>
+      <File FileName="Line_Clickable.pas" ContainerId="" ModuleName="Line_Clickable"/>
+      <File FileName="Series_TextSource.pas" ContainerId="" ModuleName="Series_TextSource"/>
+      <File FileName="Chart_WebSource.pas" ContainerId="" ModuleName="Chart_WebSource"/>
+      <File FileName="Chart_PageNavigator.pas" ContainerId="" ModuleName="Chart_PageNavigator"/>
+      <File FileName="Legend_Multi.pas" ContainerId="" ModuleName="Legend_Multi"/>
+      <File FileName="Legend_Series.pas" ContainerId="" ModuleName="Legend_Series"/>
+      <File FileName="Gallery_Panel.pas" ContainerId="" ModuleName="Gallery_Panel"/>
+      <File FileName="Line_Pattern.pas" ContainerId="" ModuleName="Line_Pattern"/>
+      <File FileName="PrintPreview_Multi.pas" ContainerId="" ModuleName="PrintPreview_Multi"/>
+      <File FileName="Pyramid_Series.pas" ContainerId="" ModuleName="Pyramid_Series"/>
+      <File FileName="Right_Wall.pas" ContainerId="" ModuleName="Right_Wall"/>
+      <File FileName="Tools_ColorBand.pas" ContainerId="" ModuleName="Tools_ColorBand"/>
+      <File FileName="Tools_ColorLine.pas" ContainerId="" ModuleName="Tools_ColorLine"/>
+      <File FileName="Chart_Grid.pas" ContainerId="" ModuleName="Chart_Grid"/>
+      <File FileName="Chart_EditorPanel.pas" ContainerId="" ModuleName="Chart_EditorPanel"/>
+      <File FileName="Smith_Series.pas" ContainerId="" ModuleName="Smith_Series"/>
+      <File FileName="Bar_Cylinder.pas" ContainerId="" ModuleName="Bar_Cylinder"/>
+      <File FileName="Export_Text.pas" ContainerId="" ModuleName="Export_Text"/>
+      <File FileName="Printing_Bugs.pas" ContainerId="" ModuleName="Printing_Bugs"/>
+      <File FileName="MACD_Function.pas" ContainerId="" ModuleName="MACD_Function"/>
+      <File FileName="Export_HTML.pas" ContainerId="" ModuleName="Export_HTML"/>
+      <File FileName="Export_XML.pas" ContainerId="" ModuleName="Export_XML"/>
+      <File FileName="Export_Excel.pas" ContainerId="" ModuleName="Export_Excel"/>
+      <File FileName="ColorRange_Bug.pas" ContainerId="" ModuleName="ColorRange_Bug"/>
+      <File FileName="Tool_Rotate.pas" ContainerId="" ModuleName="Tool_Rotate"/>
+      <File FileName="Area_Origin.pas" ContainerId="" ModuleName="Area_Origin"/>
+      <File FileName="MomentumDiv_Function.pas" ContainerId="" ModuleName="MomentumDiv_Function"/>
+      <File FileName="Mouse_Wheel.pas" ContainerId="" ModuleName="Mouse_Wheel"/>
+      <File FileName="Print_Pages.pas" ContainerId="" ModuleName="Print_Pages"/>
+      <File FileName="Candle_OpenClose.pas" ContainerId="" ModuleName="Candle_OpenClose"/>
+      <File FileName="RSI_Function.pas" ContainerId="" ModuleName="RSI_Function"/>
+      <File FileName="Canvas_DotPen.pas" ContainerId="" ModuleName="Canvas_DotPen"/>
+      <File FileName="Assign_Picture.pas" ContainerId="" ModuleName="Assign_Picture"/>
+      <File FileName="Contour_View2D.pas" ContainerId="" ModuleName="Contour_View2D"/>
+      <File FileName="Tools_Image.pas" ContainerId="" ModuleName="Tools_Image"/>
+      <File FileName="Axis_LabelAlign.pas" ContainerId="" ModuleName="Axis_LabelAlign"/>
+      <File FileName="Brush_Styles.pas" ContainerId="" ModuleName="Brush_Styles"/>
+      <File FileName="Welcome_All.pas" ContainerId="" ModuleName="Welcome_All"/>
+      <File FileName="Canvas_Cone.pas" ContainerId="" ModuleName="Canvas_Cone"/>
+      <File FileName="Tool_MarksTip.pas" ContainerId="" ModuleName="Tool_MarksTip"/>
+      <File FileName="Title_ClickEvent.pas" ContainerId="" ModuleName="Title_ClickEvent"/>
+      <File FileName="Canvas_Transparency.pas" ContainerId="" ModuleName="Canvas_Transparency"/>
+      <File FileName="Canvas_PyramidTrunc.pas" ContainerId="" ModuleName="Canvas_PyramidTrunc"/>
+      <File FileName="Tools_Custom.pas" ContainerId="" ModuleName="Tools_Custom"/>
+      <File FileName="Legend_AddText.pas" ContainerId="" ModuleName="Legend_AddText"/>
+      <File FileName="Exponential_Trend.pas" ContainerId="" ModuleName="Exponential_Trend"/>
+      <File FileName="Surface_Palette.pas" ContainerId="" ModuleName="Surface_Palette"/>
+      <File FileName="Contour_Palette.pas" ContainerId="" ModuleName="Contour_Palette"/>
+      <File FileName="TeeAxisLabelTool.pas" ContainerId="" ModuleName="TeeAxisLabelTool"/>
+      <File FileName="Print_Preview.pas" ContainerId="" ModuleName="Print_Preview"/>
+      <File FileName="PrintPreview_Navigate.pas" ContainerId="" ModuleName="PrintPreview_Navigate"/>
+      <File FileName="Tool_PageNumDemo.pas" ContainerId="" ModuleName="Tool_PageNumDemo"/>
+      <File FileName="Function_ExpMovAve.pas" ContainerId="" ModuleName="Function_ExpMovAve"/>
+      <File FileName="Function_RootMeanSq.pas" ContainerId="" ModuleName="Function_RootMeanSq"/>
+      <File FileName="Canvas_GrayScale.pas" ContainerId="" ModuleName="Canvas_GrayScale"/>
+      <File FileName="SeriesType_Line.pas" ContainerId="" ModuleName="SeriesType_Line"/>
+      <File FileName="Basic_Features.pas" ContainerId="" ModuleName="Basic_Features"/>
+      <File FileName="SeriesType_Bar.pas" ContainerId="" ModuleName="SeriesType_Bar"/>
+      <File FileName="SeriesType_Area.pas" ContainerId="" ModuleName="SeriesType_Area"/>
+      <File FileName="TeeCommander_Demo.pas" ContainerId="" ModuleName="TeeCommander_Demo"/>
+      <File FileName="FourCharts.pas" ContainerId="" ModuleName="FourCharts"/>
+      <File FileName="SeriesType_Pie.pas" ContainerId="" ModuleName="SeriesType_Pie"/>
+      <File FileName="SeriesType_FastLine.pas" ContainerId="" ModuleName="SeriesType_FastLine"/>
+      <File FileName="Internet_Charts.pas" ContainerId="" ModuleName="Internet_Charts"/>
+      <File FileName="SeriesType_Candle.pas" ContainerId="" ModuleName="SeriesType_Candle"/>
+      <File FileName="SeriesType_Volume.pas" ContainerId="" ModuleName="SeriesType_Volume"/>
+      <File FileName="Function_CurveFitting.pas" ContainerId="" ModuleName="Function_CurveFitting"/>
+      <File FileName="SeriesType_Arrow.pas" ContainerId="" ModuleName="SeriesType_Arrow"/>
+      <File FileName="SeriesType_Clock.pas" ContainerId="" ModuleName="SeriesType_Clock"/>
+      <File FileName="SeriesType_HorizBar.pas" ContainerId="" ModuleName="SeriesType_HorizBar"/>
+      <File FileName="SeriesType_Bubble.pas" ContainerId="" ModuleName="SeriesType_Bubble"/>
+      <File FileName="SeriesType_Point3D.pas" ContainerId="" ModuleName="SeriesType_Point3D"/>
+      <File FileName="SeriesType_Contour.pas" ContainerId="" ModuleName="SeriesType_Contour"/>
+      <File FileName="SeriesType_Surface.pas" ContainerId="" ModuleName="SeriesType_Surface"/>
+      <File FileName="Function_MovAve.pas" ContainerId="" ModuleName="Function_MovAve"/>
+      <File FileName="Drag_Bars.pas" ContainerId="" ModuleName="Drag_Bars"/>
+      <File FileName="Surface_Hole.pas" ContainerId="" ModuleName="Surface_Hole"/>
+      <File FileName="CurveFitting_Dynamic.pas" ContainerId="" ModuleName="CurveFitting_Dynamic"/>
+      <File FileName="QualityControl.pas" ContainerId="" ModuleName="QualityControl"/>
+      <File FileName="Export_Metafile.pas" ContainerId="" ModuleName="Export_Metafile"/>
+      <File FileName="Game_PacMan.pas" ContainerId="" ModuleName="Game_PacMan"/>
+      <File FileName="ChartListBox_Demo.pas" ContainerId="" ModuleName="ChartListBox_Demo"/>
+      <File FileName="SeriesType_Radar.pas" ContainerId="" ModuleName="SeriesType_Radar"/>
+      <File FileName="SeriesType_Polar.pas" ContainerId="" ModuleName="SeriesType_Polar"/>
+      <File FileName="SeriesType_Point.pas" ContainerId="" ModuleName="SeriesType_Point"/>
+      <File FileName="Legend_Scroll.pas" ContainerId="" ModuleName="Legend_Scroll"/>
+      <File FileName="SeriesType_Gantt.pas" ContainerId="" ModuleName="SeriesType_Gantt"/>
+      <File FileName="SeriesType_Bezier.pas" ContainerId="" ModuleName="SeriesType_Bezier"/>
+      <File FileName="Series_Calendar.pas" ContainerId="" ModuleName="Series_Calendar"/>
+      <File FileName="ValueList_FindMinMax.pas" ContainerId="" ModuleName="ValueList_FindMinMax"/>
+      <File FileName="Axis_MultiRuntime.pas" ContainerId="" ModuleName="Axis_MultiRuntime"/>
+      <File FileName="Removed_Properties.pas" ContainerId="" ModuleName="Removed_Properties"/>
+      <File FileName="Candle_AxisLabels.pas" ContainerId="" ModuleName="Candle_AxisLabels"/>
+      <File FileName="Line_ColorEachLine.pas" ContainerId="" ModuleName="Line_ColorEachLine"/>
+      <File FileName="Axis_OpaqueZone.pas" ContainerId="" ModuleName="Axis_OpaqueZone"/>
+      <File FileName="Series_BarNegativeStacked.pas" ContainerId="" ModuleName="Series_BarNegativeStacked"/>
+      <File FileName="ErrorBar_Negative.pas" ContainerId="" ModuleName="ErrorBar_Negative"/>
+      <File FileName="Function_Bollinger.pas" ContainerId="" ModuleName="Function_Bollinger"/>
+      <File FileName="Axis_MultiScroll.pas" ContainerId="" ModuleName="Axis_MultiScroll"/>
+      <File FileName="Series_Shape.pas" ContainerId="" ModuleName="Series_Shape"/>
+      <File FileName="Series_Error.pas" ContainerId="" ModuleName="Series_Error"/>
+      <File FileName="WindRose_Series.pas" ContainerId="" ModuleName="WindRose_Series"/>
+      <File FileName="Series_Bar3D.pas" ContainerId="" ModuleName="Series_Bar3D"/>
+      <File FileName="Surface_XYZFloat.pas" ContainerId="" ModuleName="Surface_XYZFloat"/>
+      <File FileName="Series_MyPoint.pas" ContainerId="" ModuleName="Series_MyPoint"/>
+      <File FileName="Reporting_Tools.pas" ContainerId="" ModuleName="Reporting_Tools"/>
+      <File FileName="Chart_Clipboard.pas" ContainerId="" ModuleName="Chart_Clipboard"/>
+      <File FileName="Chart_MultiClipboard.pas" ContainerId="" ModuleName="Chart_MultiClipboard"/>
+      <File FileName="Chart_Axes.pas" ContainerId="" ModuleName="Chart_Axes"/>
+      <File FileName="Chart_ScrollBar.pas" ContainerId="" ModuleName="Chart_ScrollBar"/>
+      <File FileName="ChartEditor_Runtime.pas" ContainerId="" ModuleName="ChartEditor_Runtime"/>
+      <File FileName="Zoom_Scroll.pas" ContainerId="" ModuleName="Zoom_Scroll"/>
+      <File FileName="Function_ADX.pas" ContainerId="" ModuleName="Function_ADX"/>
+      <File FileName="Chart_Other.pas" ContainerId="" ModuleName="Chart_Other"/>
+      <File FileName="Customers.pas" ContainerId="" ModuleName="Customers"/>
+      <File FileName="Function_RSI.pas" ContainerId="" ModuleName="Function_RSI"/>
+      <File FileName="Function_MovAveWeighted.pas" ContainerId="" ModuleName="Function_MovAveWeighted"/>
+      <File FileName="Function_Momentum.pas" ContainerId="" ModuleName="Function_Momentum"/>
+      <File FileName="Function_Cumulative.pas" ContainerId="" ModuleName="Function_Cumulative"/>
+      <File FileName="Function_Trend.pas" ContainerId="" ModuleName="Function_Trend"/>
+      <File FileName="Function_StdDeviation.pas" ContainerId="" ModuleName="Function_StdDeviation"/>
+      <File FileName="Function_ExpAve.pas" ContainerId="" ModuleName="Function_ExpAve"/>
+      <File FileName="Function_High.pas" ContainerId="" ModuleName="Function_High"/>
+      <File FileName="Function_Average.pas" ContainerId="" ModuleName="Function_Average"/>
+      <File FileName="Function_Low.pas" ContainerId="" ModuleName="Function_Low"/>
+      <File FileName="Function_Count.pas" ContainerId="" ModuleName="Function_Count"/>
+      <File FileName="Function_Subtract.pas" ContainerId="" ModuleName="Function_Subtract"/>
+      <File FileName="Function_Add.pas" ContainerId="" ModuleName="Function_Add"/>
+      <File FileName="Function_Divide.pas" ContainerId="" ModuleName="Function_Divide"/>
+      <File FileName="Function_Multiply.pas" ContainerId="" ModuleName="Function_Multiply"/>
+      <File FileName="Series_BigCandle.pas" ContainerId="" ModuleName="Series_BigCandle"/>
+      <File FileName="Series_DeltaPoint.pas" ContainerId="" ModuleName="Series_DeltaPoint"/>
+      <File FileName="Series_ImageBar.pas" ContainerId="" ModuleName="Series_ImageBar"/>
+      <File FileName="Series_ImagePoint.pas" ContainerId="" ModuleName="Series_ImagePoint"/>
+      <File FileName="CurveFitting_Coef.pas" ContainerId="" ModuleName="CurveFitting_Coef"/>
+      <File FileName="Order_Info.pas" ContainerId="" ModuleName="Order_Info"/>
+      <File FileName="ColorBand_Transparent.pas" ContainerId="" ModuleName="ColorBand_Transparent"/>
+      <File FileName="Tool_DragPoint.pas" ContainerId="" ModuleName="Tool_DragPoint"/>
+      <File FileName="Series_Funnel.pas" ContainerId="" ModuleName="Series_Funnel"/>
+      <File FileName="Function_AverageNulls.pas" ContainerId="" ModuleName="Function_AverageNulls"/>
+      <File FileName="Print_PreviewDialog.pas" ContainerId="" ModuleName="Print_PreviewDialog"/>
+      <File FileName="Commander_Custom.pas" ContainerId="" ModuleName="Commander_Custom"/>
+      <File FileName="Tool_Annotation.pas" ContainerId="" ModuleName="Tool_Annotation"/>
+      <File FileName="ColorGrid_Clicked.pas" ContainerId="" ModuleName="ColorGrid_Clicked"/>
+      <File FileName="Tools_DrawLineDragged.pas" ContainerId="" ModuleName="Tools_DrawLineDragged"/>
+      <File FileName="Tool_CursorProg.pas" ContainerId="" ModuleName="Tool_CursorProg"/>
+      <File FileName="Release503_FixedBugs.pas" ContainerId="" ModuleName="Release503_FixedBugs"/>
+      <File FileName="Release502_NewFeatures.pas" ContainerId="" ModuleName="Release502_NewFeatures"/>
+      <File FileName="Release503_NewFeatures.pas" ContainerId="" ModuleName="Release503_NewFeatures"/>
+      <File FileName="Gallery_Alternate.pas" ContainerId="" ModuleName="Gallery_Alternate"/>
+      <File FileName="Commander_Editor.pas" ContainerId="" ModuleName="Commander_Editor"/>
+      <File FileName="Delphi6_Only.pas" ContainerId="" ModuleName="Delphi6_Only"/>
+      <File FileName="Release501_FixedBugs.pas" ContainerId="" ModuleName="Release501_FixedBugs"/>
+      <File FileName="Release501_NewFeatures.pas" ContainerId="" ModuleName="Release501_NewFeatures"/>
+      <File FileName="Candle_OnGetPointer.pas" ContainerId="" ModuleName="Candle_OnGetPointer"/>
+      <File FileName="Volume_Origin.pas" ContainerId="" ModuleName="Volume_Origin"/>
+      <File FileName="Line_Outline.pas" ContainerId="" ModuleName="Line_Outline"/>
+      <File FileName="Area_Transparency.pas" ContainerId="" ModuleName="Area_Transparency"/>
+      <File FileName="Histogram_Transparency.pas" ContainerId="" ModuleName="Histogram_Transparency"/>
+      <File FileName="Calendar_Buttons.pas" ContainerId="" ModuleName="Calendar_Buttons"/>
+      <File FileName="ChartGrid_Colors.pas" ContainerId="" ModuleName="ChartGrid_Colors"/>
+      <File FileName="ChartEditor_PageNum.pas" ContainerId="" ModuleName="ChartEditor_PageNum"/>
+      <File FileName="PolarRadar_Transparency.pas" ContainerId="" ModuleName="PolarRadar_Transparency"/>
+      <File FileName="TriSurface_Hidding.pas" ContainerId="" ModuleName="TriSurface_Hidding"/>
+      <File FileName="ColorLine_DragRepaint.pas" ContainerId="" ModuleName="ColorLine_DragRepaint"/>
+      <File FileName="MarkTips_MouseDelay.pas" ContainerId="" ModuleName="MarkTips_MouseDelay"/>
+      <File FileName="Tool_CursorSynchro.pas" ContainerId="" ModuleName="Tool_CursorSynchro"/>
+      <File FileName="Export_VML.pas" ContainerId="" ModuleName="Export_VML"/>
+      <File FileName="Chart_MultiLanguage.pas" ContainerId="" ModuleName="Chart_MultiLanguage"/>
+      <File FileName="Area_Gradient.pas" ContainerId="" ModuleName="Area_Gradient"/>
+      <File FileName="Font_Gradient.pas" ContainerId="" ModuleName="Font_Gradient"/>
+      <File FileName="ComboFlat_Demo.pas" ContainerId="" ModuleName="ComboFlat_Demo"/>
+      <File FileName="ChartImage_Demo.pas" ContainerId="" ModuleName="ChartImage_Demo"/>
+      <File FileName="DrawLine_Style.pas" ContainerId="" ModuleName="DrawLine_Style"/>
+      <File FileName="Release502_FixedBugs.pas" ContainerId="" ModuleName="Release502_FixedBugs"/>
+      <File FileName="PostScript_Demo.pas" ContainerId="" ModuleName="PostScript_Demo"/>
+      <File FileName="Tool_AnnotationClick.pas" ContainerId="" ModuleName="Tool_AnnotationClick"/>
+      <File FileName="Gantt_MouseDrag.pas" ContainerId="" ModuleName="Gantt_MouseDrag"/>
+      <File FileName="FastLine_Realtime.pas" ContainerId="" ModuleName="FastLine_Realtime"/>
+      <File FileName="Series_BarSize.pas" ContainerId="" ModuleName="Series_BarSize"/>
+      <File FileName="TeeBarSizeSeries.pas" ContainerId="" ModuleName="TeeBarSizeSeries"/>
+      <File FileName="Chart_Actions.pas" ContainerId="" ModuleName="Chart_Actions"/>
+      <File FileName="Chart_FreeAllSeries.pas" ContainerId="" ModuleName="Chart_FreeAllSeries"/>
+      <File FileName="ValueList_Modified.pas" ContainerId="" ModuleName="ValueList_Modified"/>
+      <File FileName="Series_ValueList.pas" ContainerId="" ModuleName="Series_ValueList"/>
+      <File FileName="Template_Chart.pas" ContainerId="" ModuleName="Template_Chart"/>
+      <File FileName="Canvas_RotCenter.pas" ContainerId="" ModuleName="Canvas_RotCenter"/>
+      <File FileName="Chart_PrintPreview.pas" ContainerId="" ModuleName="Chart_PrintPreview"/>
+      <File FileName="Map_Series.pas" ContainerId="" ModuleName="Map_Series"/>
+      <File FileName="FastLine_DrawAll.pas" ContainerId="" ModuleName="FastLine_DrawAll"/>
+      <File FileName="Inspector_Demo.pas" ContainerId="" ModuleName="Inspector_Demo"/>
+      <File FileName="Property_Aliases.pas" ContainerId="" ModuleName="Property_Aliases"/>
+      <File FileName="Function_Smoothing.pas" ContainerId="" ModuleName="Function_Smoothing"/>
+      <File FileName="Function_Custom.pas" ContainerId="" ModuleName="Function_Custom"/>
+      <File FileName="Series_MouseEnter.pas" ContainerId="" ModuleName="Series_MouseEnter"/>
+      <File FileName="Release6_Misc.pas" ContainerId="" ModuleName="Release6_Misc"/>
+      <File FileName="Release7_Misc.pas" ContainerId="" ModuleName="Release7_Misc"/>
+      <File FileName="Release7_FixedBugs.pas" ContainerId="" ModuleName="Release7_FixedBugs"/>
+      <File FileName="Axes_ZPosition.pas" ContainerId="" ModuleName="Axes_ZPosition"/>
+      <File FileName="Canvas_180Rotation.pas" ContainerId="" ModuleName="Canvas_180Rotation"/>
+      <File FileName="ColorGrid_Marks.pas" ContainerId="" ModuleName="ColorGrid_Marks"/>
+      <File FileName="Function_Compression.pas" ContainerId="" ModuleName="Function_Compression"/>
+      <File FileName="Function_CrossPoints.pas" ContainerId="" ModuleName="Function_CrossPoints"/>
+      <File FileName="Tool_3DTranspose.pas" ContainerId="" ModuleName="Tool_3DTranspose"/>
+      <File FileName="GridToChart_Demo.pas" ContainerId="" ModuleName="GridToChart_Demo"/>
+      <File FileName="Margins_Units.pas" ContainerId="" ModuleName="Margins_Units"/>
+      <File FileName="Axes_Offsets.pas" ContainerId="" ModuleName="Axes_Offsets"/>
+      <File FileName="Contour_SmoothSegments.pas" ContainerId="" ModuleName="Contour_SmoothSegments"/>
+      <File FileName="Contour_OnBeforeDraw.pas" ContainerId="" ModuleName="Contour_OnBeforeDraw"/>
+      <File FileName="Tool_ExtraLegend.pas" ContainerId="" ModuleName="Tool_ExtraLegend"/>
+      <File FileName="Wall_Transparency.pas" ContainerId="" ModuleName="Wall_Transparency"/>
+      <File FileName="Axes_LabelsFormat.pas" ContainerId="" ModuleName="Axes_LabelsFormat"/>
+      <File FileName="Function_CLV.pas" ContainerId="" ModuleName="Function_CLV"/>
+      <File FileName="Function_OBV.pas" ContainerId="" ModuleName="Function_OBV"/>
+      <File FileName="Tools_SeriesAnim.pas" ContainerId="" ModuleName="Tools_SeriesAnim"/>
+      <File FileName="" ContainerId="" ModuleName="TeeSeriesAnimEdit"/>
+      <File FileName="Series_PointFigure.pas" ContainerId="" ModuleName="Series_PointFigure"/>
+      <File FileName="Surface_Transparency.pas" ContainerId="" ModuleName="Surface_Transparency"/>
+      <File FileName="Chart_Shadow.pas" ContainerId="" ModuleName="Chart_Shadow"/>
+      <File FileName="Bubble_Gradient.pas" ContainerId="" ModuleName="Bubble_Gradient"/>
+      <File FileName="Legend_SymbolBorder.pas" ContainerId="" ModuleName="Legend_SymbolBorder"/>
+      <File FileName="FastLine_Nulls.pas" ContainerId="" ModuleName="FastLine_Nulls"/>
+      <File FileName="Series3D_AddArray.pas" ContainerId="" ModuleName="Series3D_AddArray"/>
+      <File FileName="Axes_GridBands.pas" ContainerId="" ModuleName="Axes_GridBands"/>
+      <File FileName="Gradient_RadialCenter.pas" ContainerId="" ModuleName="Gradient_RadialCenter"/>
+      <File FileName="Chart_RoundPanel.pas" ContainerId="" ModuleName="Chart_RoundPanel"/>
+      <File FileName="ChartGrid_Grid3D.pas" ContainerId="" ModuleName="ChartGrid_Grid3D"/>
+      <File FileName="Series_SortLabels.pas" ContainerId="" ModuleName="Series_SortLabels"/>
+      <File FileName="Marks_Callout.pas" ContainerId="" ModuleName="Marks_Callout"/>
+      <File FileName="Function_CCI.pas" ContainerId="" ModuleName="Function_CCI"/>
+      <File FileName="Function_PVO.pas" ContainerId="" ModuleName="Function_PVO"/>
+      <File FileName="XYZ_Gridding.pas" ContainerId="" ModuleName="XYZ_Gridding"/>
+      <File FileName="Function_Performance.pas" ContainerId="" ModuleName="Function_Performance"/>
+      <File FileName="Marks_PerPoint.pas" ContainerId="" ModuleName="Marks_PerPoint"/>
+      <File FileName="Pie_AutoMarkPosition.pas" ContainerId="" ModuleName="Pie_AutoMarkPosition"/>
+      <File FileName="ColorGrid_Bitmap.pas" ContainerId="" ModuleName="ColorGrid_Bitmap"/>
+      <File FileName="ColorLine_Draw3D.pas" ContainerId="" ModuleName="ColorLine_Draw3D"/>
+      <File FileName="Tool_AnnotationCallout.pas" ContainerId="" ModuleName="Tool_AnnotationCallout"/>
+      <File FileName="Series_Gauge.pas" ContainerId="" ModuleName="Series_Gauge"/>
+      <File FileName="Pie_OtherLegend.pas" ContainerId="" ModuleName="Pie_OtherLegend"/>
+      <File FileName="SeriesType_HorizArea.pas" ContainerId="" ModuleName="SeriesType_HorizArea"/>
+      <File FileName="Bar_SelfStack.pas" ContainerId="" ModuleName="Bar_SelfStack"/>
+      <File FileName="Series_Vector3D.pas" ContainerId="" ModuleName="Series_Vector3D"/>
+      <File FileName="Bubble_Transparency.pas" ContainerId="" ModuleName="Bubble_Transparency"/>
+      <File FileName="SeriesType_Tower.pas" ContainerId="" ModuleName="SeriesType_Tower"/>
+      <File FileName="Canvas_AntiAlias.pas" ContainerId="" ModuleName="Canvas_AntiAlias"/>
+      <File FileName="Circled_Gradient.pas" ContainerId="" ModuleName="Circled_Gradient"/>
+      <File FileName="Preview_CustomDraw.pas" ContainerId="" ModuleName="Preview_CustomDraw"/>
+      <File FileName="Canvas_RotatedEllipse.pas" ContainerId="" ModuleName="Canvas_RotatedEllipse"/>
+      <File FileName="Axis_Items.pas" ContainerId="" ModuleName="Axis_Items"/>
+      <File FileName="Polar_Zones.pas" ContainerId="" ModuleName="Polar_Zones"/>
+      <File FileName="Tool_RotateOutline.pas" ContainerId="" ModuleName="Tool_RotateOutline"/>
+      <File FileName="Tool_Pie.pas" ContainerId="" ModuleName="Tool_Pie"/>
+      <File FileName="Axis_LabelsFormat.pas" ContainerId="" ModuleName="Axis_LabelsFormat"/>
+      <File FileName="Release6_FixedBugs.pas" ContainerId="" ModuleName="Release6_FixedBugs"/>
+      <File FileName="BoxSeries_CustomValues.pas" ContainerId="" ModuleName="BoxSeries_CustomValues"/>
+      <File FileName="Axis_LabelsAlternate.pas" ContainerId="" ModuleName="Axis_LabelsAlternate"/>
+      <File FileName="Bar_TickLines.pas" ContainerId="" ModuleName="Bar_TickLines"/>
+      <File FileName="Series_Bubble3D.pas" ContainerId="" ModuleName="Series_Bubble3D"/>
+      <File FileName="ChartListBox_Radio.pas" ContainerId="" ModuleName="ChartListBox_Radio"/>
+      <File FileName="Chart_Themes.pas" ContainerId="" ModuleName="Chart_Themes"/>
+      <File FileName="Function_Mode.pas" ContainerId="" ModuleName="Function_Mode"/>
+      <File FileName="Export_SVG.pas" ContainerId="" ModuleName="Export_SVG"/>
+      <File FileName="Pie_Gradient.pas" ContainerId="" ModuleName="Pie_Gradient"/>
+      <File FileName="Tool_Lighting.pas" ContainerId="" ModuleName="Tool_Lighting"/>
+      <File FileName="Legend_Title.pas" ContainerId="" ModuleName="Legend_Title"/>
+      <File FileName="Point3D_BaseLine.pas" ContainerId="" ModuleName="Point3D_BaseLine"/>
+      <File FileName="Chart_Palettes.pas" ContainerId="" ModuleName="Chart_Palettes"/>
+      <File FileName="Function_Median.pas" ContainerId="" ModuleName="Function_Median"/>
+      <File FileName="Function_Correlation.pas" ContainerId="" ModuleName="Function_Correlation"/>
+      <File FileName="Function_Variance.pas" ContainerId="" ModuleName="Function_Variance"/>
+      <File FileName="Commander_CustomEditor.pas" ContainerId="" ModuleName="Commander_CustomEditor"/>
+      <File FileName="ChartListBox_Editor.pas" ContainerId="" ModuleName="ChartListBox_Editor"/>
+      <File FileName="Tool_SurfaceNearest.pas" ContainerId="" ModuleName="Tool_SurfaceNearest"/>
+      <File FileName="Marks_Symbols.pas" ContainerId="" ModuleName="Marks_Symbols"/>
+      <File FileName="Pie_ShadowEllipse.pas" ContainerId="" ModuleName="Pie_ShadowEllipse"/>
+      <File FileName="Series_HorizHisto.pas" ContainerId="" ModuleName="Series_HorizHisto"/>
+      <File FileName="ColorBand_Clicked.pas" ContainerId="" ModuleName="ColorBand_Clicked"/>
+      <File FileName="Axis_DepthTop.pas" ContainerId="" ModuleName="Axis_DepthTop"/>
+      <File FileName="Function_Perimeter.pas" ContainerId="" ModuleName="Function_Perimeter"/>
+      <File FileName="Gallery_Smooth.pas" ContainerId="" ModuleName="Gallery_Smooth"/>
+      <File FileName="Canvas_SmoothStretch.pas" ContainerId="" ModuleName="Canvas_SmoothStretch"/>
+      <File FileName="Wall_AutoHide.pas" ContainerId="" ModuleName="Wall_AutoHide"/>
+      <File FileName="Tool_AxisScroll.pas" ContainerId="" ModuleName="Tool_AxisScroll"/>
+      <File FileName="ColorBand_Drag.pas" ContainerId="" ModuleName="ColorBand_Drag"/>
+      <File FileName="Legend_Scrollbar.pas" ContainerId="" ModuleName="Legend_Scrollbar"/>
+      <File FileName="Series_PolarBar.pas" ContainerId="" ModuleName="Series_PolarBar"/>
+      <File FileName="Axis_Isometric.pas" ContainerId="" ModuleName="Axis_Isometric"/>
+      <File FileName="ChartEditor_3DGallery.pas" ContainerId="" ModuleName="ChartEditor_3DGallery"/>
+      <File FileName="Axes_DrawBevels.pas" ContainerId="" ModuleName="Axes_DrawBevels"/>
+      <File FileName="Legend_SymbolFlags.pas" ContainerId="" ModuleName="Legend_SymbolFlags"/>
+      <File FileName="Axis_DepthDateTime.pas" ContainerId="" ModuleName="Axis_DepthDateTime"/>
+      <File FileName="Candle_HighLowPen.pas" ContainerId="" ModuleName="Candle_HighLowPen"/>
+      <File FileName="Surface_FastBrush.pas" ContainerId="" ModuleName="Surface_FastBrush"/>
+      <File FileName="DesignTime_Options.pas" ContainerId="" ModuleName="DesignTime_Options"/>
+      <File FileName="Pie_SliceHeights.pas" ContainerId="" ModuleName="Pie_SliceHeights"/>
+      <File FileName="Editor_Formatting.pas" ContainerId="" ModuleName="Editor_Formatting"/>
+      <File FileName="Polar_Smooth.pas" ContainerId="" ModuleName="Polar_Smooth"/>
+      <File FileName="Series_Groups.pas" ContainerId="" ModuleName="Series_Groups"/>
+      <File FileName="Axis_FirstLastLabels.pas" ContainerId="" ModuleName="Axis_FirstLastLabels"/>
+      <File FileName="Contour_Foot.pas" ContainerId="" ModuleName="Contour_Foot"/>
+      <File FileName="Bar_3DDepth.pas" ContainerId="" ModuleName="Bar_3DDepth"/>
+      <File FileName="ColorGrid_Realtime.pas" ContainerId="" ModuleName="ColorGrid_Realtime"/>
+      <File FileName="Surface_Smoothing.pas" ContainerId="" ModuleName="Surface_Smoothing"/>
+      <File FileName="TeeSmoothGrid3D.pas" ContainerId="" ModuleName="TeeSmoothGrid3D"/>
+      <File FileName="Function_DownSampling.pas" ContainerId="" ModuleName="Function_DownSampling"/>
+    </FileList>
+  </DelphiDotNet.Personality>
+</BorlandProject>

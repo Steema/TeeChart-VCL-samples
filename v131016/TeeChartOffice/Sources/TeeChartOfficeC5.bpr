@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value=".\TeeChartOfficeC5.exe"/>
+    <OBJFILES value="TeeChartOfficeC5.obj UnitChartOffice.obj 
+      TeeExpression.obj TeeConfig.obj TeeRecentFiles.obj 
+      TeeNewDataSet.obj TeeWebGallery.obj TeeHighLight.obj 
+      TeeUpdateVersion.obj TeeChartOfficeConstants.obj TeeOfficeConstants.obj
+      TeeCommanderEditor.obj TeeAxisDivider.obj"/>
+    <RESFILES value="TeeChartOfficeC5.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) UnitChartOffice.dfm TeeCommanderEditor.dfm  
+      TeeNewDataSet.dfm TeeUpdateVersion.dfm TeeWebGallery.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="DclTeePro9c5.lib DclTee9c5.lib"/>
+    <SPARELIBS value="Vcl50.lib TEE9c5.lib Vcldb50.lib TeeImage9c5.lib TEEUI9c5.lib 
+      DclTee9c5.lib TEEDB9c5.lib TEEGL9c5.lib TEEPRO9c5.lib Vclx50.lib 
+      Vclbde50.lib TEELANGUAGE9c5.lib DclTeePro9c5.lib"/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi bcbsmp50.bpi Vcldb50.bpi Vclbde50.bpi vcldbx50.bpi 
+      vclie50.bpi Inetdb50.bpi Inet50.bpi TEE9c5.bpi TEEDB9c5.bpi TEEUI9c5.bpi 
+      TeeImage9c5.bpi TEEGL9c5.bpi TEEQR9c5.bpi TEEPRO9c5.bpi TEELANGUAGE9c5.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value="$(TEELIBPATH);.;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="TeeChartOfficeC5.cpp"/>
+    <INCLUDEPATH value="$(TEEINCPATH);..\Compiled\BuilderC5\Include;..\Compiled\BuilderC5\Lib;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(TEELIBPATH);..\Compiled\BuilderC5\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\include;$(TEEINCPATH);..\include -I..\include\vcl -src_suffixcpp"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl50.csm -Hc -Q -w -Vx -Ve -X- -a1 -4 -b- -k- -vi -c
+      -tW -tWM"/>
+    <PFLAGS value="-I$(TEEINCPATH) -U$(TEELIBPATH) -N2. -N0. -$Y- -$L- -$J- -$D- -$C- -Q -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-l. -I. -D&quot;&quot; -aa -Tpe -x -Gn -w"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=2
+MinorVer=0
+Release=0
+Build=4
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=David Berneda
+FileDescription=TeeChart Office
+FileVersion=3.0.0.0
+InternalName=TeeChartOffice
+LegalCopyright=Copyright 2001-2007 by David Berneda
+LegalTrademarks=
+OriginalFilename=TeeChartOffice
+ProductName=TeeChartOffice
+ProductVersion=3.0
+Comments=
+
+[Excluded Packages]
+
+[HistoryLists\hlIncludePath]
+
+[HistoryLists\hlLibraryPath]
+
+[HistoryLists\hlDebugSourcePath]
+
+[HistoryLists\hlIntOutputDir]
+
+[HistoryLists\hlFinalOutputDir]
+
+[HistoryLists\hIBPIOutputDir]
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
