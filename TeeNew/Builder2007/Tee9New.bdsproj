@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">CPlusPlusBuilder.Personality</Option>
+			<Option Name="ProjectType">CppVCLApplication</Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{592C550B-0983-4DA0-B26D-8D090692A14B}</Option>
+		</Option>
+	</PersonalityInfo>
+	<CPlusPlusBuilder.Personality>
+		<BCBPROJECT>
+      <project version="10.0">
+        <property category="build.config" name="active" value="0"/>
+        <property category="build.config" name="count" value="1"/>
+        <property category="build.config" name="excludedefaultforzero" value="0"/>
+        <property category="build.config.0" name="builddir" value="Debug"/>
+        <property category="build.config.0" name="key" value="Debug_Build"/>
+        <property category="build.config.0" name="name" value="Debug Build"/>
+        <property category="build.config.0" name="settings.win32b" value="default"/>
+        <property category="build.config.0" name="type" value="Toolset"/>
+        <property category="build.config.0" name="win32.win32b.builddir" value="Debug_Build"/>
+        <property category="build.config.1" name="key" value="Release_Build"/>
+        <property category="build.config.1" name="name" value="Release Build"/>
+        <property category="build.config.1" name="settings.win32b" value="default"/>
+        <property category="build.config.1" name="type" value="Toolset"/>
+        <property category="build.config.1" name="win32.win32b.builddir" value="Release_Build"/>
+        <property category="build.node" name="libraries" value="Tee911.lib TeePro911.lib TeeUI911.lib TeeGL911.lib TeeDB911.lib TeeLanguage911.lib TeeImage911.lib"/>
+        <property category="build.node" name="name" value="Tee9New.exe"/>
+        <property category="build.node" name="packages" value="rtl;vcl;vclx;bcbsmp;dbrtl;vcldb;bdertl;vcldbx;vcljpg;vclie;inetdb;inet;bcbie;Tee911;TeeUI911;TeeDB911;TeeGL911;TeePro911;TeeImage911;TeeLanguage911"/>
+        <property category="build.node" name="sparelibs" value="vcl.lib rtl.lib vclx.lib bcbie.lib Tee911.lib TeePro911.lib TeeUI911.lib dbrtl.lib TeeGL911.lib bdertl.lib TeeDB911.lib vcldb.lib TeeLanguage911.lib TeeImage911.lib"/>
+        <property category="build.node" name="use_packages" value="1"/>
+        <property category="build.platform" name="active" value="win32"/>
+        <property category="build.platform" name="win32.Debug_Build.toolset" value="win32b"/>
+        <property category="build.platform" name="win32.Release_Build.toolset" value="win32b"/>
+        <property category="build.platform" name="win32.default" value="win32b"/>
+        <property category="build.platform" name="win32.enabled" value="1"/>
+        <property category="build.platform" name="win32.win32b.enabled" value="1"/>
+        <property category="win32.*.win32b.dcc32" name="param.filenames.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.listfile.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.objfile.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.xreffile.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.D.arg.1" value="_DEBUG"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.D.arg.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.D.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.Od.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.k.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.r.enabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.v.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.vi.enabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.y.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.$D.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.$O.enabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.D.arg.1" value="DEBUG"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.D.arg.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.D.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.V.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.D.arg.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.D.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.L.arg.1" value="$(BDS)\lib\debug"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.L.arg.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.L.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.tasm32" name="option.z.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.tasm32" name="option.zd.enabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.tasm32" name="option.zi.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.D.arg.1" value="NDEBUG"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.D.arg.merge" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.D.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.O2.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.k.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.r.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.vi.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.dcc32" name="option.$D.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.dcc32" name="option.$O.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.dcc32" name="option.V.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.L.arg.1" value="$(BDS)\lib\release"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.L.arg.merge" value="1"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.L.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.tasm32" name="option.z.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.tasm32" name="option.zd.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.tasm32" name="option.zi.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.tasm32" name="option.zn.enabled" value="1"/>
+        <optionset name="all_configurations">
+          <property category="node" name="displayname" value="All Configurations"/>
+          <property category="win32.*.win32b.bcc32" name="option.5.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.H=.arg.1" value="$(BDS)\lib\vcl100.csm"/>
+          <property category="win32.*.win32b.bcc32" name="option.H=.arg.merge" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.H=.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.Hc.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.1" value="$(TEEINCPATH)"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.2" value="$(BDS)\Projects"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.3" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.4" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.5" value="$(BDS)\Lib\obj"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.6" value="$(BDS)\include\dinkumware"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.O2.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.Q.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.Ve.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.Vx.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.X.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.b.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.fff.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.k.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.1" value="_RTLDLL"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.2" value="NO_STRICT"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.3" value="USEPACKAGES"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.tW.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.tWM.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.vi.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.winl.enabled" value="0"/>
+          <property category="win32.*.win32b.brcc32" name="option.D.arg.merge" value="1"/>
+          <property category="win32.*.win32b.brcc32" name="option.D.enabled" value="0"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.1" value="$(TEEINCPATH)"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.2" value="$(BDS)\Projects"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.3" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.4" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.5" value="$(BDS)\Lib\obj"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.6" value="$(BDS)\include\dinkumware"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.merge" value="1"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.enabled" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.$.arg.1" value="Y-"/>
+          <property category="win32.*.win32b.dcc32" name="option.$.arg.merge" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.$.enabled" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.$C.enabled" value="0"/>
+          <property category="win32.*.win32b.dcc32" name="option.$D.enabled" value="0"/>
+          <property category="win32.*.win32b.dcc32" name="option.$L.enabled" value="0"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.1" value=".\"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.2" value="$(BDS)\lib"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.3" value="$(BDS)\lib\obj"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.merge" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.enabled" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="param.filenames.merge" value="1"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.1" value="$(TEEINCPATH)"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.2" value="$(BDS)\Projects"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.3" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.4" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.5" value="$(BDS)\Lib\obj"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.merge" value="1"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.enabled" value="1"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.srcsuffix.arg" value="cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.srcsuffix.arg.merge" value="1"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.srcsuffix.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.D.arg" value="&quot;&quot;"/>
+          <property category="win32.*.win32b.ilink32" name="option.D.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.D.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.1" value="$(TEELIBPATH)"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.2" value="$(BDS)\Projects"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.3" value="$(BDS)\Lib"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.4" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.5" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.6" value="$(BDS)\Lib\obj"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.Tpe.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.aa.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.dynamicrtl.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.arg.1" value="."/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.1" value="$(LIBRARIES)"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.2" value="import32.lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.3" value="cp32mti.lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.1" value="c0w32.obj"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.2" value="$(PACKAGES)"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.3" value="Memmgr.Lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.4" value="sysinit.obj"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.1" value="$(TEEINCPATH)"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.2" value="$(BDS)\Projects"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.3" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.4" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.5" value="$(BDS)\Lib\obj"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.6" value="$(BDS)\include\dinkumware"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.enabled" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.w2.enabled" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.zn.enabled" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="param.listfile.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="param.objfile.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="param.xreffile.merge" value="1"/>
+        </optionset>
+      </project>
+      <FILELIST>
+        <FILE FILENAME="Tee9New.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tee9New" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="Tee9New.res" CONTAINERID="ResTool" LOCALCOMMAND="" UNITNAME="Tee9New" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="Main.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Main" FORMNAME="Tee8Form" DESIGNCLASS="" ADDITIONAL="Main.h"/>
+        <FILE FILENAME="Welcome.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Welcome" FORMNAME="WelcomeForm" DESIGNCLASS="" ADDITIONAL="Welcome.h"/>
+        <FILE FILENAME="Base.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Base" FORMNAME="BaseForm" DESIGNCLASS="" ADDITIONAL="Base.h"/>
+        <FILE FILENAME="Canvas_OrthoAngle.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_OrthoAngle" FORMNAME="OrthoAngle" DESIGNCLASS="" ADDITIONAL="Canvas_OrthoAngle.h"/>
+        <FILE FILENAME="Area_Origin.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Area_Origin" FORMNAME="AreaOriginForm" DESIGNCLASS="" ADDITIONAL="Area_Origin.h"/>
+        <FILE FILENAME="Gradient_MidColor.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Gradient_MidColor" FORMNAME="GradientMiddle" DESIGNCLASS="" ADDITIONAL="Gradient_MidColor.h"/>
+        <FILE FILENAME="Base_CustomPos.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Base_CustomPos" FORMNAME="BaseCustomPos" DESIGNCLASS="" ADDITIONAL="Base_CustomPos.h"/>
+        <FILE FILENAME="Base_DBChart.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Base_DBChart" FORMNAME="BaseDBChart" DESIGNCLASS="" ADDITIONAL="Base_DBChart.h"/>
+        <FILE FILENAME="Area_Stairs.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Area_Stairs" FORMNAME="AreaStairsForm" DESIGNCLASS="" ADDITIONAL="Area_Stairs.h"/>
+        <FILE FILENAME="Canvas_RotCenter.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_RotCenter" FORMNAME="RotationCenter" DESIGNCLASS="" ADDITIONAL="Canvas_RotCenter.h"/>
+        <FILE FILENAME="Canvas_DotPen.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_DotPen" FORMNAME="CanvasDotPen" DESIGNCLASS="" ADDITIONAL="Canvas_DotPen.h"/>
+        <FILE FILENAME="Brush_Styles.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Brush_Styles" FORMNAME="BrushStyleForm" DESIGNCLASS="" ADDITIONAL="Brush_Styles.h"/>
+        <FILE FILENAME="Canvas_Cone.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_Cone" FORMNAME="ConesForm" DESIGNCLASS="" ADDITIONAL="Canvas_Cone.h"/>
+        <FILE FILENAME="Assign_Picture.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Assign_Picture" FORMNAME="AssignPicture" DESIGNCLASS="" ADDITIONAL="Assign_Picture.h"/>
+        <FILE FILENAME="Canvas_PyramidTrunc.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_PyramidTrunc" FORMNAME="TruncPyramidForm" DESIGNCLASS="" ADDITIONAL="Canvas_PyramidTrunc.h"/>
+        <FILE FILENAME="Canvas_Transparency.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_Transparency" FORMNAME="TransparencyForm" DESIGNCLASS="" ADDITIONAL="Canvas_Transparency.h"/>
+        <FILE FILENAME="Right_Wall.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Right_Wall" FORMNAME="RightWallForm" DESIGNCLASS="" ADDITIONAL="Right_Wall.h"/>
+        <FILE FILENAME="BackWall_Gradient.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="BackWall_Gradient" FORMNAME="BackWallGradient" DESIGNCLASS="" ADDITIONAL="BackWall_Gradient.h"/>
+        <FILE FILENAME="BackWall_Image.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="BackWall_Image" FORMNAME="BackWallImage" DESIGNCLASS="" ADDITIONAL="BackWall_Image.h"/>
+        <FILE FILENAME="Chart_SubTitles.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_SubTitles" FORMNAME="SubTitles" DESIGNCLASS="" ADDITIONAL="Chart_SubTitles.h"/>
+        <FILE FILENAME="Title_CustomPos.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Title_CustomPos" FORMNAME="TitleCustomPos" DESIGNCLASS="" ADDITIONAL="Title_CustomPos.h"/>
+        <FILE FILENAME="Title_ClickEvent.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Title_ClickEvent" FORMNAME="TitleClickEvent" DESIGNCLASS="" ADDITIONAL="Title_ClickEvent.h"/>
+        <FILE FILENAME="Title_GenFormat.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Title_GenFormat" FORMNAME="TitleGenFormat" DESIGNCLASS="" ADDITIONAL="Title_GenFormat.h"/>
+        <FILE FILENAME="Axis_Behind.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_Behind" FORMNAME="AxisBehind" DESIGNCLASS="" ADDITIONAL="Axis_Behind.h"/>
+        <FILE FILENAME="Axis_Custom.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_Custom" FORMNAME="AxisCustom" DESIGNCLASS="" ADDITIONAL="Axis_Custom.h"/>
+        <FILE FILENAME="AxisTitle_Visible.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="AxisTitle_Visible" FORMNAME="AxisTitleVisible" DESIGNCLASS="" ADDITIONAL="AxisTitle_Visible.h"/>
+        <FILE FILENAME="Axis_Millisec.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_Millisec" FORMNAME="AxisMillisec" DESIGNCLASS="" ADDITIONAL="Axis_Millisec.h"/>
+        <FILE FILENAME="Axis_Exponent.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_Exponent" FORMNAME="AxisLabelExp" DESIGNCLASS="" ADDITIONAL="Axis_Exponent.h"/>
+        <FILE FILENAME="Axis_LabelAlign.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_LabelAlign" FORMNAME="AxisLabelAlignForm" DESIGNCLASS="" ADDITIONAL="Axis_LabelAlign.h"/>
+        <FILE FILENAME="Axis_MinorGrid.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_MinorGrid" FORMNAME="AxisMinorGrid" DESIGNCLASS="" ADDITIONAL="Axis_MinorGrid.h"/>
+        <FILE FILENAME="Legend_CustomPos.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_CustomPos" FORMNAME="LegendCustomPos" DESIGNCLASS="" ADDITIONAL="Legend_CustomPos.h"/>
+        <FILE FILENAME="Legend_Widths.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_Widths" FORMNAME="LegendWidths" DESIGNCLASS="" ADDITIONAL="Legend_Widths.h"/>
+        <FILE FILENAME="Legend_CheckBox.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_CheckBox" FORMNAME="LegendCheckbox" DESIGNCLASS="" ADDITIONAL="Legend_CheckBox.h"/>
+        <FILE FILENAME="Legend_Image.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_Image" FORMNAME="LegendImage" DESIGNCLASS="" ADDITIONAL="Legend_Image.h"/>
+        <FILE FILENAME="Legend_VertSpa.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_VertSpa" FORMNAME="LegendVertSpa" DESIGNCLASS="" ADDITIONAL="Legend_VertSpa.h"/>
+        <FILE FILENAME="Legend_Symbol.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_Symbol" FORMNAME="LegendSymbolForm" DESIGNCLASS="" ADDITIONAL="Legend_Symbol.h"/>
+        <FILE FILENAME="Axis_OpaqueZone.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_OpaqueZone" FORMNAME="AxisOpaqueZone" DESIGNCLASS="" ADDITIONAL="Axis_OpaqueZone.h"/>
+        <FILE FILENAME="Axis_MultiScroll.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_MultiScroll" FORMNAME="MultiAxisScroll" DESIGNCLASS="" ADDITIONAL="Axis_MultiScroll.h"/>
+        <FILE FILENAME="Axis_MultiRuntime.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_MultiRuntime" FORMNAME="AxisMultiRuntime" DESIGNCLASS="" ADDITIONAL="Axis_MultiRuntime.h"/>
+        <FILE FILENAME="Canvas_GrayScale.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_GrayScale" FORMNAME="GrayScaleForm" DESIGNCLASS="" ADDITIONAL="Canvas_GrayScale.h"/>
+        <FILE FILENAME="Chart_OnBeforeDraw.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_OnBeforeDraw" FORMNAME="ChartBeforeDraw" DESIGNCLASS="" ADDITIONAL="Chart_OnBeforeDraw.h"/>
+        <FILE FILENAME="Legend_TextStyle.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_TextStyle" FORMNAME="LegendStyleForm" DESIGNCLASS="" ADDITIONAL="Legend_TextStyle.h"/>
+        <FILE FILENAME="Legend_CurrentPage.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_CurrentPage" FORMNAME="LegendCurrentPage" DESIGNCLASS="" ADDITIONAL="Legend_CurrentPage.h"/>
+        <FILE FILENAME="Legend_FontColor.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_FontColor" FORMNAME="LegendFontColor" DESIGNCLASS="" ADDITIONAL="Legend_FontColor.h"/>
+        <FILE FILENAME="Legend_GenFormat.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_GenFormat" FORMNAME="LegendGenFormat" DESIGNCLASS="" ADDITIONAL="Legend_GenFormat.h"/>
+        <FILE FILENAME="Legend_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_Series" FORMNAME="LegendSeriesForm" DESIGNCLASS="" ADDITIONAL="Legend_Series.h"/>
+        <FILE FILENAME="Legend_Multi.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_Multi" FORMNAME="MultiLegendForm" DESIGNCLASS="" ADDITIONAL="Legend_Multi.h"/>
+        <FILE FILENAME="Legend_AddText.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_AddText" FORMNAME="LegendAddText" DESIGNCLASS="" ADDITIONAL="Legend_AddText.h"/>
+        <FILE FILENAME="Print_Pages.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Print_Pages" FORMNAME="PrintPagesForm" DESIGNCLASS="" ADDITIONAL="Print_Pages.h"/>
+        <FILE FILENAME="Print_Preview.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Print_Preview" FORMNAME="PrintPreviewForm" DESIGNCLASS="" ADDITIONAL="Print_Preview.h"/>
+        <FILE FILENAME="PrintPreview_Navigate.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="PrintPreview_Navigate" FORMNAME="PrintPreviewNavigate" DESIGNCLASS="" ADDITIONAL="PrintPreview_Navigate.h"/>
+        <FILE FILENAME="PrintPreview_Multi.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="PrintPreview_Multi" FORMNAME="PrintPreviewMulti" DESIGNCLASS="" ADDITIONAL="PrintPreview_Multi.h"/>
+        <FILE FILENAME="Zoom_Pen.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Zoom_Pen" FORMNAME="ZoomPen" DESIGNCLASS="" ADDITIONAL="Zoom_Pen.h"/>
+        <FILE FILENAME="Zoom_MinPix.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Zoom_MinPix" FORMNAME="ZoomMinPixel" DESIGNCLASS="" ADDITIONAL="Zoom_MinPix.h"/>
+        <FILE FILENAME="Zoom_Direction.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Zoom_Direction" FORMNAME="ZoomDirection" DESIGNCLASS="" ADDITIONAL="Zoom_Direction.h"/>
+        <FILE FILENAME="DBChart_Speed.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_Speed" FORMNAME="DBChartSpeed" DESIGNCLASS="" ADDITIONAL="DBChart_Speed.h"/>
+        <FILE FILENAME="DBChart_Summary.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_Summary" FORMNAME="DBChartSummary" DESIGNCLASS="" ADDITIONAL="DBChart_Summary.h"/>
+        <FILE FILENAME="DBChart_Order.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_Order" FORMNAME="DBChartOrder" DESIGNCLASS="" ADDITIONAL="DBChart_Order.h"/>
+        <FILE FILENAME="DBChart_LocateRecord.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_LocateRecord" FORMNAME="DBChartRecordLocate" DESIGNCLASS="" ADDITIONAL="DBChart_LocateRecord.h"/>
+        <FILE FILENAME="Function_MovAveWeighted.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_MovAveWeighted" FORMNAME="MovAveWeightedForm" DESIGNCLASS="" ADDITIONAL="Function_MovAveWeighted.h"/>
+        <FILE FILENAME="RSI_Function.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="RSI_Function" FORMNAME="RSICalcForm" DESIGNCLASS="" ADDITIONAL="RSI_Function.h"/>
+        <FILE FILENAME="Function_AverageNulls.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_AverageNulls" FORMNAME="AverageFunctionNulls" DESIGNCLASS="" ADDITIONAL="Function_AverageNulls.h"/>
+        <FILE FILENAME="Marks_Shadow.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_Shadow" FORMNAME="MarksShadow" DESIGNCLASS="" ADDITIONAL="Marks_Shadow.h"/>
+        <FILE FILENAME="Marks_Angle.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_Angle" FORMNAME="MarksAngle" DESIGNCLASS="" ADDITIONAL="Marks_Angle.h"/>
+        <FILE FILENAME="Marks_DrawEvery.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_DrawEvery" FORMNAME="MarksEvery" DESIGNCLASS="" ADDITIONAL="Marks_DrawEvery.h"/>
+        <FILE FILENAME="Marks_XYStyle.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_XYStyle" FORMNAME="MarksXYStyle" DESIGNCLASS="" ADDITIONAL="Marks_XYStyle.h"/>
+        <FILE FILENAME="Marks_Multi.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_Multi" FORMNAME="MarksMulti" DESIGNCLASS="" ADDITIONAL="Marks_Multi.h"/>
+        <FILE FILENAME="Marks_Positions.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_Positions" FORMNAME="MarksPositions" DESIGNCLASS="" ADDITIONAL="Marks_Positions.h"/>
+        <FILE FILENAME="Marks_GenFormat.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_GenFormat" FORMNAME="MarksGenFormat" DESIGNCLASS="" ADDITIONAL="Marks_GenFormat.h"/>
+        <FILE FILENAME="SeriesType_Area.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Area" FORMNAME="AreaSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Area.h"/>
+        <FILE FILENAME="SeriesType_Bezier.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Bezier" FORMNAME="BezierSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Bezier.h"/>
+        <FILE FILENAME="Bar_SideAll.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bar_SideAll" FORMNAME="BarSideAll" DESIGNCLASS="" ADDITIONAL="Bar_SideAll.h"/>
+        <FILE FILENAME="Bar_StackGroup.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bar_StackGroup" FORMNAME="BarStackGroup" DESIGNCLASS="" ADDITIONAL="Bar_StackGroup.h"/>
+        <FILE FILENAME="Series_BarNegativeStacked.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_BarNegativeStacked" FORMNAME="BarStackNegative" DESIGNCLASS="" ADDITIONAL="Series_BarNegativeStacked.h"/>
+        <FILE FILENAME="Bar_Image.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bar_Image" FORMNAME="BarImage" DESIGNCLASS="" ADDITIONAL="Bar_Image.h"/>
+        <FILE FILENAME="Bar_Gradient.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bar_Gradient" FORMNAME="BarGradient" DESIGNCLASS="" ADDITIONAL="Bar_Gradient.h"/>
+        <FILE FILENAME="Candle_CustomColors.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Candle_CustomColors" FORMNAME="CandleCustomColors" DESIGNCLASS="" ADDITIONAL="Candle_CustomColors.h"/>
+        <FILE FILENAME="Candle_OpenClose.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Candle_OpenClose" FORMNAME="CandleOpenClose" DESIGNCLASS="" ADDITIONAL="Candle_OpenClose.h"/>
+        <FILE FILENAME="Candle_AxisLabels.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Candle_AxisLabels" FORMNAME="CandleAxisLabels" DESIGNCLASS="" ADDITIONAL="Candle_AxisLabels.h"/>
+        <FILE FILENAME="SeriesType_Contour.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Contour" FORMNAME="ContourSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Contour.h"/>
+        <FILE FILENAME="Contour_Levels.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Contour_Levels" FORMNAME="ContourLevelsForm" DESIGNCLASS="" ADDITIONAL="Contour_Levels.h"/>
+        <FILE FILENAME="Contour_View2D.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Contour_View2D" FORMNAME="ContourView2D" DESIGNCLASS="" ADDITIONAL="Contour_View2D.h"/>
+        <FILE FILENAME="Contour_Palette.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Contour_Palette" FORMNAME="ContourPaletteForm" DESIGNCLASS="" ADDITIONAL="Contour_Palette.h"/>
+        <FILE FILENAME="ErrorBar_Negative.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ErrorBar_Negative" FORMNAME="ErrorBarNegativeForm" DESIGNCLASS="" ADDITIONAL="ErrorBar_Negative.h"/>
+        <FILE FILENAME="Line_Stack.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Line_Stack" FORMNAME="LineStack" DESIGNCLASS="" ADDITIONAL="Line_Stack.h"/>
+        <FILE FILENAME="Line_Clickable.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Line_Clickable" FORMNAME="LineClickableForm" DESIGNCLASS="" ADDITIONAL="Line_Clickable.h"/>
+        <FILE FILENAME="Line_Pattern.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Line_Pattern" FORMNAME="LinePatternForm" DESIGNCLASS="" ADDITIONAL="Line_Pattern.h"/>
+        <FILE FILENAME="Line_ColorEachLine.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Line_ColorEachLine" FORMNAME="LineColorEachLine" DESIGNCLASS="" ADDITIONAL="Line_ColorEachLine.h"/>
+        <FILE FILENAME="Pie_Multi.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pie_Multi" FORMNAME="PieMultiple" DESIGNCLASS="" ADDITIONAL="Pie_Multi.h"/>
+        <FILE FILENAME="Pie_Semi.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pie_Semi" FORMNAME="PieSemi" DESIGNCLASS="" ADDITIONAL="Pie_Semi.h"/>
+        <FILE FILENAME="Pointer_DrawCanvas.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pointer_DrawCanvas" FORMNAME="PointerDrawCanvas" DESIGNCLASS="" ADDITIONAL="Pointer_DrawCanvas.h"/>
+        <FILE FILENAME="SeriesType_Point3D.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Point3D" FORMNAME="Point3DSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Point3D.h"/>
+        <FILE FILENAME="Point3D_Event.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Point3D_Event" FORMNAME="Point3DEvent" DESIGNCLASS="" ADDITIONAL="Point3D_Event.h"/>
+        <FILE FILENAME="Polar_ClockWise.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Polar_ClockWise" FORMNAME="PolarClockWise" DESIGNCLASS="" ADDITIONAL="Polar_ClockWise.h"/>
+        <FILE FILENAME="Polar_LabelsInside.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Polar_LabelsInside" FORMNAME="PolarLabelsInside" DESIGNCLASS="" ADDITIONAL="Polar_LabelsInside.h"/>
+        <FILE FILENAME="Shape_Image.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Shape_Image" FORMNAME="ShapeImage" DESIGNCLASS="" ADDITIONAL="Shape_Image.h"/>
+        <FILE FILENAME="Shape_VertAlign.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Shape_VertAlign" FORMNAME="ShapeVertAlign" DESIGNCLASS="" ADDITIONAL="Shape_VertAlign.h"/>
+        <FILE FILENAME="SeriesType_Surface.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Surface" FORMNAME="SurfaceSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Surface.h"/>
+        <FILE FILENAME="Surface_Sides.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_Sides" FORMNAME="SurfaceSides" DESIGNCLASS="" ADDITIONAL="Surface_Sides.h"/>
+        <FILE FILENAME="Surface_Smooth.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_Smooth" FORMNAME="SurfaceSmooth" DESIGNCLASS="" ADDITIONAL="Surface_Smooth.h"/>
+        <FILE FILENAME="Surface_Irregular.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_Irregular" FORMNAME="SurfaceFloat" DESIGNCLASS="" ADDITIONAL="Surface_Irregular.h"/>
+        <FILE FILENAME="Surface_XYZFloat.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_XYZFloat" FORMNAME="SurfaceFloatOther" DESIGNCLASS="" ADDITIONAL="Surface_XYZFloat.h"/>
+        <FILE FILENAME="Surface_WirePalette.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_WirePalette" FORMNAME="SurfaceWire" DESIGNCLASS="" ADDITIONAL="Surface_WirePalette.h"/>
+        <FILE FILENAME="Surface_Palette.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_Palette" FORMNAME="SurfacePaletteForm" DESIGNCLASS="" ADDITIONAL="Surface_Palette.h"/>
+        <FILE FILENAME="WindRose_AngleInc.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="WindRose_AngleInc" FORMNAME="WindAngleInc" DESIGNCLASS="" ADDITIONAL="WindRose_AngleInc.h"/>
+        <FILE FILENAME="Series3D_RangePalette.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series3D_RangePalette" FORMNAME="Series3DRangePalette" DESIGNCLASS="" ADDITIONAL="Series3D_RangePalette.h"/>
+        <FILE FILENAME="Chart_FreeAllSeries.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_FreeAllSeries" FORMNAME="FreeAllSeriesForm" DESIGNCLASS="" ADDITIONAL="Chart_FreeAllSeries.h"/>
+        <FILE FILENAME="Series_Depth.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Depth" FORMNAME="SeriesDepth" DESIGNCLASS="" ADDITIONAL="Series_Depth.h"/>
+        <FILE FILENAME="Clock_Editors.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Clock_Editors" FORMNAME="ClockEdi" DESIGNCLASS="" ADDITIONAL="Clock_Editors.h"/>
+        <FILE FILENAME="Chart_Gallery.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Gallery" FORMNAME="ChartGallery" DESIGNCLASS="" ADDITIONAL="Chart_Gallery.h"/>
+        <FILE FILENAME="Chart_SubGallery.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_SubGallery" FORMNAME="ChartSubGallery" DESIGNCLASS="" ADDITIONAL="Chart_SubGallery.h"/>
+        <FILE FILENAME="Order_Info.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Order_Info" FORMNAME="OrderInfo" DESIGNCLASS="" ADDITIONAL="Order_Info.h"/>
+        <FILE FILENAME="Removed_Properties.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Removed_Properties" FORMNAME="RemovedProperties" DESIGNCLASS="" ADDITIONAL="Removed_Properties.h"/>
+        <FILE FILENAME="Changes_Package.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Changes_Package" FORMNAME="ChangesPackage" DESIGNCLASS="" ADDITIONAL="Changes_Package.h"/>
+        <FILE FILENAME="Changes_Misc.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Changes_Misc" FORMNAME="ChangesMisc" DESIGNCLASS="" ADDITIONAL="Changes_Misc.h"/>
+        <FILE FILENAME="TeeCustomShape.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TeeCustomShape" FORMNAME="CustomShape" DESIGNCLASS="" ADDITIONAL="TeeCustomShape.h"/>
+        <FILE FILENAME="Tool_Cursor.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_Cursor" FORMNAME="CursorToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_Cursor.h"/>
+        <FILE FILENAME="Tool_DragMarks.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_DragMarks" FORMNAME="DragMarksToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_DragMarks.h"/>
+        <FILE FILENAME="Series_ValueList.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_ValueList" FORMNAME="DynArrays" DESIGNCLASS="" ADDITIONAL="Series_ValueList.h"/>
+        <FILE FILENAME="Tool_AxisArrow.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_AxisArrow" FORMNAME="AxisArrowToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_AxisArrow.h"/>
+        <FILE FILENAME="Tools_DrawLine.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tools_DrawLine" FORMNAME="DrawLineToolDemo" DESIGNCLASS="" ADDITIONAL="Tools_DrawLine.h"/>
+        <FILE FILENAME="Tools_Nearest.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tools_Nearest" FORMNAME="NearestToolDemo" DESIGNCLASS="" ADDITIONAL="Tools_Nearest.h"/>
+        <FILE FILENAME="Tool_MarksTip.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_MarksTip" FORMNAME="MarkTipsToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_MarksTip.h"/>
+        <FILE FILENAME="Tools_ColorBand.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tools_ColorBand" FORMNAME="ColorBandToolForm" DESIGNCLASS="" ADDITIONAL="Tools_ColorBand.h"/>
+        <FILE FILENAME="ColorBand_Transparent.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorBand_Transparent" FORMNAME="ColorBandTransp" DESIGNCLASS="" ADDITIONAL="ColorBand_Transparent.h"/>
+        <FILE FILENAME="Tools_ColorLine.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tools_ColorLine" FORMNAME="ColorLineForm" DESIGNCLASS="" ADDITIONAL="Tools_ColorLine.h"/>
+        <FILE FILENAME="Tool_Rotate.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_Rotate" FORMNAME="RotateToolForm" DESIGNCLASS="" ADDITIONAL="Tool_Rotate.h"/>
+        <FILE FILENAME="Tools_Image.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tools_Image" FORMNAME="ImageToolForm" DESIGNCLASS="" ADDITIONAL="Tools_Image.h"/>
+        <FILE FILENAME="Tools_Custom.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tools_Custom" FORMNAME="AxisLabelToolDemo" DESIGNCLASS="" ADDITIONAL="Tools_Custom.h"/>
+        <FILE FILENAME="Tool_PageNumDemo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_PageNumDemo" FORMNAME="PageNumToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_PageNumDemo.h"/>
+        <FILE FILENAME="Tool_DragPoint.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_DragPoint" FORMNAME="DragPointToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_DragPoint.h"/>
+        <FILE FILENAME="Chart_Grid.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Grid" FORMNAME="ChartGridForm" DESIGNCLASS="" ADDITIONAL="Chart_Grid.h"/>
+        <FILE FILENAME="Chart_EditorPanel.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_EditorPanel" FORMNAME="ChartEditorPanelForm" DESIGNCLASS="" ADDITIONAL="Chart_EditorPanel.h"/>
+        <FILE FILENAME="Gallery_Panel.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Gallery_Panel" FORMNAME="GalleryPanelForm" DESIGNCLASS="" ADDITIONAL="Gallery_Panel.h"/>
+        <FILE FILENAME="Chart_PageNavigator.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_PageNavigator" FORMNAME="PageNavigatorForm" DESIGNCLASS="" ADDITIONAL="Chart_PageNavigator.h"/>
+        <FILE FILENAME="Chart_WebSource.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_WebSource" FORMNAME="ChartWebSourceForm" DESIGNCLASS="" ADDITIONAL="Chart_WebSource.h"/>
+        <FILE FILENAME="Series_TextSource.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_TextSource" FORMNAME="SeriesTextSourceForm" DESIGNCLASS="" ADDITIONAL="Series_TextSource.h"/>
+        <FILE FILENAME="ValueList_FindMinMax.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ValueList_FindMinMax" FORMNAME="FindMinMaxValues" DESIGNCLASS="" ADDITIONAL="ValueList_FindMinMax.h"/>
+        <FILE FILENAME="ValueList_Modified.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ValueList_Modified" FORMNAME="ValueListModified" DESIGNCLASS="" ADDITIONAL="ValueList_Modified.h"/>
+        <FILE FILENAME="Printing_Bugs.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Printing_Bugs" FORMNAME="PrintingBugsForm" DESIGNCLASS="" ADDITIONAL="Printing_Bugs.h"/>
+        <FILE FILENAME="ColorRange_Bug.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorRange_Bug" FORMNAME="ColorRangeBug" DESIGNCLASS="" ADDITIONAL="ColorRange_Bug.h"/>
+        <FILE FILENAME="Bar_Cylinder.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bar_Cylinder" FORMNAME="BarCylinderForm" DESIGNCLASS="" ADDITIONAL="Bar_Cylinder.h"/>
+        <FILE FILENAME="Exponential_Trend.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Exponential_Trend" FORMNAME="ExponentialTrendForm" DESIGNCLASS="" ADDITIONAL="Exponential_Trend.h"/>
+        <FILE FILENAME="MomentumDiv_Function.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MomentumDiv_Function" FORMNAME="MomentumDivForm" DESIGNCLASS="" ADDITIONAL="MomentumDiv_Function.h"/>
+        <FILE FILENAME="MACD_Function.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MACD_Function" FORMNAME="MACDForm" DESIGNCLASS="" ADDITIONAL="MACD_Function.h"/>
+        <FILE FILENAME="Welcome_All.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Welcome_All" FORMNAME="WelcomeAllForm" DESIGNCLASS="" ADDITIONAL="Welcome_All.h"/>
+        <FILE FILENAME="Stochastic_Function.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Stochastic_Function" FORMNAME="StochasticForm" DESIGNCLASS="" ADDITIONAL="Stochastic_Function.h"/>
+        <FILE FILENAME="Function_ExpMovAve.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_ExpMovAve" FORMNAME="ExpMovAveForm" DESIGNCLASS="" ADDITIONAL="Function_ExpMovAve.h"/>
+        <FILE FILENAME="Function_RootMeanSq.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_RootMeanSq" FORMNAME="RootMeanSqForm" DESIGNCLASS="" ADDITIONAL="Function_RootMeanSq.h"/>
+        <FILE FILENAME="Function_Bollinger.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Bollinger" FORMNAME="BollingerForm" DESIGNCLASS="" ADDITIONAL="Function_Bollinger.h"/>
+        <FILE FILENAME="Function_ADX.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_ADX" FORMNAME="ADXFunctionForm" DESIGNCLASS="" ADDITIONAL="Function_ADX.h"/>
+        <FILE FILENAME="Donut_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Donut_Series" FORMNAME="DonutSeriesForm" DESIGNCLASS="" ADDITIONAL="Donut_Series.h"/>
+        <FILE FILENAME="TriSurface_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TriSurface_Series" FORMNAME="TriSurfaceForm" DESIGNCLASS="" ADDITIONAL="TriSurface_Series.h"/>
+        <FILE FILENAME="BoxPlot_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="BoxPlot_Series" FORMNAME="BoxPlotForm" DESIGNCLASS="" ADDITIONAL="BoxPlot_Series.h"/>
+        <FILE FILENAME="Histogram_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Histogram_Series" FORMNAME="HistogramForm" DESIGNCLASS="" ADDITIONAL="Histogram_Series.h"/>
+        <FILE FILENAME="ColorGrid_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorGrid_Series" FORMNAME="ColorGrid" DESIGNCLASS="" ADDITIONAL="ColorGrid_Series.h"/>
+        <FILE FILENAME="ColorGrid_Transparent.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorGrid_Transparent" FORMNAME="ColorGridTransparent" DESIGNCLASS="" ADDITIONAL="ColorGrid_Transparent.h"/>
+        <FILE FILENAME="Mouse_Wheel.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Mouse_Wheel" FORMNAME="MouseWheelForm" DESIGNCLASS="" ADDITIONAL="Mouse_Wheel.h"/>
+        <FILE FILENAME="HorizLine_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HorizLine_Series" FORMNAME="HorizLineForm" DESIGNCLASS="" ADDITIONAL="HorizLine_Series.h"/>
+        <FILE FILENAME="BarJoin_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="BarJoin_Series" FORMNAME="BarJoinForm" DESIGNCLASS="" ADDITIONAL="BarJoin_Series.h"/>
+        <FILE FILENAME="HighLow_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HighLow_Series" FORMNAME="HighLowForm" DESIGNCLASS="" ADDITIONAL="HighLow_Series.h"/>
+        <FILE FILENAME="WaterFall_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="WaterFall_Series" FORMNAME="WaterFallForm" DESIGNCLASS="" ADDITIONAL="WaterFall_Series.h"/>
+        <FILE FILENAME="Smith_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Smith_Series" FORMNAME="SmithForm" DESIGNCLASS="" ADDITIONAL="Smith_Series.h"/>
+        <FILE FILENAME="Pyramid_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pyramid_Series" FORMNAME="PyramidForm" DESIGNCLASS="" ADDITIONAL="Pyramid_Series.h"/>
+        <FILE FILENAME="Map_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Map_Series" FORMNAME="MapSeriesForm" DESIGNCLASS="" ADDITIONAL="Map_Series.h"/>
+        <FILE FILENAME="Series_Calendar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Calendar" FORMNAME="CalendarSeriesForm" DESIGNCLASS="" ADDITIONAL="Series_Calendar.h"/>
+        <FILE FILENAME="Series_Funnel.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Funnel" FORMNAME="FunnelSeriesForm" DESIGNCLASS="" ADDITIONAL="Series_Funnel.h"/>
+        <FILE FILENAME="Chart_Transparent.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Transparent" FORMNAME="ChartTransparent" DESIGNCLASS="" ADDITIONAL="Chart_Transparent.h"/>
+        <FILE FILENAME="Editor_Color.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Editor_Color" FORMNAME="EditorColor" DESIGNCLASS="" ADDITIONAL="Editor_Color.h"/>
+        <FILE FILENAME="Series_Designer.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Designer" FORMNAME="SeriesDesigner" DESIGNCLASS="" ADDITIONAL="Series_Designer.h"/>
+        <FILE FILENAME="Chart_Actions.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Actions" FORMNAME="ChartActionsForm" DESIGNCLASS="" ADDITIONAL="Chart_Actions.h"/>
+        <FILE FILENAME="Export_Charts.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_Charts" FORMNAME="ExportChartsForm" DESIGNCLASS="" ADDITIONAL="Export_Charts.h"/>
+        <FILE FILENAME="Export_Text.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_Text" FORMNAME="ExportTextForm" DESIGNCLASS="" ADDITIONAL="Export_Text.h"/>
+        <FILE FILENAME="Export_HTML.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_HTML" FORMNAME="ExportHTMLForm" DESIGNCLASS="" ADDITIONAL="Export_HTML.h"/>
+        <FILE FILENAME="Export_XML.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_XML" FORMNAME="ExportXMLForm" DESIGNCLASS="" ADDITIONAL="Export_XML.h"/>
+        <FILE FILENAME="Export_Excel.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_Excel" FORMNAME="ExportExcelForm" DESIGNCLASS="" ADDITIONAL="Export_Excel.h"/>
+        <FILE FILENAME="Export_GIF.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_GIF" FORMNAME="GIFExportForm" DESIGNCLASS="" ADDITIONAL="Export_GIF.h"/>
+        <FILE FILENAME="Export_JPEG.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_JPEG" FORMNAME="JPEGExportForm" DESIGNCLASS="" ADDITIONAL="Export_JPEG.h"/>
+        <FILE FILENAME="Export_PNG.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_PNG" FORMNAME="PNGExportForm" DESIGNCLASS="" ADDITIONAL="Export_PNG.h"/>
+        <FILE FILENAME="Export_PCX.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_PCX" FORMNAME="PCXExportForm" DESIGNCLASS="" ADDITIONAL="Export_PCX.h"/>
+        <FILE FILENAME="Export_Email.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_Email" FORMNAME="ExportEmailForm" DESIGNCLASS="" ADDITIONAL="Export_Email.h"/>
+        <FILE FILENAME="Template_Chart.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Template_Chart" FORMNAME="TemplateChart" DESIGNCLASS="" ADDITIONAL="Template_Chart.h"/>
+        <FILE FILENAME="ChartEditor_Dialog.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartEditor_Dialog" FORMNAME="ChartEditorForm" DESIGNCLASS="" ADDITIONAL="ChartEditor_Dialog.h"/>
+        <FILE FILENAME="Chart_Commander.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Commander" FORMNAME="TeeCommanderForm" DESIGNCLASS="" ADDITIONAL="Chart_Commander.h"/>
+        <FILE FILENAME="Chart_ListBox.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_ListBox" FORMNAME="ChartListBoxForm" DESIGNCLASS="" ADDITIONAL="Chart_ListBox.h"/>
+        <FILE FILENAME="OpenGL_Editor.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="OpenGL_Editor" FORMNAME="OpenGLEditorForm" DESIGNCLASS="" ADDITIONAL="OpenGL_Editor.h"/>
+        <FILE FILENAME="OpenGL_Surface.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="OpenGL_Surface" FORMNAME="OpenGLSurface" DESIGNCLASS="" ADDITIONAL="OpenGL_Surface.h"/>
+        <FILE FILENAME="OpenGL_TriSurface.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="OpenGL_TriSurface" FORMNAME="OpenGLTriSurface" DESIGNCLASS="" ADDITIONAL="OpenGL_TriSurface.h"/>
+        <FILE FILENAME="OpenGL_Canvas.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="OpenGL_Canvas" FORMNAME="OpenGLCanvas" DESIGNCLASS="" ADDITIONAL="OpenGL_Canvas.h"/>
+        <FILE FILENAME="OpenGL_Football.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="OpenGL_Football" FORMNAME="OpenGLFootBall" DESIGNCLASS="" ADDITIONAL="OpenGL_Football.h"/>
+        <FILE FILENAME="Basic_Features.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Basic_Features" FORMNAME="BasicFeatures" DESIGNCLASS="" ADDITIONAL="Basic_Features.h"/>
+        <FILE FILENAME="SeriesType_Line.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Line" FORMNAME="LineSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Line.h"/>
+        <FILE FILENAME="SeriesType_Bar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Bar" FORMNAME="BarSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Bar.h"/>
+        <FILE FILENAME="SeriesType_Pie.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Pie" FORMNAME="PieSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Pie.h"/>
+        <FILE FILENAME="SeriesType_FastLine.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_FastLine" FORMNAME="FastLineForm" DESIGNCLASS="" ADDITIONAL="SeriesType_FastLine.h"/>
+        <FILE FILENAME="SeriesType_HorizBar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_HorizBar" FORMNAME="HorizBarSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_HorizBar.h"/>
+        <FILE FILENAME="SeriesType_Point.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Point" FORMNAME="PointSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Point.h"/>
+        <FILE FILENAME="SeriesType_Bubble.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Bubble" FORMNAME="BubbleSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Bubble.h"/>
+        <FILE FILENAME="SeriesType_Arrow.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Arrow" FORMNAME="ArrowSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Arrow.h"/>
+        <FILE FILENAME="SeriesType_Gantt.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Gantt" FORMNAME="GanttSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Gantt.h"/>
+        <FILE FILENAME="Series_Shape.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Shape" FORMNAME="ShapeSeriesForm" DESIGNCLASS="" ADDITIONAL="Series_Shape.h"/>
+        <FILE FILENAME="SeriesType_Candle.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Candle" FORMNAME="CandleForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Candle.h"/>
+        <FILE FILENAME="SeriesType_Volume.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Volume" FORMNAME="VolumeForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Volume.h"/>
+        <FILE FILENAME="Surface_Hole.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_Hole" FORMNAME="SurfaceHolesForm" DESIGNCLASS="" ADDITIONAL="Surface_Hole.h"/>
+        <FILE FILENAME="SeriesType_Polar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Polar" FORMNAME="PolarForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Polar.h"/>
+        <FILE FILENAME="SeriesType_Radar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Radar" FORMNAME="RadarForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Radar.h"/>
+        <FILE FILENAME="Series_Error.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Error" FORMNAME="ErrorSeriesForm" DESIGNCLASS="" ADDITIONAL="Series_Error.h"/>
+        <FILE FILENAME="WindRose_Series.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="WindRose_Series" FORMNAME="WindRoseForm" DESIGNCLASS="" ADDITIONAL="WindRose_Series.h"/>
+        <FILE FILENAME="Reporting_Tools.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Reporting_Tools" FORMNAME="ChartReports" DESIGNCLASS="" ADDITIONAL="Reporting_Tools.h"/>
+        <FILE FILENAME="Customers.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Customers" FORMNAME="TeeCustomers" DESIGNCLASS="" ADDITIONAL="Customers.h"/>
+        <FILE FILENAME="Chart_Other.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Other" FORMNAME="ChartOther" DESIGNCLASS="" ADDITIONAL="Chart_Other.h"/>
+        <FILE FILENAME="SeriesType_Clock.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Clock" FORMNAME="ClockSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Clock.h"/>
+        <FILE FILENAME="Series_Bar3D.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Bar3D" FORMNAME="Bar3DForm" DESIGNCLASS="" ADDITIONAL="Series_Bar3D.h"/>
+        <FILE FILENAME="Series_MyPoint.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_MyPoint" FORMNAME="MyPointSeriesForm" DESIGNCLASS="" ADDITIONAL="Series_MyPoint.h"/>
+        <FILE FILENAME="Series_ImageBar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_ImageBar" FORMNAME="ImageBarForm" DESIGNCLASS="" ADDITIONAL="Series_ImageBar.h"/>
+        <FILE FILENAME="Series_ImagePoint.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_ImagePoint" FORMNAME="ImagePointForm" DESIGNCLASS="" ADDITIONAL="Series_ImagePoint.h"/>
+        <FILE FILENAME="Series_DeltaPoint.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_DeltaPoint" FORMNAME="DeltaPointForm" DESIGNCLASS="" ADDITIONAL="Series_DeltaPoint.h"/>
+        <FILE FILENAME="Series_BigCandle.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_BigCandle" FORMNAME="BigCandleForm" DESIGNCLASS="" ADDITIONAL="Series_BigCandle.h"/>
+        <FILE FILENAME="DBChart_AnyDataSet.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_AnyDataSet" FORMNAME="DBChartAny" DESIGNCLASS="" ADDITIONAL="DBChart_AnyDataSet.h"/>
+        <FILE FILENAME="DBChart_SingleRecord.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_SingleRecord" FORMNAME="DBChartSingleRecord" DESIGNCLASS="" ADDITIONAL="DBChart_SingleRecord.h"/>
+        <FILE FILENAME="DBChart_MasterDetail.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_MasterDetail" FORMNAME="LinkedTablesForm" DESIGNCLASS="" ADDITIONAL="DBChart_MasterDetail.h"/>
+        <FILE FILENAME="DBChart_CrossTab.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_CrossTab" FORMNAME="DBChartCrossTab" DESIGNCLASS="" ADDITIONAL="DBChart_CrossTab.h"/>
+        <FILE FILENAME="TeeCross.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TeeCross" FORMNAME="" DESIGNCLASS="" ADDITIONAL="TeeCross.h"/>
+        <FILE FILENAME="Print_PreviewDialog.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Print_PreviewDialog" FORMNAME="PrintPreviewDialog" DESIGNCLASS="" ADDITIONAL="Print_PreviewDialog.h"/>
+        <FILE FILENAME="FourCharts.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="FourCharts" FORMNAME="FourChartsForm" DESIGNCLASS="" ADDITIONAL="FourCharts.h"/>
+        <FILE FILENAME="Export_Metafile.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_Metafile" FORMNAME="MetafileForm" DESIGNCLASS="" ADDITIONAL="Export_Metafile.h"/>
+        <FILE FILENAME="Function_Subtract.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Subtract" FORMNAME="SubtractForm" DESIGNCLASS="" ADDITIONAL="Function_Subtract.h"/>
+        <FILE FILENAME="Function_High.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_High" FORMNAME="HighForm" DESIGNCLASS="" ADDITIONAL="Function_High.h"/>
+        <FILE FILENAME="Function_Low.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Low" FORMNAME="LowForm" DESIGNCLASS="" ADDITIONAL="Function_Low.h"/>
+        <FILE FILENAME="Function_Count.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Count" FORMNAME="CountForm" DESIGNCLASS="" ADDITIONAL="Function_Count.h"/>
+        <FILE FILENAME="Function_Add.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Add" FORMNAME="FunctionAddForm" DESIGNCLASS="" ADDITIONAL="Function_Add.h"/>
+        <FILE FILENAME="Function_Multiply.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Multiply" FORMNAME="MultiplyForm" DESIGNCLASS="" ADDITIONAL="Function_Multiply.h"/>
+        <FILE FILENAME="Function_Divide.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Divide" FORMNAME="DivideForm" DESIGNCLASS="" ADDITIONAL="Function_Divide.h"/>
+        <FILE FILENAME="Function_Average.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Average" FORMNAME="AverageForm" DESIGNCLASS="" ADDITIONAL="Function_Average.h"/>
+        <FILE FILENAME="Function_ExpAve.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_ExpAve" FORMNAME="ExpAveForm" DESIGNCLASS="" ADDITIONAL="Function_ExpAve.h"/>
+        <FILE FILENAME="Function_StdDeviation.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_StdDeviation" FORMNAME="StdDeviationForm" DESIGNCLASS="" ADDITIONAL="Function_StdDeviation.h"/>
+        <FILE FILENAME="Function_CurveFitting.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_CurveFitting" FORMNAME="CurveFittingForm" DESIGNCLASS="" ADDITIONAL="Function_CurveFitting.h"/>
+        <FILE FILENAME="CurveFitting_Coef.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="CurveFitting_Coef" FORMNAME="CurveFittingCoef" DESIGNCLASS="" ADDITIONAL="CurveFitting_Coef.h"/>
+        <FILE FILENAME="CurveFitting_Dynamic.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="CurveFitting_Dynamic" FORMNAME="DynamicTrend" DESIGNCLASS="" ADDITIONAL="CurveFitting_Dynamic.h"/>
+        <FILE FILENAME="Function_Trend.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Trend" FORMNAME="TrendForm" DESIGNCLASS="" ADDITIONAL="Function_Trend.h"/>
+        <FILE FILENAME="Function_Cumulative.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Cumulative" FORMNAME="CumulativeForm" DESIGNCLASS="" ADDITIONAL="Function_Cumulative.h"/>
+        <FILE FILENAME="Function_MovAve.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_MovAve" FORMNAME="MovAveFunctionForm" DESIGNCLASS="" ADDITIONAL="Function_MovAve.h"/>
+        <FILE FILENAME="Function_RSI.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_RSI" FORMNAME="RSIFunctionForm" DESIGNCLASS="" ADDITIONAL="Function_RSI.h"/>
+        <FILE FILENAME="Function_Momentum.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Momentum" FORMNAME="MomentumForm" DESIGNCLASS="" ADDITIONAL="Function_Momentum.h"/>
+        <FILE FILENAME="QualityControl.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="QualityControl" FORMNAME="FormQuality" DESIGNCLASS="" ADDITIONAL="QualityControl.h"/>
+        <FILE FILENAME="ChartEditor_Runtime.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartEditor_Runtime" FORMNAME="ChartEditorRuntime" DESIGNCLASS="" ADDITIONAL="ChartEditor_Runtime.h"/>
+        <FILE FILENAME="ChartListBox_Demo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartListBox_Demo" FORMNAME="ListBoxForm" DESIGNCLASS="" ADDITIONAL="ChartListBox_Demo.h"/>
+        <FILE FILENAME="Draw3D_Canvas.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Draw3D_Canvas" FORMNAME="Draw3DCanvas" DESIGNCLASS="" ADDITIONAL="Draw3D_Canvas.h"/>
+        <FILE FILENAME="Chart_PrintPreview.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_PrintPreview" FORMNAME="ChartPrintPreviewForm" DESIGNCLASS="" ADDITIONAL="Chart_PrintPreview.h"/>
+        <FILE FILENAME="Chart_ScrollBar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_ScrollBar" FORMNAME="ChartScrollBarForm" DESIGNCLASS="" ADDITIONAL="Chart_ScrollBar.h"/>
+        <FILE FILENAME="Series_DataSet.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_DataSet" FORMNAME="SeriesDataSetForm" DESIGNCLASS="" ADDITIONAL="Series_DataSet.h"/>
+        <FILE FILENAME="TeeCommander_Demo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TeeCommander_Demo" FORMNAME="TeeCommanderDemo" DESIGNCLASS="" ADDITIONAL="TeeCommander_Demo.h"/>
+        <FILE FILENAME="Internet_Charts.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Internet_Charts" FORMNAME="InternetCharts" DESIGNCLASS="" ADDITIONAL="Internet_Charts.h"/>
+        <FILE FILENAME="Chart_Axes.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Axes" FORMNAME="ChartAxesForm" DESIGNCLASS="" ADDITIONAL="Chart_Axes.h"/>
+        <FILE FILENAME="Zoom_Scroll.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Zoom_Scroll" FORMNAME="ZoomScrollForm" DESIGNCLASS="" ADDITIONAL="Zoom_Scroll.h"/>
+        <FILE FILENAME="Legend_Scroll.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_Scroll" FORMNAME="LegendScroll" DESIGNCLASS="" ADDITIONAL="Legend_Scroll.h"/>
+        <FILE FILENAME="Drag_Bars.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Drag_Bars" FORMNAME="DragBarForm" DESIGNCLASS="" ADDITIONAL="Drag_Bars.h"/>
+        <FILE FILENAME="Chart_Clipboard.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Clipboard" FORMNAME="ChartClipboard" DESIGNCLASS="" ADDITIONAL="Chart_Clipboard.h"/>
+        <FILE FILENAME="Chart_MultiClipboard.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_MultiClipboard" FORMNAME="ChartMultiClipboard" DESIGNCLASS="" ADDITIONAL="Chart_MultiClipboard.h"/>
+        <FILE FILENAME="TeeAxisLabelTool.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TeeAxisLabelTool" FORMNAME="" DESIGNCLASS="" ADDITIONAL="TeeAxisLabelTool.h"/>
+        <FILE FILENAME="Area_Transparency.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Area_Transparency" FORMNAME="AreaTransparency" DESIGNCLASS="" ADDITIONAL="Area_Transparency.h"/>
+        <FILE FILENAME="Line_Outline.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Line_Outline" FORMNAME="LineOutline" DESIGNCLASS="" ADDITIONAL="Line_Outline.h"/>
+        <FILE FILENAME="PolarRadar_Transparency.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="PolarRadar_Transparency" FORMNAME="PolarRadarTransp" DESIGNCLASS="" ADDITIONAL="PolarRadar_Transparency.h"/>
+        <FILE FILENAME="Tool_Annotation.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_Annotation" FORMNAME="AnnotationToolForm" DESIGNCLASS="" ADDITIONAL="Tool_Annotation.h"/>
+        <FILE FILENAME="Tool_CursorProg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_CursorProg" FORMNAME="CursorToolProg" DESIGNCLASS="" ADDITIONAL="Tool_CursorProg.h"/>
+        <FILE FILENAME="Tool_CursorSynchro.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_CursorSynchro" FORMNAME="CursorSynchro" DESIGNCLASS="" ADDITIONAL="Tool_CursorSynchro.h"/>
+        <FILE FILENAME="Tool_DrawLineDragged.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_DrawLineDragged" FORMNAME="DrawLineOnDragged" DESIGNCLASS="" ADDITIONAL="Tool_DrawLineDragged.h"/>
+        <FILE FILENAME="ColorLine_DragRepaint.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorLine_DragRepaint" FORMNAME="ColorLineDragRepaint" DESIGNCLASS="" ADDITIONAL="ColorLine_DragRepaint.h"/>
+        <FILE FILENAME="ChartGrid_Colors.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartGrid_Colors" FORMNAME="ChartGridColors" DESIGNCLASS="" ADDITIONAL="ChartGrid_Colors.h"/>
+        <FILE FILENAME="TriSurface_Hidding.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TriSurface_Hidding" FORMNAME="TriSurfaceHidding" DESIGNCLASS="" ADDITIONAL="TriSurface_Hidding.h"/>
+        <FILE FILENAME="Histogram_Transparency.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Histogram_Transparency" FORMNAME="HistogramTransp" DESIGNCLASS="" ADDITIONAL="Histogram_Transparency.h"/>
+        <FILE FILENAME="ColorGrid_Clicked.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorGrid_Clicked" FORMNAME="ColorGridClicked" DESIGNCLASS="" ADDITIONAL="ColorGrid_Clicked.h"/>
+        <FILE FILENAME="Calendar_Buttons.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Calendar_Buttons" FORMNAME="CalendarButtons" DESIGNCLASS="" ADDITIONAL="Calendar_Buttons.h"/>
+        <FILE FILENAME="Export_VML.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_VML" FORMNAME="ExportVMLForm" DESIGNCLASS="" ADDITIONAL="Export_VML.h"/>
+        <FILE FILENAME="Commander_Custom.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Commander_Custom" FORMNAME="CommanderCustom" DESIGNCLASS="" ADDITIONAL="Commander_Custom.h"/>
+        <FILE FILENAME="Chart_MultiLanguage.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_MultiLanguage" FORMNAME="ChartMultiLanguage" DESIGNCLASS="" ADDITIONAL="Chart_MultiLanguage.h"/>
+        <FILE FILENAME="Candle_OnGetPointer.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Candle_OnGetPointer" FORMNAME="CandleOnGetPointer" DESIGNCLASS="" ADDITIONAL="Candle_OnGetPointer.h"/>
+        <FILE FILENAME="Volume_Origin.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Volume_Origin" FORMNAME="VolumeOrigin" DESIGNCLASS="" ADDITIONAL="Volume_Origin.h"/>
+        <FILE FILENAME="FastLine_DrawAll.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="FastLine_DrawAll" FORMNAME="FastLineDrawAll" DESIGNCLASS="" ADDITIONAL="FastLine_DrawAll.h"/>
+        <FILE FILENAME="ChartEditor_PageNum.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartEditor_PageNum" FORMNAME="ChartEditorPageNum" DESIGNCLASS="" ADDITIONAL="ChartEditor_PageNum.h"/>
+        <FILE FILENAME="MarkTips_MouseDelay.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MarkTips_MouseDelay" FORMNAME="MarksTipMouseDelay" DESIGNCLASS="" ADDITIONAL="MarkTips_MouseDelay.h"/>
+        <FILE FILENAME="Release502_NewFeatures.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release502_NewFeatures" FORMNAME="Release502Misc" DESIGNCLASS="" ADDITIONAL="Release502_NewFeatures.h"/>
+        <FILE FILENAME="Release502_FixedBugs.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release502_FixedBugs" FORMNAME="Release502Fixed" DESIGNCLASS="" ADDITIONAL="Release502_FixedBugs.h"/>
+        <FILE FILENAME="TeeChartWizardDemo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TeeChartWizardDemo" FORMNAME="ChartWizardDemo" DESIGNCLASS="" ADDITIONAL="TeeChartWizardDemo.h"/>
+        <FILE FILENAME="Release501_NewFeatures.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release501_NewFeatures" FORMNAME="Release501Misc" DESIGNCLASS="" ADDITIONAL="Release501_NewFeatures.h"/>
+        <FILE FILENAME="Release501_FixedBugs.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release501_FixedBugs" FORMNAME="Release501Fixed" DESIGNCLASS="" ADDITIONAL="Release501_FixedBugs.h"/>
+        <FILE FILENAME="Pie_Shadow.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pie_Shadow" FORMNAME="PieShadowForm" DESIGNCLASS="" ADDITIONAL="Pie_Shadow.h"/>
+        <FILE FILENAME="Area_Gradient.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Area_Gradient" FORMNAME="AreaGradient" DESIGNCLASS="" ADDITIONAL="Area_Gradient.h"/>
+        <FILE FILENAME="Font_Gradient.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Font_Gradient" FORMNAME="FontGradient" DESIGNCLASS="" ADDITIONAL="Font_Gradient.h"/>
+        <FILE FILENAME="ComboFlat_Demo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ComboFlat_Demo" FORMNAME="ComboFlatForm" DESIGNCLASS="" ADDITIONAL="ComboFlat_Demo.h"/>
+        <FILE FILENAME="Inspector_Demo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Inspector_Demo" FORMNAME="InspectorForm" DESIGNCLASS="" ADDITIONAL="Inspector_Demo.h"/>
+        <FILE FILENAME="ChartImage_Demo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartImage_Demo" FORMNAME="ChartImageForm" DESIGNCLASS="" ADDITIONAL="ChartImage_Demo.h"/>
+        <FILE FILENAME="DrawLine_Style.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DrawLine_Style" FORMNAME="DrawLineStyleForm" DESIGNCLASS="" ADDITIONAL="DrawLine_Style.h"/>
+        <FILE FILENAME="Release503_NewFeatures.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release503_NewFeatures" FORMNAME="Release503Misc" DESIGNCLASS="" ADDITIONAL="Release503_NewFeatures.h"/>
+        <FILE FILENAME="Release503_FixedBugs.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release503_FixedBugs" FORMNAME="Release503Fixed" DESIGNCLASS="" ADDITIONAL="Release503_FixedBugs.h"/>
+        <FILE FILENAME="FastLine_Realtime.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="FastLine_Realtime" FORMNAME="FastDeleteRealtime" DESIGNCLASS="" ADDITIONAL="FastLine_Realtime.h"/>
+        <FILE FILENAME="Tool_AnnotationClick.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_AnnotationClick" FORMNAME="AnnotationClickForm" DESIGNCLASS="" ADDITIONAL="Tool_AnnotationClick.h"/>
+        <FILE FILENAME="Series_BarSize.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_BarSize" FORMNAME="BarSizeSeriesForm" DESIGNCLASS="" ADDITIONAL="Series_BarSize.h"/>
+        <FILE FILENAME="TeeBarSizeSeries.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TeeBarSizeSeries" FORMNAME="" DESIGNCLASS="" ADDITIONAL="TeeBarSizeSeries.h"/>
+        <FILE FILENAME="PostScript_Demo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="PostScript_Demo" FORMNAME="PostScriptForm" DESIGNCLASS="" ADDITIONAL="PostScript_Demo.h"/>
+        <FILE FILENAME="Gantt_MouseDrag.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Gantt_MouseDrag" FORMNAME="GanttMouseForm" DESIGNCLASS="" ADDITIONAL="Gantt_MouseDrag.h"/>
+        <FILE FILENAME="Axes_ZPosition.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axes_ZPosition" FORMNAME="AxesZPosition" DESIGNCLASS="" ADDITIONAL="Axes_ZPosition.h"/>
+        <FILE FILENAME="Axes_Offsets.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axes_Offsets" FORMNAME="AxesOffsets" DESIGNCLASS="" ADDITIONAL="Axes_Offsets.h"/>
+        <FILE FILENAME="Axis_Items.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_Items" FORMNAME="AxisItemsDemo" DESIGNCLASS="" ADDITIONAL="Axis_Items.h"/>
+        <FILE FILENAME="Axes_LabelsFormat.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axes_LabelsFormat" FORMNAME="AxesLabelsFormat" DESIGNCLASS="" ADDITIONAL="Axes_LabelsFormat.h"/>
+        <FILE FILENAME="Axis_LabelsFormat.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_LabelsFormat" FORMNAME="AxisLabelsFormat" DESIGNCLASS="" ADDITIONAL="Axis_LabelsFormat.h"/>
+        <FILE FILENAME="Canvas_180Rotation.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_180Rotation" FORMNAME="Canvas180Rotation" DESIGNCLASS="" ADDITIONAL="Canvas_180Rotation.h"/>
+        <FILE FILENAME="Gradient_RadialCenter.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Gradient_RadialCenter" FORMNAME="GradientRadial" DESIGNCLASS="" ADDITIONAL="Gradient_RadialCenter.h"/>
+        <FILE FILENAME="Canvas_AntiAlias.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_AntiAlias" FORMNAME="CanvasAntiAlias" DESIGNCLASS="" ADDITIONAL="Canvas_AntiAlias.h"/>
+        <FILE FILENAME="Canvas_RotatedEllipse.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_RotatedEllipse" FORMNAME="CanvasRotatedEllipse" DESIGNCLASS="" ADDITIONAL="Canvas_RotatedEllipse.h"/>
+        <FILE FILENAME="RichText_Drawing.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="RichText_Drawing" FORMNAME="RichTextDrawing" DESIGNCLASS="" ADDITIONAL="RichText_Drawing.h"/>
+        <FILE FILENAME="Legend_SymbolBorder.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_SymbolBorder" FORMNAME="LegendSymbolBorder" DESIGNCLASS="" ADDITIONAL="Legend_SymbolBorder.h"/>
+        <FILE FILENAME="Wall_Transparency.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Wall_Transparency" FORMNAME="WallTransparency" DESIGNCLASS="" ADDITIONAL="Wall_Transparency.h"/>
+        <FILE FILENAME="Margins_Units.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Margins_Units" FORMNAME="ChartMarginUnits" DESIGNCLASS="" ADDITIONAL="Margins_Units.h"/>
+        <FILE FILENAME="Chart_Shadow.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Shadow" FORMNAME="ChartShadow" DESIGNCLASS="" ADDITIONAL="Chart_Shadow.h"/>
+        <FILE FILENAME="Chart_RoundPanel.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_RoundPanel" FORMNAME="ChartRoundPanel" DESIGNCLASS="" ADDITIONAL="Chart_RoundPanel.h"/>
+        <FILE FILENAME="DBChart_SummaryOrder.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_SummaryOrder" FORMNAME="DBSummaryOrder" DESIGNCLASS="" ADDITIONAL="DBChart_SummaryOrder.h"/>
+        <FILE FILENAME="ColorLine_Draw3D.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorLine_Draw3D" FORMNAME="ColorLine3D" DESIGNCLASS="" ADDITIONAL="ColorLine_Draw3D.h"/>
+        <FILE FILENAME="Tool_AnnotationCallout.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_AnnotationCallout" FORMNAME="AnnotationCO" DESIGNCLASS="" ADDITIONAL="Tool_AnnotationCallout.h"/>
+        <FILE FILENAME="Tool_RotateOutline.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_RotateOutline" FORMNAME="RotateOutline" DESIGNCLASS="" ADDITIONAL="Tool_RotateOutline.h"/>
+        <FILE FILENAME="Series_MouseEnter.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_MouseEnter" FORMNAME="SeriesMouseEnter" DESIGNCLASS="" ADDITIONAL="Series_MouseEnter.h"/>
+        <FILE FILENAME="Series_SortLabels.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_SortLabels" FORMNAME="SeriesSortLabel" DESIGNCLASS="" ADDITIONAL="Series_SortLabels.h"/>
+        <FILE FILENAME="Marks_Callout.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_Callout" FORMNAME="MarksCallouts" DESIGNCLASS="" ADDITIONAL="Marks_Callout.h"/>
+        <FILE FILENAME="Marks_PerPoint.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_PerPoint" FORMNAME="MarksPerPoint" DESIGNCLASS="" ADDITIONAL="Marks_PerPoint.h"/>
+        <FILE FILENAME="Bar_SelfStack.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bar_SelfStack" FORMNAME="BarSelfStack" DESIGNCLASS="" ADDITIONAL="Bar_SelfStack.h"/>
+        <FILE FILENAME="BoxSeries_CustomValues.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="BoxSeries_CustomValues" FORMNAME="BoxCustomForm" DESIGNCLASS="" ADDITIONAL="BoxSeries_CustomValues.h"/>
+        <FILE FILENAME="Bubble_Gradient.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bubble_Gradient" FORMNAME="BubbleGradient" DESIGNCLASS="" ADDITIONAL="Bubble_Gradient.h"/>
+        <FILE FILENAME="Bubble_Transparency.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bubble_Transparency" FORMNAME="BubbleTransparency" DESIGNCLASS="" ADDITIONAL="Bubble_Transparency.h"/>
+        <FILE FILENAME="ColorGrid_Marks.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorGrid_Marks" FORMNAME="ColorGridMarks" DESIGNCLASS="" ADDITIONAL="ColorGrid_Marks.h"/>
+        <FILE FILENAME="ColorGrid_Bitmap.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorGrid_Bitmap" FORMNAME="ColorGridBitmap" DESIGNCLASS="" ADDITIONAL="ColorGrid_Bitmap.h"/>
+        <FILE FILENAME="Contour_SmoothSegments.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Contour_SmoothSegments" FORMNAME="ContourSmooth" DESIGNCLASS="" ADDITIONAL="Contour_SmoothSegments.h"/>
+        <FILE FILENAME="Contour_OnBeforeDraw.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Contour_OnBeforeDraw" FORMNAME="ContourOnBefore" DESIGNCLASS="" ADDITIONAL="Contour_OnBeforeDraw.h"/>
+        <FILE FILENAME="FastLine_Nulls.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="FastLine_Nulls" FORMNAME="FastLineNulls" DESIGNCLASS="" ADDITIONAL="FastLine_Nulls.h"/>
+        <FILE FILENAME="Pie_AutoMarkPosition.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pie_AutoMarkPosition" FORMNAME="PieAutoMarkPos" DESIGNCLASS="" ADDITIONAL="Pie_AutoMarkPosition.h"/>
+        <FILE FILENAME="Pie_OtherLegend.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pie_OtherLegend" FORMNAME="PieOtherLegend" DESIGNCLASS="" ADDITIONAL="Pie_OtherLegend.h"/>
+        <FILE FILENAME="Circled_Gradient.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Circled_Gradient" FORMNAME="CircledGradient" DESIGNCLASS="" ADDITIONAL="Circled_Gradient.h"/>
+        <FILE FILENAME="Polar_Zones.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Polar_Zones" FORMNAME="PolarZones" DESIGNCLASS="" ADDITIONAL="Polar_Zones.h"/>
+        <FILE FILENAME="Surface_Transparency.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_Transparency" FORMNAME="SurfaceTransp" DESIGNCLASS="" ADDITIONAL="Surface_Transparency.h"/>
+        <FILE FILENAME="Series3D_AddArray.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series3D_AddArray" FORMNAME="AddArray3D" DESIGNCLASS="" ADDITIONAL="Series3D_AddArray.h"/>
+        <FILE FILENAME="XYZ_Gridding.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="XYZ_Gridding" FORMNAME="XYZGridding" DESIGNCLASS="" ADDITIONAL="XYZ_Gridding.h"/>
+        <FILE FILENAME="ChartEditor_HideDataSets.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartEditor_HideDataSets" FORMNAME="ChartEditorHideDataSets" DESIGNCLASS="" ADDITIONAL="ChartEditor_HideDataSets.h"/>
+        <FILE FILENAME="Preview_CustomDraw.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Preview_CustomDraw" FORMNAME="PreviewCustomDraw" DESIGNCLASS="" ADDITIONAL="Preview_CustomDraw.h"/>
+        <FILE FILENAME="ChartGrid_Grid3D.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartGrid_Grid3D" FORMNAME="ChartGrid3D" DESIGNCLASS="" ADDITIONAL="ChartGrid_Grid3D.h"/>
+        <FILE FILENAME="Tool_3DTranspose.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_3DTranspose" FORMNAME="TransposeToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_3DTranspose.h"/>
+        <FILE FILENAME="Tool_ExtraLegend.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_ExtraLegend" FORMNAME="ExtraLegendDemo" DESIGNCLASS="" ADDITIONAL="Tool_ExtraLegend.h"/>
+        <FILE FILENAME="Tools_SeriesAnim.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tools_SeriesAnim" FORMNAME="SeriesAnimDemo" DESIGNCLASS="" ADDITIONAL="Tools_SeriesAnim.h"/>
+        <FILE FILENAME="Axes_GridBands.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axes_GridBands" FORMNAME="AxesGridBands" DESIGNCLASS="" ADDITIONAL="Axes_GridBands.h"/>
+        <FILE FILENAME="Tool_Pie.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_Pie" FORMNAME="PieToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_Pie.h"/>
+        <FILE FILENAME="Series_XMLSource.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_XMLSource" FORMNAME="XMLSourceDemo" DESIGNCLASS="" ADDITIONAL="Series_XMLSource.h"/>
+        <FILE FILENAME="Series_XMLSourceWeb.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_XMLSourceWeb" FORMNAME="XMLSourceWeb" DESIGNCLASS="" ADDITIONAL="Series_XMLSourceWeb.h"/>
+        <FILE FILENAME="DBChart_CrossTabSource.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DBChart_CrossTabSource" FORMNAME="DBCrossTabSourceDemo" DESIGNCLASS="" ADDITIONAL="DBChart_CrossTabSource.h"/>
+        <FILE FILENAME="Function_Smoothing.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Smoothing" FORMNAME="SmoothingFunctionDemo" DESIGNCLASS="" ADDITIONAL="Function_Smoothing.h"/>
+        <FILE FILENAME="Function_Custom.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Custom" FORMNAME="CustomFunctionDemo" DESIGNCLASS="" ADDITIONAL="Function_Custom.h"/>
+        <FILE FILENAME="Function_Compression.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Compression" FORMNAME="CompressionDemo" DESIGNCLASS="" ADDITIONAL="Function_Compression.h"/>
+        <FILE FILENAME="Function_CrossPoints.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_CrossPoints" FORMNAME="CrossPointsDemo" DESIGNCLASS="" ADDITIONAL="Function_CrossPoints.h"/>
+        <FILE FILENAME="Function_CLV.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_CLV" FORMNAME="CLVFuncDemo" DESIGNCLASS="" ADDITIONAL="Function_CLV.h"/>
+        <FILE FILENAME="Function_OBV.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_OBV" FORMNAME="OBVFuncDemo" DESIGNCLASS="" ADDITIONAL="Function_OBV.h"/>
+        <FILE FILENAME="Function_CCI.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_CCI" FORMNAME="CCIFuncDemo" DESIGNCLASS="" ADDITIONAL="Function_CCI.h"/>
+        <FILE FILENAME="Function_PVO.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_PVO" FORMNAME="PVOFuncdemo" DESIGNCLASS="" ADDITIONAL="Function_PVO.h"/>
+        <FILE FILENAME="Function_Performance.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Performance" FORMNAME="PerfFuncDemo" DESIGNCLASS="" ADDITIONAL="Function_Performance.h"/>
+        <FILE FILENAME="SeriesType_HorizArea.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_HorizArea" FORMNAME="HorizAreaSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_HorizArea.h"/>
+        <FILE FILENAME="Series_PointFigure.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_PointFigure" FORMNAME="PointFigureDemo" DESIGNCLASS="" ADDITIONAL="Series_PointFigure.h"/>
+        <FILE FILENAME="Series_Gauge.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Gauge" FORMNAME="GaugeDemo" DESIGNCLASS="" ADDITIONAL="Series_Gauge.h"/>
+        <FILE FILENAME="Series_Vector3D.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Vector3D" FORMNAME="Vector3DSeriesForm" DESIGNCLASS="" ADDITIONAL="Series_Vector3D.h"/>
+        <FILE FILENAME="SeriesType_Tower.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SeriesType_Tower" FORMNAME="TowerSeriesForm" DESIGNCLASS="" ADDITIONAL="SeriesType_Tower.h"/>
+        <FILE FILENAME="Export_PDF.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_PDF" FORMNAME="PDFExportForm" DESIGNCLASS="" ADDITIONAL="Export_PDF.h"/>
+        <FILE FILENAME="Property_Aliases.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Property_Aliases" FORMNAME="PropertyAliases" DESIGNCLASS="" ADDITIONAL="Property_Aliases.h"/>
+        <FILE FILENAME="GridToChart_Demo.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="GridToChart_Demo" FORMNAME="GridToChartDemo" DESIGNCLASS="" ADDITIONAL="GridToChart_Demo.h"/>
+        <FILE FILENAME="Release6_Misc.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release6_Misc" FORMNAME="MiscVersion6" DESIGNCLASS="" ADDITIONAL="Release6_Misc.h"/>
+        <FILE FILENAME="Release6_FixedBugs.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release6_FixedBugs" FORMNAME="Release6Fixed" DESIGNCLASS="" ADDITIONAL="Release6_FixedBugs.h"/>
+        <FILE FILENAME="Chart_Themes.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Themes" FORMNAME="ChartThemes" DESIGNCLASS="" ADDITIONAL="Chart_Themes.h"/>
+        <FILE FILENAME="Chart_Palettes.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Chart_Palettes" FORMNAME="CustomPalettes" DESIGNCLASS="" ADDITIONAL="Chart_Palettes.h"/>
+        <FILE FILENAME="Axis_LabelsAlternate.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_LabelsAlternate" FORMNAME="AlternateAxisLabels" DESIGNCLASS="" ADDITIONAL="Axis_LabelsAlternate.h"/>
+        <FILE FILENAME="Axis_DepthTop.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_DepthTop" FORMNAME="DepthTopAxisForm" DESIGNCLASS="" ADDITIONAL="Axis_DepthTop.h"/>
+        <FILE FILENAME="Legend_Title.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_Title" FORMNAME="LegendTitleForm" DESIGNCLASS="" ADDITIONAL="Legend_Title.h"/>
+        <FILE FILENAME="Bar_TickLines.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bar_TickLines" FORMNAME="BarTickLines" DESIGNCLASS="" ADDITIONAL="Bar_TickLines.h"/>
+        <FILE FILENAME="Marks_Symbols.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Marks_Symbols" FORMNAME="MarkSymbols" DESIGNCLASS="" ADDITIONAL="Marks_Symbols.h"/>
+        <FILE FILENAME="Pie_ShadowEllipse.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pie_ShadowEllipse" FORMNAME="PieShadowEllipse" DESIGNCLASS="" ADDITIONAL="Pie_ShadowEllipse.h"/>
+        <FILE FILENAME="Tool_Lighting.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_Lighting" FORMNAME="LightToolForm" DESIGNCLASS="" ADDITIONAL="Tool_Lighting.h"/>
+        <FILE FILENAME="Tool_SurfaceNearest.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_SurfaceNearest" FORMNAME="SurfaceNearestForm" DESIGNCLASS="" ADDITIONAL="Tool_SurfaceNearest.h"/>
+        <FILE FILENAME="ChartListBox_Radio.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartListBox_Radio" FORMNAME="ChartListBoxRadio" DESIGNCLASS="" ADDITIONAL="ChartListBox_Radio.h"/>
+        <FILE FILENAME="ChartListBox_Editor.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartListBox_Editor" FORMNAME="ChartListBoxEditor" DESIGNCLASS="" ADDITIONAL="ChartListBox_Editor.h"/>
+        <FILE FILENAME="Commander_CustomEditor.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Commander_CustomEditor" FORMNAME="CommanderCustomEditor" DESIGNCLASS="" ADDITIONAL="Commander_CustomEditor.h"/>
+        <FILE FILENAME="Gallery_Smooth.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Gallery_Smooth" FORMNAME="GallerySmooth" DESIGNCLASS="" ADDITIONAL="Gallery_Smooth.h"/>
+        <FILE FILENAME="Function_Mode.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Mode" FORMNAME="ModeFunctionDemo" DESIGNCLASS="" ADDITIONAL="Function_Mode.h"/>
+        <FILE FILENAME="Function_Median.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Median" FORMNAME="MedianFunctionDemo" DESIGNCLASS="" ADDITIONAL="Function_Median.h"/>
+        <FILE FILENAME="Function_Correlation.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Correlation" FORMNAME="CorrelationFunctionDemo" DESIGNCLASS="" ADDITIONAL="Function_Correlation.h"/>
+        <FILE FILENAME="Function_Variance.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Variance" FORMNAME="VarianceDemo" DESIGNCLASS="" ADDITIONAL="Function_Variance.h"/>
+        <FILE FILENAME="Function_Perimeter.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_Perimeter" FORMNAME="PerimeterDemo" DESIGNCLASS="" ADDITIONAL="Function_Perimeter.h"/>
+        <FILE FILENAME="Series_Bubble3D.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Bubble3D" FORMNAME="Bubble3DSeriesForm" DESIGNCLASS="" ADDITIONAL="Series_Bubble3D.h"/>
+        <FILE FILENAME="Series_HorizHisto.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_HorizHisto" FORMNAME="HorizHistoForm" DESIGNCLASS="" ADDITIONAL="Series_HorizHisto.h"/>
+        <FILE FILENAME="Export_SVG.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Export_SVG" FORMNAME="SVGExportForm" DESIGNCLASS="" ADDITIONAL="Export_SVG.h"/>
+        <FILE FILENAME="Pie_Gradient.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pie_Gradient" FORMNAME="PieGradientForm" DESIGNCLASS="" ADDITIONAL="Pie_Gradient.h"/>
+        <FILE FILENAME="Point3D_BaseLine.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Point3D_BaseLine" FORMNAME="Point3DBaseLine" DESIGNCLASS="" ADDITIONAL="Point3D_BaseLine.h"/>
+        <FILE FILENAME="ColorBand_Clicked.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorBand_Clicked" FORMNAME="ColorBandClicked" DESIGNCLASS="" ADDITIONAL="ColorBand_Clicked.h"/>
+        <FILE FILENAME="Canvas_SmoothStretch.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Canvas_SmoothStretch" FORMNAME="CanvasSmoothStretch" DESIGNCLASS="" ADDITIONAL="Canvas_SmoothStretch.h"/>
+        <FILE FILENAME="Release7_Misc.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release7_Misc" FORMNAME="MiscVersion7" DESIGNCLASS="" ADDITIONAL="Release7_Misc.h"/>
+        <FILE FILENAME="Release7_FixedBugs.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Release7_FixedBugs" FORMNAME="Release7Fixed" DESIGNCLASS="" ADDITIONAL="Release7_FixedBugs.h"/>
+        <FILE FILENAME="Gallery_Alternate.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Gallery_Alternate" FORMNAME="GalleryAlternate" DESIGNCLASS="" ADDITIONAL="Gallery_Alternate.h"/>
+        <FILE FILENAME="Axis_Isometric.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_Isometric" FORMNAME="IsometricAxis" DESIGNCLASS="" ADDITIONAL="Axis_Isometric.h"/>
+        <FILE FILENAME="Axes_DrawBevels.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axes_DrawBevels" FORMNAME="BeveledAxes" DESIGNCLASS="" ADDITIONAL="Axes_DrawBevels.h"/>
+        <FILE FILENAME="Axis_FirstLastLabels.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_FirstLastLabels" FORMNAME="FirstLastLabels" DESIGNCLASS="" ADDITIONAL="Axis_FirstLastLabels.h"/>
+        <FILE FILENAME="Axis_DepthDateTime.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Axis_DepthDateTime" FORMNAME="DepthAxisDateTime" DESIGNCLASS="" ADDITIONAL="Axis_DepthDateTime.h"/>
+        <FILE FILENAME="Legend_Scrollbar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_Scrollbar" FORMNAME="LegendScrollBarDemo" DESIGNCLASS="" ADDITIONAL="Legend_Scrollbar.h"/>
+        <FILE FILENAME="Legend_SymbolFlags.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Legend_SymbolFlags" FORMNAME="LegendSymbolDraw" DESIGNCLASS="" ADDITIONAL="Legend_SymbolFlags.h"/>
+        <FILE FILENAME="Bar_3DDepth.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Bar_3DDepth" FORMNAME="Bar3DDepth" DESIGNCLASS="" ADDITIONAL="Bar_3DDepth.h"/>
+        <FILE FILENAME="Pie_SliceHeights.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Pie_SliceHeights" FORMNAME="PieSliceHeights" DESIGNCLASS="" ADDITIONAL="Pie_SliceHeights.h"/>
+        <FILE FILENAME="Candle_HighLowPen.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Candle_HighLowPen" FORMNAME="CandleHighLowPen" DESIGNCLASS="" ADDITIONAL="Candle_HighLowPen.h"/>
+        <FILE FILENAME="Surface_FastBrush.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_FastBrush" FORMNAME="SurfaceFastBrush" DESIGNCLASS="" ADDITIONAL="Surface_FastBrush.h"/>
+        <FILE FILENAME="Surface_Smoothing.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Surface_Smoothing" FORMNAME="SurfaceSmoothing" DESIGNCLASS="" ADDITIONAL="Surface_Smoothing.h"/>
+        <FILE FILENAME="Contour_Foot.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Contour_Foot" FORMNAME="ContourFoot" DESIGNCLASS="" ADDITIONAL="Contour_Foot.h"/>
+        <FILE FILENAME="ColorGrid_Realtime.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ColorGrid_Realtime" FORMNAME="ColorGridRealtime" DESIGNCLASS="" ADDITIONAL="ColorGrid_Realtime.h"/>
+        <FILE FILENAME="Wall_AutoHide.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Wall_AutoHide" FORMNAME="WallAutoHide" DESIGNCLASS="" ADDITIONAL="Wall_AutoHide.h"/>
+        <FILE FILENAME="Tool_AxisScroll.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Tool_AxisScroll" FORMNAME="AxisScrollToolDemo" DESIGNCLASS="" ADDITIONAL="Tool_AxisScroll.h"/>
+        <FILE FILENAME="Function_DownSampling.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Function_DownSampling" FORMNAME="DownSampling" DESIGNCLASS="" ADDITIONAL="Function_DownSampling.h"/>
+        <FILE FILENAME="Series_PolarBar.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_PolarBar" FORMNAME="PolarBarForm" DESIGNCLASS="" ADDITIONAL="Series_PolarBar.h"/>
+        <FILE FILENAME="Polar_Smooth.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Polar_Smooth" FORMNAME="PolarSmoothForm" DESIGNCLASS="" ADDITIONAL="Polar_Smooth.h"/>
+        <FILE FILENAME="Series_Groups.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Series_Groups" FORMNAME="SeriesGroupsForm" DESIGNCLASS="" ADDITIONAL="Series_Groups.h"/>
+        <FILE FILENAME="Editor_Formatting.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Editor_Formatting" FORMNAME="FormatEditorDemo" DESIGNCLASS="" ADDITIONAL="Editor_Formatting.h"/>
+        <FILE FILENAME="ChartEditor_3DGallery.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChartEditor_3DGallery" FORMNAME="Gallery3DForm" DESIGNCLASS="" ADDITIONAL="ChartEditor_3DGallery.h"/>
+        <FILE FILENAME="DesignTime_Options.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DesignTime_Options" FORMNAME="DesignTimeOptions" DESIGNCLASS="" ADDITIONAL="DesignTime_Options.h"/>
+      </FILELIST>
+      <IDEOPTIONS>
+        <VersionInfo>
+          <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+          <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+          <VersionInfo Name="MajorVer">9</VersionInfo>
+          <VersionInfo Name="MinorVer">0</VersionInfo>
+          <VersionInfo Name="Release">0</VersionInfo>
+          <VersionInfo Name="Build">0</VersionInfo>
+          <VersionInfo Name="Debug">False</VersionInfo>
+          <VersionInfo Name="PreRelease">False</VersionInfo>
+          <VersionInfo Name="Special">False</VersionInfo>
+          <VersionInfo Name="Private">False</VersionInfo>
+          <VersionInfo Name="DLL">False</VersionInfo>
+          <VersionInfo Name="Locale">1033</VersionInfo>
+          <VersionInfo Name="CodePage">1252</VersionInfo>
+        </VersionInfo>
+        <VersionInfoKeys>
+          <VersionInfoKeys Name="CompanyName">Steema Software</VersionInfoKeys>
+          <VersionInfoKeys Name="FileDescription">TeeChart Pro 9 Examples</VersionInfoKeys>
+          <VersionInfoKeys Name="FileVersion">9.0.0.0</VersionInfoKeys>
+          <VersionInfoKeys Name="InternalName">Tee9New</VersionInfoKeys>
+          <VersionInfoKeys Name="LegalCopyright">Copyright (c) 2003-2010 by Steema Software</VersionInfoKeys>
+          <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+          <VersionInfoKeys Name="OriginalFilename">Tee9New.exe</VersionInfoKeys>
+          <VersionInfoKeys Name="ProductName">TeeChart Pro</VersionInfoKeys>
+          <VersionInfoKeys Name="ProductVersion">9.0</VersionInfoKeys>
+          <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+        </VersionInfoKeys>
+        <Debugging>
+          <Debugging Name="DebugSourceDirs"></Debugging>
+        </Debugging>
+        <Parameters>
+          <Parameters Name="RunParams"></Parameters>
+          <Parameters Name="Launcher"></Parameters>
+          <Parameters Name="UseLauncher">False</Parameters>
+          <Parameters Name="DebugCWD"></Parameters>
+          <Parameters Name="HostApplication"></Parameters>
+          <Parameters Name="RemoteHost"></Parameters>
+          <Parameters Name="RemotePath"></Parameters>
+          <Parameters Name="RemoteParams"></Parameters>
+          <Parameters Name="RemoteLauncher"></Parameters>
+          <Parameters Name="UseRemoteLauncher">False</Parameters>
+          <Parameters Name="RemoteCWD"></Parameters>
+          <Parameters Name="RemoteDebug">False</Parameters>
+          <Parameters Name="Debug Symbols Search Path"></Parameters>
+          <Parameters Name="LoadAllSymbols">True</Parameters>
+          <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+        </Parameters>
+        <Language>
+          <Language Name="ActiveLang"></Language>
+          <Language Name="ProjectLang">$00000000</Language>
+          <Language Name="RootDir"></Language>
+        </Language>
+        <Excluded_Packages>
+          <Excluded_Packages Name="e:\program files\borland\bds\4.0\Bin\dcltee110.bpl">TeeChart Components</Excluded_Packages>
+        </Excluded_Packages>
+        <Linker>
+          <Linker Name="LibPrefix"></Linker>
+          <Linker Name="LibSuffix"></Linker>
+          <Linker Name="LibVersion"></Linker>
+        </Linker>
+      </IDEOPTIONS>
+    </BCBPROJECT>
+		<Source>
+			<Source Name="MainSource">Tee9New.cpp</Source>
+		</Source>
+		<buildevents/>
+	</CPlusPlusBuilder.Personality>
+</BorlandProject>

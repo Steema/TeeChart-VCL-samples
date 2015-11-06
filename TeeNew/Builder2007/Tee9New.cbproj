@@ -1,0 +1,2658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{592c550b-0983-4da0-b26d-8d090692a14b}</ProjectGuid>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <MainSource>Tee9New.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Debug Build</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Debug Build' or '$(Cfg_1)'!=''">
+    <Base>true</Base>
+    <Cfg_1>true</Cfg_1>
+    <CfgParent>Base</CfgParent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Release Build' or '$(Cfg_2)'!=''">
+    <Base>true</Base>
+    <Cfg_2>true</Cfg_2>
+    <CfgParent>Base</CfgParent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <OutputExt>exe</OutputExt>
+    <DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
+    <BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+    <DynamicRTL>true</DynamicRTL>
+    <BCC_InstructionSet>5</BCC_InstructionSet>
+    <OptPCH>"vcl.h"="vcl4.h"</OptPCH>
+    <ILINK_AppType>Windows</ILINK_AppType>
+    <DCC_DebugInformation>false</DCC_DebugInformation>
+    <ILINK_ObjectSearchPath>..\..\..\Sources9\Compiled\Delphi11\Lib\Obj;..\..\..\Sources8</ILINK_ObjectSearchPath>
+    <BCC_GenerateWindowsApp>true</BCC_GenerateWindowsApp>
+    <BCC_ZeroLengthEmptyMemberFuncs>true</BCC_ZeroLengthEmptyMemberFuncs>
+    <FinalOutputDir>.</FinalOutputDir>
+    <PackageImports>rtl.bpi;vcl.bpi;vclx.bpi;bcbsmp.bpi;dbrtl.bpi;vcldb.bpi;bdertl.bpi;vcldbx.bpi;vcljpg.bpi;vclie.bpi;inetdb.bpi;inet.bpi;bcbie.bpi;Tee911.bpi;TeeUI911.bpi;TeeDB911.bpi;TeeGL911.bpi;TeePro911.bpi;TeeImage911.bpi;TeeLanguage911.bpi;vclimg.bpi</PackageImports>
+    <TASM_AdditionalSwitches> /w2</TASM_AdditionalSwitches>
+    <BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+    <DCC_UnitSearchPath>.\;$(BDS)\lib;$(BDS)\lib\obj</DCC_UnitSearchPath>
+    <BRCC_UserSuppliedOptions> -I$(TEEINCPATH);$(BDS)\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;$(BDS)\include\dinkumware</BRCC_UserSuppliedOptions>
+    <BCC_GenerateMultithreaded>true</BCC_GenerateMultithreaded>
+    <PackageLibs>vclactnband.lib;xmlrtl.lib;adortl.lib;TeeWorld911.lib</PackageLibs>
+    <BCC_PCHCache>true</BCC_PCHCache>
+    <IncludePath>..\..\..\Sources8</IncludePath>
+    <BCC_IntegerSizedEnums>false</BCC_IntegerSizedEnums>
+    <DCC_IncludePath>.\;$(BDS)\lib;$(BDS)\lib\obj</DCC_IncludePath>
+    <BRCC_IncludePath>$(TEEINCPATH);$(BDS)\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;$(BDS)\include\dinkumware</BRCC_IncludePath>
+    <AllPackageLibs>vcl.lib;rtl.lib;vclx.lib;bcbie.lib;Tee911.lib;TeePro911.lib;TeeUI911.lib;dbrtl.lib;TeeGL911.lib;bdertl.lib;TeeDB911.lib;vcldb.lib;TeeLanguage911.lib;TeeImage911.lib;vclactnband.lib;xmlrtl.lib;adortl.lib;TeeWorld911.lib</AllPackageLibs>
+    <TASM_IncludePath>$(TEEINCPATH);$(BDS)\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;$(BDS)\include\dinkumware</TASM_IncludePath>
+    <BCC_IncludePath>$(TEEINCPATH);$(BDS)\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;$(BDS)\include\dinkumware</BCC_IncludePath>
+    <ILINK_LibraryPath>$(TEELIBPATH);$(BDS)\Projects;$(BDS)\Lib;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;..\..\..\Sources9\Compiled\Delphi11\Lib\Obj;..\..\..\Sources9</ILINK_LibraryPath>
+    <BCC_ZeroLengthEmptyBaseClass>true</BCC_ZeroLengthEmptyBaseClass>
+    <BCC_InternalDefines>NO_STRICT</BCC_InternalDefines>
+    <Multithreaded>true</Multithreaded>
+    <TASM_Debugging>None</TASM_Debugging>
+    <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Cfg_1)'!=''">
+    <DCC_Optimize>false</DCC_Optimize>
+    <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+    <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+    <ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+    <BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+    <ILINK_DisableIncrementalLinking>true</ILINK_DisableIncrementalLinking>
+    <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+    <DCC_DebugInformation>true</DCC_DebugInformation>
+    <BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+    <IntermediateOutputDir>Debug_Build</IntermediateOutputDir>
+    <TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+    <BCC_StackFrames>true</BCC_StackFrames>
+    <IncludePath>..\..\..\Sources9;$(TEEINCPATH);..\..\..\Sources9\Compiled\Delphi11\include;$(IncludePath)</IncludePath>
+    <ILINK_LibraryPath>$(BDS)\lib\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+    <BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+    <BCC_Defines>_DEBUG;$(BCC_Defines)</BCC_Defines>
+    <TASM_Debugging>Full</TASM_Debugging>
+    <BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Cfg_2)'!=''">
+    <IntermediateOutputDir>Release_Build</IntermediateOutputDir>
+    <ILINK_LibraryPath>$(BDS)\lib\release;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+    <BCC_Defines>NDEBUG;$(BCC_Defines)</BCC_Defines>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><CPlusPlusBuilder.Personality><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">7</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Steema Software</VersionInfoKeys><VersionInfoKeys Name="FileDescription">TeeChart Pro 7 Examples</VersionInfoKeys><VersionInfoKeys Name="FileVersion">7.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName">Tee7New</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">2003 by Steema Software</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">Tee7New.exe</VersionInfoKeys><VersionInfoKeys Name="ProductName">TeeChart Pro</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">7.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Debugging><Debugging Name="DebugSourceDirs"></Debugging></Debugging><Parameters><Parameters Name="RunParams"></Parameters><Parameters Name="Launcher"></Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="DebugCWD"></Parameters><Parameters Name="HostApplication"></Parameters><Parameters Name="RemoteHost"></Parameters><Parameters Name="RemotePath"></Parameters><Parameters Name="RemoteParams"></Parameters><Parameters Name="RemoteLauncher"></Parameters><Parameters Name="UseRemoteLauncher">False</Parameters><Parameters Name="RemoteCWD"></Parameters><Parameters Name="RemoteDebug">False</Parameters><Parameters Name="Debug Symbols Search Path"></Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="$(BDS)\bin\bcboffice2k100.bpl">CodeGear C++Builder Office 2000 Servers Package</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\bcbofficexp100.bpl">CodeGear C++Builder Office XP Servers Package</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+      <Excluded_Packages Name="c:\root\TeeChartVCL\Sources8\..\..\TeeTreeVCL\Sources9\Compiled\Delphi11\Bin\DclTree2D11Tee8.bpl">TeeTree 2 Components</Excluded_Packages>
+    </Excluded_Packages><Linker><Linker Name="LibPrefix"></Linker><Linker Name="LibSuffix"></Linker><Linker Name="LibVersion"></Linker></Linker><Source><Source Name="MainSource">Tee9New.cpp</Source></Source><ProjectProperties><ProjectProperties Name="AutoShowDeps">False</ProjectProperties><ProjectProperties Name="ManagePaths">True</ProjectProperties><ProjectProperties Name="VerifyPackages">True</ProjectProperties></ProjectProperties><HistoryLists_hlFinalOutputDir><HistoryLists_hlFinalOutputDir Name="Count">1</HistoryLists_hlFinalOutputDir><HistoryLists_hlFinalOutputDir Name="Item0">.</HistoryLists_hlFinalOutputDir></HistoryLists_hlFinalOutputDir><HistoryLists_hlILINK_LibraryPath><HistoryLists_hlILINK_LibraryPath Name="Count">1</HistoryLists_hlILINK_LibraryPath><HistoryLists_hlILINK_LibraryPath Name="Item0">$(BDS)\lib\debug;$(TEELIBPATH);$(BDS)\Projects;$(BDS)\Lib;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;..\..\..\Sources9\Compiled\Delphi11\Lib\Obj;..\..\..\Sources9</HistoryLists_hlILINK_LibraryPath></HistoryLists_hlILINK_LibraryPath><HistoryLists_hlIntermediateOutputDir><HistoryLists_hlIntermediateOutputDir Name="Count">1</HistoryLists_hlIntermediateOutputDir><HistoryLists_hlIntermediateOutputDir Name="Item0">Debug_Build</HistoryLists_hlIntermediateOutputDir></HistoryLists_hlIntermediateOutputDir><HistoryLists_hlBCC_MaxIdentifierLength><HistoryLists_hlBCC_MaxIdentifierLength Name="Count">1</HistoryLists_hlBCC_MaxIdentifierLength><HistoryLists_hlBCC_MaxIdentifierLength Name="Item0">250</HistoryLists_hlBCC_MaxIdentifierLength></HistoryLists_hlBCC_MaxIdentifierLength><HistoryLists_hlBCC_IncludePath><HistoryLists_hlBCC_IncludePath Name="Count">1</HistoryLists_hlBCC_IncludePath><HistoryLists_hlBCC_IncludePath Name="Item0">$(TEEINCPATH);$(BDS)\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;$(BDS)\include\dinkumware</HistoryLists_hlBCC_IncludePath></HistoryLists_hlBCC_IncludePath><HistoryLists_hlBCC_Defines><HistoryLists_hlBCC_Defines Name="Count">1</HistoryLists_hlBCC_Defines><HistoryLists_hlBCC_Defines Name="Item0">_DEBUG</HistoryLists_hlBCC_Defines></HistoryLists_hlBCC_Defines><HistoryLists_hlILINK_MaxErrors><HistoryLists_hlILINK_MaxErrors Name="Count">1</HistoryLists_hlILINK_MaxErrors><HistoryLists_hlILINK_MaxErrors Name="Item0">0</HistoryLists_hlILINK_MaxErrors></HistoryLists_hlILINK_MaxErrors><HistoryLists_hlILINK_FileAlignment><HistoryLists_hlILINK_FileAlignment Name="Count">1</HistoryLists_hlILINK_FileAlignment><HistoryLists_hlILINK_FileAlignment Name="Item0">0x200</HistoryLists_hlILINK_FileAlignment></HistoryLists_hlILINK_FileAlignment><HistoryLists_hlILINK_ObjectAlignment><HistoryLists_hlILINK_ObjectAlignment Name="Count">1</HistoryLists_hlILINK_ObjectAlignment><HistoryLists_hlILINK_ObjectAlignment Name="Item0">4096</HistoryLists_hlILINK_ObjectAlignment></HistoryLists_hlILINK_ObjectAlignment><HistoryLists_hlILINK_BaseAddress><HistoryLists_hlILINK_BaseAddress Name="Count">1</HistoryLists_hlILINK_BaseAddress><HistoryLists_hlILINK_BaseAddress Name="Item0">0x00400000</HistoryLists_hlILINK_BaseAddress></HistoryLists_hlILINK_BaseAddress><HistoryLists_hlILINK_HeapCommitSize><HistoryLists_hlILINK_HeapCommitSize Name="Count">1</HistoryLists_hlILINK_HeapCommitSize><HistoryLists_hlILINK_HeapCommitSize Name="Item0">0x00001000</HistoryLists_hlILINK_HeapCommitSize></HistoryLists_hlILINK_HeapCommitSize><HistoryLists_hlILINK_HeapReserveSize><HistoryLists_hlILINK_HeapReserveSize Name="Count">1</HistoryLists_hlILINK_HeapReserveSize><HistoryLists_hlILINK_HeapReserveSize Name="Item0">0x00100000</HistoryLists_hlILINK_HeapReserveSize></HistoryLists_hlILINK_HeapReserveSize><HistoryLists_hlILINK_StackCommitSize><HistoryLists_hlILINK_StackCommitSize Name="Count">1</HistoryLists_hlILINK_StackCommitSize><HistoryLists_hlILINK_StackCommitSize Name="Item0">0x00002000</HistoryLists_hlILINK_StackCommitSize></HistoryLists_hlILINK_StackCommitSize><HistoryLists_hlILINK_StackReserveSize><HistoryLists_hlILINK_StackReserveSize Name="Count">1</HistoryLists_hlILINK_StackReserveSize><HistoryLists_hlILINK_StackReserveSize Name="Item0">0x00100000</HistoryLists_hlILINK_StackReserveSize></HistoryLists_hlILINK_StackReserveSize><HistoryLists_hlDCC_IncludePath><HistoryLists_hlDCC_IncludePath Name="Count">1</HistoryLists_hlDCC_IncludePath><HistoryLists_hlDCC_IncludePath Name="Item0">.\;$(BDS)\lib;$(BDS)\lib\obj</HistoryLists_hlDCC_IncludePath></HistoryLists_hlDCC_IncludePath><HistoryLists_hlDCC_Define><HistoryLists_hlDCC_Define Name="Count">1</HistoryLists_hlDCC_Define><HistoryLists_hlDCC_Define Name="Item0">DEBUG</HistoryLists_hlDCC_Define></HistoryLists_hlDCC_Define><HistoryLists_hlDCC_CodePage><HistoryLists_hlDCC_CodePage Name="Count">1</HistoryLists_hlDCC_CodePage><HistoryLists_hlDCC_CodePage Name="Item0">0</HistoryLists_hlDCC_CodePage></HistoryLists_hlDCC_CodePage><HistoryLists_hlBRCC_IncludePath><HistoryLists_hlBRCC_IncludePath Name="Count">1</HistoryLists_hlBRCC_IncludePath><HistoryLists_hlBRCC_IncludePath Name="Item0">$(TEEINCPATH);$(BDS)\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;$(BDS)\include\dinkumware</HistoryLists_hlBRCC_IncludePath></HistoryLists_hlBRCC_IncludePath><HistoryLists_hlTASM_IncludePath><HistoryLists_hlTASM_IncludePath Name="Count">1</HistoryLists_hlTASM_IncludePath><HistoryLists_hlTASM_IncludePath Name="Item0">$(TEEINCPATH);$(BDS)\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\Lib\obj;$(BDS)\include\dinkumware</HistoryLists_hlTASM_IncludePath></HistoryLists_hlTASM_IncludePath><HistoryLists_hlTASM_HashTableCapacity><HistoryLists_hlTASM_HashTableCapacity Name="Count">1</HistoryLists_hlTASM_HashTableCapacity><HistoryLists_hlTASM_HashTableCapacity Name="Item0">8192</HistoryLists_hlTASM_HashTableCapacity></HistoryLists_hlTASM_HashTableCapacity><HistoryLists_hlTASM_MaxSymbolLength><HistoryLists_hlTASM_MaxSymbolLength Name="Count">1</HistoryLists_hlTASM_MaxSymbolLength><HistoryLists_hlTASM_MaxSymbolLength Name="Item0">12</HistoryLists_hlTASM_MaxSymbolLength></HistoryLists_hlTASM_MaxSymbolLength><HistoryLists_hlTASM_Passes><HistoryLists_hlTASM_Passes Name="Count">1</HistoryLists_hlTASM_Passes><HistoryLists_hlTASM_Passes Name="Item0">1</HistoryLists_hlTASM_Passes></HistoryLists_hlTASM_Passes><HistoryLists_hlTASM_VersionId><HistoryLists_hlTASM_VersionId Name="Count">1</HistoryLists_hlTASM_VersionId><HistoryLists_hlTASM_VersionId Name="Item0">0</HistoryLists_hlTASM_VersionId></HistoryLists_hlTASM_VersionId><HistoryLists_hlIncludePath><HistoryLists_hlIncludePath Name="Count">3</HistoryLists_hlIncludePath><HistoryLists_hlIncludePath Name="Item0">..\..\..\Sources9;$(TEEINCPATH);..\..\..\Sources9\Compiled\Delphi11\include</HistoryLists_hlIncludePath>  <HistoryLists_hlIncludePath Name="Item1">..\..\..\Sources9;$(TEEINCPATH);..\..\..\Sources8</HistoryLists_hlIncludePath>
+      <HistoryLists_hlIncludePath Name="Item2">..\..\..\Sources9</HistoryLists_hlIncludePath>
+    </HistoryLists_hlIncludePath></CPlusPlusBuilder.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Cpp.Targets" />
+  <ItemGroup>
+    <CppCompile Include="Area_Gradient.cpp">
+      <Form>AreaGradient</Form>
+      <DependentOn>Area_Gradient.h</DependentOn>
+      <BuildOrder>289</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Area_Origin.cpp">
+      <Form>AreaOriginForm</Form>
+      <DependentOn>Area_Origin.h</DependentOn>
+      <BuildOrder>6</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Area_Stairs.cpp">
+      <Form>AreaStairsForm</Form>
+      <DependentOn>Area_Stairs.h</DependentOn>
+      <BuildOrder>10</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Area_Transparency.cpp">
+      <Form>AreaTransparency</Form>
+      <DependentOn>Area_Transparency.h</DependentOn>
+      <BuildOrder>262</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Assign_Picture.cpp">
+      <Form>AssignPicture</Form>
+      <DependentOn>Assign_Picture.h</DependentOn>
+      <BuildOrder>15</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axes_DrawBevels.cpp">
+      <Form>BeveledAxes</Form>
+      <DependentOn>Axes_DrawBevels.h</DependentOn>
+      <BuildOrder>402</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axes_GridBands.cpp">
+      <Form>AxesGridBands</Form>
+      <DependentOn>Axes_GridBands.h</DependentOn>
+      <BuildOrder>348</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axes_LabelsFormat.cpp">
+      <Form>AxesLabelsFormat</Form>
+      <DependentOn>Axes_LabelsFormat.h</DependentOn>
+      <BuildOrder>306</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axes_Offsets.cpp">
+      <Form>AxesOffsets</Form>
+      <DependentOn>Axes_Offsets.h</DependentOn>
+      <BuildOrder>304</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axes_ZPosition.cpp">
+      <Form>AxesZPosition</Form>
+      <DependentOn>Axes_ZPosition.h</DependentOn>
+      <BuildOrder>303</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="AxisTitle_Visible.cpp">
+      <Form>AxisTitleVisible</Form>
+      <DependentOn>AxisTitle_Visible.h</DependentOn>
+      <BuildOrder>27</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_Behind.cpp">
+      <Form>AxisBehind</Form>
+      <DependentOn>Axis_Behind.h</DependentOn>
+      <BuildOrder>25</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_Custom.cpp">
+      <Form>AxisCustom</Form>
+      <DependentOn>Axis_Custom.h</DependentOn>
+      <BuildOrder>26</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_DepthDateTime.cpp">
+      <Form>DepthAxisDateTime</Form>
+      <DependentOn>Axis_DepthDateTime.h</DependentOn>
+      <BuildOrder>404</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_DepthTop.cpp">
+      <Form>DepthTopAxisForm</Form>
+      <DependentOn>Axis_DepthTop.h</DependentOn>
+      <BuildOrder>375</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_Exponent.cpp">
+      <Form>AxisLabelExp</Form>
+      <DependentOn>Axis_Exponent.h</DependentOn>
+      <BuildOrder>29</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_FirstLastLabels.cpp">
+      <Form>FirstLastLabels</Form>
+      <DependentOn>Axis_FirstLastLabels.h</DependentOn>
+      <BuildOrder>403</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_Isometric.cpp">
+      <Form>IsometricAxis</Form>
+      <DependentOn>Axis_Isometric.h</DependentOn>
+      <BuildOrder>401</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_Items.cpp">
+      <Form>AxisItemsDemo</Form>
+      <DependentOn>Axis_Items.h</DependentOn>
+      <BuildOrder>305</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_LabelAlign.cpp">
+      <Form>AxisLabelAlignForm</Form>
+      <DependentOn>Axis_LabelAlign.h</DependentOn>
+      <BuildOrder>30</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_LabelsAlternate.cpp">
+      <Form>AlternateAxisLabels</Form>
+      <DependentOn>Axis_LabelsAlternate.h</DependentOn>
+      <BuildOrder>374</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_LabelsFormat.cpp">
+      <Form>AxisLabelsFormat</Form>
+      <DependentOn>Axis_LabelsFormat.h</DependentOn>
+      <BuildOrder>307</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_Millisec.cpp">
+      <Form>AxisMillisec</Form>
+      <DependentOn>Axis_Millisec.h</DependentOn>
+      <BuildOrder>28</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_MinorGrid.cpp">
+      <Form>AxisMinorGrid</Form>
+      <DependentOn>Axis_MinorGrid.h</DependentOn>
+      <BuildOrder>31</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_MultiRuntime.cpp">
+      <Form>AxisMultiRuntime</Form>
+      <DependentOn>Axis_MultiRuntime.h</DependentOn>
+      <BuildOrder>40</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_MultiScroll.cpp">
+      <Form>MultiAxisScroll</Form>
+      <DependentOn>Axis_MultiScroll.h</DependentOn>
+      <BuildOrder>39</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Axis_OpaqueZone.cpp">
+      <Form>AxisOpaqueZone</Form>
+      <DependentOn>Axis_OpaqueZone.h</DependentOn>
+      <BuildOrder>38</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="BackWall_Gradient.cpp">
+      <Form>BackWallGradient</Form>
+      <DependentOn>BackWall_Gradient.h</DependentOn>
+      <BuildOrder>19</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="BackWall_Image.cpp">
+      <Form>BackWallImage</Form>
+      <DependentOn>BackWall_Image.h</DependentOn>
+      <BuildOrder>20</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="BarJoin_Series.cpp">
+      <Form>BarJoinForm</Form>
+      <DependentOn>BarJoin_Series.h</DependentOn>
+      <BuildOrder>161</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bar_3DDepth.cpp">
+      <Form>Bar3DDepth</Form>
+      <DependentOn>Bar_3DDepth.h</DependentOn>
+      <BuildOrder>407</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bar_Cylinder.cpp">
+      <Form>BarCylinderForm</Form>
+      <DependentOn>Bar_Cylinder.h</DependentOn>
+      <BuildOrder>143</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bar_Gradient.cpp">
+      <Form>BarGradient</Form>
+      <DependentOn>Bar_Gradient.h</DependentOn>
+      <BuildOrder>77</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bar_Image.cpp">
+      <Form>BarImage</Form>
+      <DependentOn>Bar_Image.h</DependentOn>
+      <BuildOrder>76</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bar_SelfStack.cpp">
+      <Form>BarSelfStack</Form>
+      <DependentOn>Bar_SelfStack.h</DependentOn>
+      <BuildOrder>326</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bar_SideAll.cpp">
+      <Form>BarSideAll</Form>
+      <DependentOn>Bar_SideAll.h</DependentOn>
+      <BuildOrder>73</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bar_StackGroup.cpp">
+      <Form>BarStackGroup</Form>
+      <DependentOn>Bar_StackGroup.h</DependentOn>
+      <BuildOrder>74</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bar_TickLines.cpp">
+      <Form>BarTickLines</Form>
+      <DependentOn>Bar_TickLines.h</DependentOn>
+      <BuildOrder>377</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Base.cpp">
+      <Form>BaseForm</Form>
+      <DependentOn>Base.h</DependentOn>
+      <BuildOrder>4</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Base_CustomPos.cpp">
+      <Form>BaseCustomPos</Form>
+      <DependentOn>Base_CustomPos.h</DependentOn>
+      <BuildOrder>8</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Base_DBChart.cpp">
+      <Form>BaseDBChart</Form>
+      <DependentOn>Base_DBChart.h</DependentOn>
+      <BuildOrder>9</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Basic_Features.cpp">
+      <Form>BasicFeatures</Form>
+      <DependentOn>Basic_Features.h</DependentOn>
+      <BuildOrder>192</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="BoxPlot_Series.cpp">
+      <Form>BoxPlotForm</Form>
+      <DependentOn>BoxPlot_Series.h</DependentOn>
+      <BuildOrder>155</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="BoxSeries_CustomValues.cpp">
+      <Form>BoxCustomForm</Form>
+      <DependentOn>BoxSeries_CustomValues.h</DependentOn>
+      <BuildOrder>327</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Brush_Styles.cpp">
+      <Form>BrushStyleForm</Form>
+      <DependentOn>Brush_Styles.h</DependentOn>
+      <BuildOrder>13</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bubble_Gradient.cpp">
+      <Form>BubbleGradient</Form>
+      <DependentOn>Bubble_Gradient.h</DependentOn>
+      <BuildOrder>328</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Bubble_Transparency.cpp">
+      <Form>BubbleTransparency</Form>
+      <DependentOn>Bubble_Transparency.h</DependentOn>
+      <BuildOrder>329</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Calendar_Buttons.cpp">
+      <Form>CalendarButtons</Form>
+      <DependentOn>Calendar_Buttons.h</DependentOn>
+      <BuildOrder>274</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Candle_AxisLabels.cpp">
+      <Form>CandleAxisLabels</Form>
+      <DependentOn>Candle_AxisLabels.h</DependentOn>
+      <BuildOrder>80</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Candle_CustomColors.cpp">
+      <Form>CandleCustomColors</Form>
+      <DependentOn>Candle_CustomColors.h</DependentOn>
+      <BuildOrder>78</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Candle_HighLowPen.cpp">
+      <Form>CandleHighLowPen</Form>
+      <DependentOn>Candle_HighLowPen.h</DependentOn>
+      <BuildOrder>409</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Candle_OnGetPointer.cpp">
+      <Form>CandleOnGetPointer</Form>
+      <DependentOn>Candle_OnGetPointer.h</DependentOn>
+      <BuildOrder>278</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Candle_OpenClose.cpp">
+      <Form>CandleOpenClose</Form>
+      <DependentOn>Candle_OpenClose.h</DependentOn>
+      <BuildOrder>79</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_180Rotation.cpp">
+      <Form>Canvas180Rotation</Form>
+      <DependentOn>Canvas_180Rotation.h</DependentOn>
+      <BuildOrder>308</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_AntiAlias.cpp">
+      <Form>CanvasAntiAlias</Form>
+      <DependentOn>Canvas_AntiAlias.h</DependentOn>
+      <BuildOrder>310</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_Cone.cpp">
+      <Form>ConesForm</Form>
+      <DependentOn>Canvas_Cone.h</DependentOn>
+      <BuildOrder>14</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_DotPen.cpp">
+      <Form>CanvasDotPen</Form>
+      <DependentOn>Canvas_DotPen.h</DependentOn>
+      <BuildOrder>12</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_GrayScale.cpp">
+      <Form>GrayScaleForm</Form>
+      <DependentOn>Canvas_GrayScale.h</DependentOn>
+      <BuildOrder>41</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_OrthoAngle.cpp">
+      <Form>OrthoAngle</Form>
+      <DependentOn>Canvas_OrthoAngle.h</DependentOn>
+      <BuildOrder>5</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_PyramidTrunc.cpp">
+      <Form>TruncPyramidForm</Form>
+      <DependentOn>Canvas_PyramidTrunc.h</DependentOn>
+      <BuildOrder>16</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_RotatedEllipse.cpp">
+      <Form>CanvasRotatedEllipse</Form>
+      <DependentOn>Canvas_RotatedEllipse.h</DependentOn>
+      <BuildOrder>311</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_RotCenter.cpp">
+      <Form>RotationCenter</Form>
+      <DependentOn>Canvas_RotCenter.h</DependentOn>
+      <BuildOrder>11</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_SmoothStretch.cpp">
+      <Form>CanvasSmoothStretch</Form>
+      <DependentOn>Canvas_SmoothStretch.h</DependentOn>
+      <BuildOrder>397</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Canvas_Transparency.cpp">
+      <Form>TransparencyForm</Form>
+      <DependentOn>Canvas_Transparency.h</DependentOn>
+      <BuildOrder>17</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Changes_Misc.cpp">
+      <Form>ChangesMisc</Form>
+      <DependentOn>Changes_Misc.h</DependentOn>
+      <BuildOrder>116</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Changes_Package.cpp">
+      <Form>ChangesPackage</Form>
+      <DependentOn>Changes_Package.h</DependentOn>
+      <BuildOrder>115</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartEditor_3DGallery.cpp">
+      <Form>Gallery3DForm</Form>
+      <DependentOn>ChartEditor_3DGallery.h</DependentOn>
+      <BuildOrder>421</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartEditor_Dialog.cpp">
+      <Form>ChartEditorForm</Form>
+      <DependentOn>ChartEditor_Dialog.h</DependentOn>
+      <BuildOrder>184</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartEditor_HideDataSets.cpp">
+      <Form>ChartEditorHideDataSets</Form>
+      <DependentOn>ChartEditor_HideDataSets.h</DependentOn>
+      <BuildOrder>342</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartEditor_PageNum.cpp">
+      <Form>ChartEditorPageNum</Form>
+      <DependentOn>ChartEditor_PageNum.h</DependentOn>
+      <BuildOrder>281</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartEditor_Runtime.cpp">
+      <Form>ChartEditorRuntime</Form>
+      <DependentOn>ChartEditor_Runtime.h</DependentOn>
+      <BuildOrder>247</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartGrid_Colors.cpp">
+      <Form>ChartGridColors</Form>
+      <DependentOn>ChartGrid_Colors.h</DependentOn>
+      <BuildOrder>270</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartGrid_Grid3D.cpp">
+      <Form>ChartGrid3D</Form>
+      <DependentOn>ChartGrid_Grid3D.h</DependentOn>
+      <BuildOrder>344</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartImage_Demo.cpp">
+      <Form>ChartImageForm</Form>
+      <DependentOn>ChartImage_Demo.h</DependentOn>
+      <BuildOrder>293</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartListBox_Demo.cpp">
+      <Form>ListBoxForm</Form>
+      <DependentOn>ChartListBox_Demo.h</DependentOn>
+      <BuildOrder>248</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartListBox_Editor.cpp">
+      <Form>ChartListBoxEditor</Form>
+      <DependentOn>ChartListBox_Editor.h</DependentOn>
+      <BuildOrder>383</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ChartListBox_Radio.cpp">
+      <Form>ChartListBoxRadio</Form>
+      <DependentOn>ChartListBox_Radio.h</DependentOn>
+      <BuildOrder>382</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Actions.cpp">
+      <Form>ChartActionsForm</Form>
+      <DependentOn>Chart_Actions.h</DependentOn>
+      <BuildOrder>172</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Axes.cpp">
+      <Form>ChartAxesForm</Form>
+      <DependentOn>Chart_Axes.h</DependentOn>
+      <BuildOrder>255</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Clipboard.cpp">
+      <Form>ChartClipboard</Form>
+      <DependentOn>Chart_Clipboard.h</DependentOn>
+      <BuildOrder>259</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Commander.cpp">
+      <Form>TeeCommanderForm</Form>
+      <DependentOn>Chart_Commander.h</DependentOn>
+      <BuildOrder>185</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_EditorPanel.cpp">
+      <Form>ChartEditorPanelForm</Form>
+      <DependentOn>Chart_EditorPanel.h</DependentOn>
+      <BuildOrder>134</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_FreeAllSeries.cpp">
+      <Form>FreeAllSeriesForm</Form>
+      <DependentOn>Chart_FreeAllSeries.h</DependentOn>
+      <BuildOrder>108</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Gallery.cpp">
+      <Form>ChartGallery</Form>
+      <DependentOn>Chart_Gallery.h</DependentOn>
+      <BuildOrder>111</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Grid.cpp">
+      <Form>ChartGridForm</Form>
+      <DependentOn>Chart_Grid.h</DependentOn>
+      <BuildOrder>133</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_ListBox.cpp">
+      <Form>ChartListBoxForm</Form>
+      <DependentOn>Chart_ListBox.h</DependentOn>
+      <BuildOrder>186</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_MultiClipboard.cpp">
+      <Form>ChartMultiClipboard</Form>
+      <DependentOn>Chart_MultiClipboard.h</DependentOn>
+      <BuildOrder>260</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_MultiLanguage.cpp">
+      <Form>ChartMultiLanguage</Form>
+      <DependentOn>Chart_MultiLanguage.h</DependentOn>
+      <BuildOrder>277</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_OnBeforeDraw.cpp">
+      <Form>ChartBeforeDraw</Form>
+      <DependentOn>Chart_OnBeforeDraw.h</DependentOn>
+      <BuildOrder>42</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Other.cpp">
+      <Form>ChartOther</Form>
+      <DependentOn>Chart_Other.h</DependentOn>
+      <BuildOrder>212</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_PageNavigator.cpp">
+      <Form>PageNavigatorForm</Form>
+      <DependentOn>Chart_PageNavigator.h</DependentOn>
+      <BuildOrder>136</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Palettes.cpp">
+      <Form>CustomPalettes</Form>
+      <DependentOn>Chart_Palettes.h</DependentOn>
+      <BuildOrder>373</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_PrintPreview.cpp">
+      <Form>ChartPrintPreviewForm</Form>
+      <DependentOn>Chart_PrintPreview.h</DependentOn>
+      <BuildOrder>250</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_RoundPanel.cpp">
+      <Form>ChartRoundPanel</Form>
+      <DependentOn>Chart_RoundPanel.h</DependentOn>
+      <BuildOrder>317</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_ScrollBar.cpp">
+      <Form>ChartScrollBarForm</Form>
+      <DependentOn>Chart_ScrollBar.h</DependentOn>
+      <BuildOrder>251</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Shadow.cpp">
+      <Form>ChartShadow</Form>
+      <DependentOn>Chart_Shadow.h</DependentOn>
+      <BuildOrder>316</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_SubGallery.cpp">
+      <Form>ChartSubGallery</Form>
+      <DependentOn>Chart_SubGallery.h</DependentOn>
+      <BuildOrder>112</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_SubTitles.cpp">
+      <Form>SubTitles</Form>
+      <DependentOn>Chart_SubTitles.h</DependentOn>
+      <BuildOrder>21</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Themes.cpp">
+      <Form>ChartThemes</Form>
+      <DependentOn>Chart_Themes.h</DependentOn>
+      <BuildOrder>372</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_Transparent.cpp">
+      <Form>ChartTransparent</Form>
+      <DependentOn>Chart_Transparent.h</DependentOn>
+      <BuildOrder>169</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Chart_WebSource.cpp">
+      <Form>ChartWebSourceForm</Form>
+      <DependentOn>Chart_WebSource.h</DependentOn>
+      <BuildOrder>137</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Circled_Gradient.cpp">
+      <Form>CircledGradient</Form>
+      <DependentOn>Circled_Gradient.h</DependentOn>
+      <BuildOrder>337</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Clock_Editors.cpp">
+      <Form>ClockEdi</Form>
+      <DependentOn>Clock_Editors.h</DependentOn>
+      <BuildOrder>110</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorBand_Clicked.cpp">
+      <Form>ColorBandClicked</Form>
+      <DependentOn>ColorBand_Clicked.h</DependentOn>
+      <BuildOrder>396</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorBand_Transparent.cpp">
+      <Form>ColorBandTransp</Form>
+      <DependentOn>ColorBand_Transparent.h</DependentOn>
+      <BuildOrder>126</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorGrid_Bitmap.cpp">
+      <Form>ColorGridBitmap</Form>
+      <DependentOn>ColorGrid_Bitmap.h</DependentOn>
+      <BuildOrder>331</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorGrid_Clicked.cpp">
+      <Form>ColorGridClicked</Form>
+      <DependentOn>ColorGrid_Clicked.h</DependentOn>
+      <BuildOrder>273</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorGrid_Marks.cpp">
+      <Form>ColorGridMarks</Form>
+      <DependentOn>ColorGrid_Marks.h</DependentOn>
+      <BuildOrder>330</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorGrid_Realtime.cpp">
+      <Form>ColorGridRealtime</Form>
+      <DependentOn>ColorGrid_Realtime.h</DependentOn>
+      <BuildOrder>413</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorGrid_Series.cpp">
+      <Form>ColorGrid</Form>
+      <DependentOn>ColorGrid_Series.h</DependentOn>
+      <BuildOrder>157</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorGrid_Transparent.cpp">
+      <Form>ColorGridTransparent</Form>
+      <DependentOn>ColorGrid_Transparent.h</DependentOn>
+      <BuildOrder>158</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorLine_DragRepaint.cpp">
+      <Form>ColorLineDragRepaint</Form>
+      <DependentOn>ColorLine_DragRepaint.h</DependentOn>
+      <BuildOrder>269</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorLine_Draw3D.cpp">
+      <Form>ColorLine3D</Form>
+      <DependentOn>ColorLine_Draw3D.h</DependentOn>
+      <BuildOrder>319</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ColorRange_Bug.cpp">
+      <Form>ColorRangeBug</Form>
+      <DependentOn>ColorRange_Bug.h</DependentOn>
+      <BuildOrder>142</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ComboFlat_Demo.cpp">
+      <Form>ComboFlatForm</Form>
+      <DependentOn>ComboFlat_Demo.h</DependentOn>
+      <BuildOrder>291</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Commander_Custom.cpp">
+      <Form>CommanderCustom</Form>
+      <DependentOn>Commander_Custom.h</DependentOn>
+      <BuildOrder>276</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Commander_CustomEditor.cpp">
+      <Form>CommanderCustomEditor</Form>
+      <DependentOn>Commander_CustomEditor.h</DependentOn>
+      <BuildOrder>384</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Contour_Foot.cpp">
+      <Form>ContourFoot</Form>
+      <DependentOn>Contour_Foot.h</DependentOn>
+      <BuildOrder>412</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Contour_Levels.cpp">
+      <Form>ContourLevelsForm</Form>
+      <DependentOn>Contour_Levels.h</DependentOn>
+      <BuildOrder>82</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Contour_OnBeforeDraw.cpp">
+      <Form>ContourOnBefore</Form>
+      <DependentOn>Contour_OnBeforeDraw.h</DependentOn>
+      <BuildOrder>333</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Contour_Palette.cpp">
+      <Form>ContourPaletteForm</Form>
+      <DependentOn>Contour_Palette.h</DependentOn>
+      <BuildOrder>84</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Contour_SmoothSegments.cpp">
+      <Form>ContourSmooth</Form>
+      <DependentOn>Contour_SmoothSegments.h</DependentOn>
+      <BuildOrder>332</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Contour_View2D.cpp">
+      <Form>ContourView2D</Form>
+      <DependentOn>Contour_View2D.h</DependentOn>
+      <BuildOrder>83</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="CurveFitting_Coef.cpp">
+      <Form>CurveFittingCoef</Form>
+      <DependentOn>CurveFitting_Coef.h</DependentOn>
+      <BuildOrder>239</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="CurveFitting_Dynamic.cpp">
+      <Form>DynamicTrend</Form>
+      <DependentOn>CurveFitting_Dynamic.h</DependentOn>
+      <BuildOrder>240</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Customers.cpp">
+      <Form>TeeCustomers</Form>
+      <DependentOn>Customers.h</DependentOn>
+      <BuildOrder>211</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_AnyDataSet.cpp">
+      <Form>DBChartAny</Form>
+      <DependentOn>DBChart_AnyDataSet.h</DependentOn>
+      <BuildOrder>220</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_CrossTab.cpp">
+      <Form>DBChartCrossTab</Form>
+      <DependentOn>DBChart_CrossTab.h</DependentOn>
+      <BuildOrder>223</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_CrossTabSource.cpp">
+      <Form>DBCrossTabSourceDemo</Form>
+      <DependentOn>DBChart_CrossTabSource.h</DependentOn>
+      <BuildOrder>352</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_LocateRecord.cpp">
+      <Form>DBChartRecordLocate</Form>
+      <DependentOn>DBChart_LocateRecord.h</DependentOn>
+      <BuildOrder>60</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_MasterDetail.cpp">
+      <Form>LinkedTablesForm</Form>
+      <DependentOn>DBChart_MasterDetail.h</DependentOn>
+      <BuildOrder>222</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_Order.cpp">
+      <Form>DBChartOrder</Form>
+      <DependentOn>DBChart_Order.h</DependentOn>
+      <BuildOrder>59</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_SingleRecord.cpp">
+      <Form>DBChartSingleRecord</Form>
+      <DependentOn>DBChart_SingleRecord.h</DependentOn>
+      <BuildOrder>221</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_Speed.cpp">
+      <Form>DBChartSpeed</Form>
+      <DependentOn>DBChart_Speed.h</DependentOn>
+      <BuildOrder>57</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_Summary.cpp">
+      <Form>DBChartSummary</Form>
+      <DependentOn>DBChart_Summary.h</DependentOn>
+      <BuildOrder>58</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DBChart_SummaryOrder.cpp">
+      <Form>DBSummaryOrder</Form>
+      <DependentOn>DBChart_SummaryOrder.h</DependentOn>
+      <BuildOrder>318</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DesignTime_Options.cpp">
+      <Form>DesignTimeOptions</Form>
+      <DependentOn>DesignTime_Options.h</DependentOn>
+      <BuildOrder>422</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Donut_Series.cpp">
+      <Form>DonutSeriesForm</Form>
+      <DependentOn>Donut_Series.h</DependentOn>
+      <BuildOrder>153</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Drag_Bars.cpp">
+      <Form>DragBarForm</Form>
+      <DependentOn>Drag_Bars.h</DependentOn>
+      <BuildOrder>258</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Draw3D_Canvas.cpp">
+      <Form>Draw3DCanvas</Form>
+      <DependentOn>Draw3D_Canvas.h</DependentOn>
+      <BuildOrder>249</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="DrawLine_Style.cpp">
+      <Form>DrawLineStyleForm</Form>
+      <DependentOn>DrawLine_Style.h</DependentOn>
+      <BuildOrder>294</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Editor_Color.cpp">
+      <Form>EditorColor</Form>
+      <DependentOn>Editor_Color.h</DependentOn>
+      <BuildOrder>170</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Editor_Formatting.cpp">
+      <Form>FormatEditorDemo</Form>
+      <DependentOn>Editor_Formatting.h</DependentOn>
+      <BuildOrder>420</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ErrorBar_Negative.cpp">
+      <Form>ErrorBarNegativeForm</Form>
+      <DependentOn>ErrorBar_Negative.h</DependentOn>
+      <BuildOrder>85</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Exponential_Trend.cpp">
+      <Form>ExponentialTrendForm</Form>
+      <DependentOn>Exponential_Trend.h</DependentOn>
+      <BuildOrder>144</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_Charts.cpp">
+      <Form>ExportChartsForm</Form>
+      <DependentOn>Export_Charts.h</DependentOn>
+      <BuildOrder>173</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_Email.cpp">
+      <Form>ExportEmailForm</Form>
+      <DependentOn>Export_Email.h</DependentOn>
+      <BuildOrder>182</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_Excel.cpp">
+      <Form>ExportExcelForm</Form>
+      <DependentOn>Export_Excel.h</DependentOn>
+      <BuildOrder>177</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_GIF.cpp">
+      <Form>GIFExportForm</Form>
+      <DependentOn>Export_GIF.h</DependentOn>
+      <BuildOrder>178</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_HTML.cpp">
+      <Form>ExportHTMLForm</Form>
+      <DependentOn>Export_HTML.h</DependentOn>
+      <BuildOrder>175</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_JPEG.cpp">
+      <Form>JPEGExportForm</Form>
+      <DependentOn>Export_JPEG.h</DependentOn>
+      <BuildOrder>179</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_Metafile.cpp">
+      <Form>MetafileForm</Form>
+      <DependentOn>Export_Metafile.h</DependentOn>
+      <BuildOrder>227</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_PCX.cpp">
+      <Form>PCXExportForm</Form>
+      <DependentOn>Export_PCX.h</DependentOn>
+      <BuildOrder>181</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_PDF.cpp">
+      <Form>PDFExportForm</Form>
+      <DependentOn>Export_PDF.h</DependentOn>
+      <BuildOrder>367</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_PNG.cpp">
+      <Form>PNGExportForm</Form>
+      <DependentOn>Export_PNG.h</DependentOn>
+      <BuildOrder>180</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_SVG.cpp">
+      <Form>SVGExportForm</Form>
+      <DependentOn>Export_SVG.h</DependentOn>
+      <BuildOrder>393</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_Text.cpp">
+      <Form>ExportTextForm</Form>
+      <DependentOn>Export_Text.h</DependentOn>
+      <BuildOrder>174</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_VML.cpp">
+      <Form>ExportVMLForm</Form>
+      <DependentOn>Export_VML.h</DependentOn>
+      <BuildOrder>275</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Export_XML.cpp">
+      <Form>ExportXMLForm</Form>
+      <DependentOn>Export_XML.h</DependentOn>
+      <BuildOrder>176</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="FastLine_DrawAll.cpp">
+      <Form>FastLineDrawAll</Form>
+      <DependentOn>FastLine_DrawAll.h</DependentOn>
+      <BuildOrder>280</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="FastLine_Nulls.cpp">
+      <Form>FastLineNulls</Form>
+      <DependentOn>FastLine_Nulls.h</DependentOn>
+      <BuildOrder>334</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="FastLine_Realtime.cpp">
+      <Form>FastDeleteRealtime</Form>
+      <DependentOn>FastLine_Realtime.h</DependentOn>
+      <BuildOrder>297</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Font_Gradient.cpp">
+      <Form>FontGradient</Form>
+      <DependentOn>Font_Gradient.h</DependentOn>
+      <BuildOrder>290</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="FourCharts.cpp">
+      <Form>FourChartsForm</Form>
+      <DependentOn>FourCharts.h</DependentOn>
+      <BuildOrder>226</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Add.cpp">
+      <Form>FunctionAddForm</Form>
+      <DependentOn>Function_Add.h</DependentOn>
+      <BuildOrder>232</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_ADX.cpp">
+      <Form>ADXFunctionForm</Form>
+      <DependentOn>Function_ADX.h</DependentOn>
+      <BuildOrder>152</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Average.cpp">
+      <Form>AverageForm</Form>
+      <DependentOn>Function_Average.h</DependentOn>
+      <BuildOrder>235</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_AverageNulls.cpp">
+      <Form>AverageFunctionNulls</Form>
+      <DependentOn>Function_AverageNulls.h</DependentOn>
+      <BuildOrder>63</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Bollinger.cpp">
+      <Form>BollingerForm</Form>
+      <DependentOn>Function_Bollinger.h</DependentOn>
+      <BuildOrder>151</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_CCI.cpp">
+      <Form>CCIFuncDemo</Form>
+      <DependentOn>Function_CCI.h</DependentOn>
+      <BuildOrder>359</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_CLV.cpp">
+      <Form>CLVFuncDemo</Form>
+      <DependentOn>Function_CLV.h</DependentOn>
+      <BuildOrder>357</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Compression.cpp">
+      <Form>CompressionDemo</Form>
+      <DependentOn>Function_Compression.h</DependentOn>
+      <BuildOrder>355</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Correlation.cpp">
+      <Form>CorrelationFunctionDemo</Form>
+      <DependentOn>Function_Correlation.h</DependentOn>
+      <BuildOrder>388</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Count.cpp">
+      <Form>CountForm</Form>
+      <DependentOn>Function_Count.h</DependentOn>
+      <BuildOrder>231</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_CrossPoints.cpp">
+      <Form>CrossPointsDemo</Form>
+      <DependentOn>Function_CrossPoints.h</DependentOn>
+      <BuildOrder>356</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Cumulative.cpp">
+      <Form>CumulativeForm</Form>
+      <DependentOn>Function_Cumulative.h</DependentOn>
+      <BuildOrder>242</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_CurveFitting.cpp">
+      <Form>CurveFittingForm</Form>
+      <DependentOn>Function_CurveFitting.h</DependentOn>
+      <BuildOrder>238</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Custom.cpp">
+      <Form>CustomFunctionDemo</Form>
+      <DependentOn>Function_Custom.h</DependentOn>
+      <BuildOrder>354</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Divide.cpp">
+      <Form>DivideForm</Form>
+      <DependentOn>Function_Divide.h</DependentOn>
+      <BuildOrder>234</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_DownSampling.cpp">
+      <Form>DownSampling</Form>
+      <DependentOn>Function_DownSampling.h</DependentOn>
+      <BuildOrder>416</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_ExpAve.cpp">
+      <Form>ExpAveForm</Form>
+      <DependentOn>Function_ExpAve.h</DependentOn>
+      <BuildOrder>236</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_ExpMovAve.cpp">
+      <Form>ExpMovAveForm</Form>
+      <DependentOn>Function_ExpMovAve.h</DependentOn>
+      <BuildOrder>149</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_High.cpp">
+      <Form>HighForm</Form>
+      <DependentOn>Function_High.h</DependentOn>
+      <BuildOrder>229</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Low.cpp">
+      <Form>LowForm</Form>
+      <DependentOn>Function_Low.h</DependentOn>
+      <BuildOrder>230</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Median.cpp">
+      <Form>MedianFunctionDemo</Form>
+      <DependentOn>Function_Median.h</DependentOn>
+      <BuildOrder>387</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Mode.cpp">
+      <Form>ModeFunctionDemo</Form>
+      <DependentOn>Function_Mode.h</DependentOn>
+      <BuildOrder>386</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Momentum.cpp">
+      <Form>MomentumForm</Form>
+      <DependentOn>Function_Momentum.h</DependentOn>
+      <BuildOrder>245</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_MovAve.cpp">
+      <Form>MovAveFunctionForm</Form>
+      <DependentOn>Function_MovAve.h</DependentOn>
+      <BuildOrder>243</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_MovAveWeighted.cpp">
+      <Form>MovAveWeightedForm</Form>
+      <DependentOn>Function_MovAveWeighted.h</DependentOn>
+      <BuildOrder>61</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Multiply.cpp">
+      <Form>MultiplyForm</Form>
+      <DependentOn>Function_Multiply.h</DependentOn>
+      <BuildOrder>233</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_OBV.cpp">
+      <Form>OBVFuncDemo</Form>
+      <DependentOn>Function_OBV.h</DependentOn>
+      <BuildOrder>358</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Performance.cpp">
+      <Form>PerfFuncDemo</Form>
+      <DependentOn>Function_Performance.h</DependentOn>
+      <BuildOrder>361</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Perimeter.cpp">
+      <Form>PerimeterDemo</Form>
+      <DependentOn>Function_Perimeter.h</DependentOn>
+      <BuildOrder>390</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_PVO.cpp">
+      <Form>PVOFuncdemo</Form>
+      <DependentOn>Function_PVO.h</DependentOn>
+      <BuildOrder>360</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_RootMeanSq.cpp">
+      <Form>RootMeanSqForm</Form>
+      <DependentOn>Function_RootMeanSq.h</DependentOn>
+      <BuildOrder>150</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_RSI.cpp">
+      <Form>RSIFunctionForm</Form>
+      <DependentOn>Function_RSI.h</DependentOn>
+      <BuildOrder>244</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Smoothing.cpp">
+      <Form>SmoothingFunctionDemo</Form>
+      <DependentOn>Function_Smoothing.h</DependentOn>
+      <BuildOrder>353</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_StdDeviation.cpp">
+      <Form>StdDeviationForm</Form>
+      <DependentOn>Function_StdDeviation.h</DependentOn>
+      <BuildOrder>237</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Subtract.cpp">
+      <Form>SubtractForm</Form>
+      <DependentOn>Function_Subtract.h</DependentOn>
+      <BuildOrder>228</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Trend.cpp">
+      <Form>TrendForm</Form>
+      <DependentOn>Function_Trend.h</DependentOn>
+      <BuildOrder>241</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Function_Variance.cpp">
+      <Form>VarianceDemo</Form>
+      <DependentOn>Function_Variance.h</DependentOn>
+      <BuildOrder>389</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Gallery_Alternate.cpp">
+      <Form>GalleryAlternate</Form>
+      <DependentOn>Gallery_Alternate.h</DependentOn>
+      <BuildOrder>400</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Gallery_Panel.cpp">
+      <Form>GalleryPanelForm</Form>
+      <DependentOn>Gallery_Panel.h</DependentOn>
+      <BuildOrder>135</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Gallery_Smooth.cpp">
+      <Form>GallerySmooth</Form>
+      <DependentOn>Gallery_Smooth.h</DependentOn>
+      <BuildOrder>385</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Gantt_MouseDrag.cpp">
+      <Form>GanttMouseForm</Form>
+      <DependentOn>Gantt_MouseDrag.h</DependentOn>
+      <BuildOrder>302</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Gradient_MidColor.cpp">
+      <Form>GradientMiddle</Form>
+      <DependentOn>Gradient_MidColor.h</DependentOn>
+      <BuildOrder>7</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Gradient_RadialCenter.cpp">
+      <Form>GradientRadial</Form>
+      <DependentOn>Gradient_RadialCenter.h</DependentOn>
+      <BuildOrder>309</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="GridToChart_Demo.cpp">
+      <Form>GridToChartDemo</Form>
+      <DependentOn>GridToChart_Demo.h</DependentOn>
+      <BuildOrder>369</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="HighLow_Series.cpp">
+      <Form>HighLowForm</Form>
+      <DependentOn>HighLow_Series.h</DependentOn>
+      <BuildOrder>162</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Histogram_Series.cpp">
+      <Form>HistogramForm</Form>
+      <DependentOn>Histogram_Series.h</DependentOn>
+      <BuildOrder>156</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Histogram_Transparency.cpp">
+      <Form>HistogramTransp</Form>
+      <DependentOn>Histogram_Transparency.h</DependentOn>
+      <BuildOrder>272</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="HorizLine_Series.cpp">
+      <Form>HorizLineForm</Form>
+      <DependentOn>HorizLine_Series.h</DependentOn>
+      <BuildOrder>160</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Inspector_Demo.cpp">
+      <Form>InspectorForm</Form>
+      <DependentOn>Inspector_Demo.h</DependentOn>
+      <BuildOrder>292</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Internet_Charts.cpp">
+      <Form>InternetCharts</Form>
+      <DependentOn>Internet_Charts.h</DependentOn>
+      <BuildOrder>254</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_AddText.cpp">
+      <Form>LegendAddText</Form>
+      <DependentOn>Legend_AddText.h</DependentOn>
+      <BuildOrder>49</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_CheckBox.cpp">
+      <Form>LegendCheckbox</Form>
+      <DependentOn>Legend_CheckBox.h</DependentOn>
+      <BuildOrder>34</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_CurrentPage.cpp">
+      <Form>LegendCurrentPage</Form>
+      <DependentOn>Legend_CurrentPage.h</DependentOn>
+      <BuildOrder>44</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_CustomPos.cpp">
+      <Form>LegendCustomPos</Form>
+      <DependentOn>Legend_CustomPos.h</DependentOn>
+      <BuildOrder>32</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_FontColor.cpp">
+      <Form>LegendFontColor</Form>
+      <DependentOn>Legend_FontColor.h</DependentOn>
+      <BuildOrder>45</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_GenFormat.cpp">
+      <Form>LegendGenFormat</Form>
+      <DependentOn>Legend_GenFormat.h</DependentOn>
+      <BuildOrder>46</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_Image.cpp">
+      <Form>LegendImage</Form>
+      <DependentOn>Legend_Image.h</DependentOn>
+      <BuildOrder>35</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_Multi.cpp">
+      <Form>MultiLegendForm</Form>
+      <DependentOn>Legend_Multi.h</DependentOn>
+      <BuildOrder>48</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_Scroll.cpp">
+      <Form>LegendScroll</Form>
+      <DependentOn>Legend_Scroll.h</DependentOn>
+      <BuildOrder>257</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_Scrollbar.cpp">
+      <Form>LegendScrollBarDemo</Form>
+      <DependentOn>Legend_Scrollbar.h</DependentOn>
+      <BuildOrder>405</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_Series.cpp">
+      <Form>LegendSeriesForm</Form>
+      <DependentOn>Legend_Series.h</DependentOn>
+      <BuildOrder>47</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_Symbol.cpp">
+      <Form>LegendSymbolForm</Form>
+      <DependentOn>Legend_Symbol.h</DependentOn>
+      <BuildOrder>37</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_SymbolBorder.cpp">
+      <Form>LegendSymbolBorder</Form>
+      <DependentOn>Legend_SymbolBorder.h</DependentOn>
+      <BuildOrder>313</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_SymbolFlags.cpp">
+      <Form>LegendSymbolDraw</Form>
+      <DependentOn>Legend_SymbolFlags.h</DependentOn>
+      <BuildOrder>406</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_TextStyle.cpp">
+      <Form>LegendStyleForm</Form>
+      <DependentOn>Legend_TextStyle.h</DependentOn>
+      <BuildOrder>43</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_Title.cpp">
+      <Form>LegendTitleForm</Form>
+      <DependentOn>Legend_Title.h</DependentOn>
+      <BuildOrder>376</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_VertSpa.cpp">
+      <Form>LegendVertSpa</Form>
+      <DependentOn>Legend_VertSpa.h</DependentOn>
+      <BuildOrder>36</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Legend_Widths.cpp">
+      <Form>LegendWidths</Form>
+      <DependentOn>Legend_Widths.h</DependentOn>
+      <BuildOrder>33</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Line_Clickable.cpp">
+      <Form>LineClickableForm</Form>
+      <DependentOn>Line_Clickable.h</DependentOn>
+      <BuildOrder>87</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Line_ColorEachLine.cpp">
+      <Form>LineColorEachLine</Form>
+      <DependentOn>Line_ColorEachLine.h</DependentOn>
+      <BuildOrder>89</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Line_Outline.cpp">
+      <Form>LineOutline</Form>
+      <DependentOn>Line_Outline.h</DependentOn>
+      <BuildOrder>263</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Line_Pattern.cpp">
+      <Form>LinePatternForm</Form>
+      <DependentOn>Line_Pattern.h</DependentOn>
+      <BuildOrder>88</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Line_Stack.cpp">
+      <Form>LineStack</Form>
+      <DependentOn>Line_Stack.h</DependentOn>
+      <BuildOrder>86</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="MACD_Function.cpp">
+      <Form>MACDForm</Form>
+      <DependentOn>MACD_Function.h</DependentOn>
+      <BuildOrder>146</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Main.cpp">
+      <Form>Tee8Form</Form>
+      <DependentOn>Main.h</DependentOn>
+      <BuildOrder>2</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Map_Series.cpp">
+      <Form>MapSeriesForm</Form>
+      <DependentOn>Map_Series.h</DependentOn>
+      <BuildOrder>166</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Margins_Units.cpp">
+      <Form>ChartMarginUnits</Form>
+      <DependentOn>Margins_Units.h</DependentOn>
+      <BuildOrder>315</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_Angle.cpp">
+      <Form>MarksAngle</Form>
+      <DependentOn>Marks_Angle.h</DependentOn>
+      <BuildOrder>65</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_Callout.cpp">
+      <Form>MarksCallouts</Form>
+      <DependentOn>Marks_Callout.h</DependentOn>
+      <BuildOrder>324</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_DrawEvery.cpp">
+      <Form>MarksEvery</Form>
+      <DependentOn>Marks_DrawEvery.h</DependentOn>
+      <BuildOrder>66</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_GenFormat.cpp">
+      <Form>MarksGenFormat</Form>
+      <DependentOn>Marks_GenFormat.h</DependentOn>
+      <BuildOrder>70</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_Multi.cpp">
+      <Form>MarksMulti</Form>
+      <DependentOn>Marks_Multi.h</DependentOn>
+      <BuildOrder>68</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_PerPoint.cpp">
+      <Form>MarksPerPoint</Form>
+      <DependentOn>Marks_PerPoint.h</DependentOn>
+      <BuildOrder>325</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_Positions.cpp">
+      <Form>MarksPositions</Form>
+      <DependentOn>Marks_Positions.h</DependentOn>
+      <BuildOrder>69</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_Shadow.cpp">
+      <Form>MarksShadow</Form>
+      <DependentOn>Marks_Shadow.h</DependentOn>
+      <BuildOrder>64</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_Symbols.cpp">
+      <Form>MarkSymbols</Form>
+      <DependentOn>Marks_Symbols.h</DependentOn>
+      <BuildOrder>378</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Marks_XYStyle.cpp">
+      <Form>MarksXYStyle</Form>
+      <DependentOn>Marks_XYStyle.h</DependentOn>
+      <BuildOrder>67</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="MarkTips_MouseDelay.cpp">
+      <Form>MarksTipMouseDelay</Form>
+      <DependentOn>MarkTips_MouseDelay.h</DependentOn>
+      <BuildOrder>282</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="MomentumDiv_Function.cpp">
+      <Form>MomentumDivForm</Form>
+      <DependentOn>MomentumDiv_Function.h</DependentOn>
+      <BuildOrder>145</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Mouse_Wheel.cpp">
+      <Form>MouseWheelForm</Form>
+      <DependentOn>Mouse_Wheel.h</DependentOn>
+      <BuildOrder>159</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="OpenGL_Canvas.cpp">
+      <Form>OpenGLCanvas</Form>
+      <DependentOn>OpenGL_Canvas.h</DependentOn>
+      <BuildOrder>190</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="OpenGL_Editor.cpp">
+      <Form>OpenGLEditorForm</Form>
+      <DependentOn>OpenGL_Editor.h</DependentOn>
+      <BuildOrder>187</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="OpenGL_Football.cpp">
+      <Form>OpenGLFootBall</Form>
+      <DependentOn>OpenGL_Football.h</DependentOn>
+      <BuildOrder>191</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="OpenGL_Surface.cpp">
+      <Form>OpenGLSurface</Form>
+      <DependentOn>OpenGL_Surface.h</DependentOn>
+      <BuildOrder>188</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="OpenGL_TriSurface.cpp">
+      <Form>OpenGLTriSurface</Form>
+      <DependentOn>OpenGL_TriSurface.h</DependentOn>
+      <BuildOrder>189</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Order_Info.cpp">
+      <Form>OrderInfo</Form>
+      <DependentOn>Order_Info.h</DependentOn>
+      <BuildOrder>113</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pie_AutoMarkPosition.cpp">
+      <Form>PieAutoMarkPos</Form>
+      <DependentOn>Pie_AutoMarkPosition.h</DependentOn>
+      <BuildOrder>335</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pie_Gradient.cpp">
+      <Form>PieGradientForm</Form>
+      <DependentOn>Pie_Gradient.h</DependentOn>
+      <BuildOrder>394</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pie_Multi.cpp">
+      <Form>PieMultiple</Form>
+      <DependentOn>Pie_Multi.h</DependentOn>
+      <BuildOrder>90</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pie_OtherLegend.cpp">
+      <Form>PieOtherLegend</Form>
+      <DependentOn>Pie_OtherLegend.h</DependentOn>
+      <BuildOrder>336</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pie_Semi.cpp">
+      <Form>PieSemi</Form>
+      <DependentOn>Pie_Semi.h</DependentOn>
+      <BuildOrder>91</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pie_Shadow.cpp">
+      <Form>PieShadowForm</Form>
+      <DependentOn>Pie_Shadow.h</DependentOn>
+      <BuildOrder>288</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pie_ShadowEllipse.cpp">
+      <Form>PieShadowEllipse</Form>
+      <DependentOn>Pie_ShadowEllipse.h</DependentOn>
+      <BuildOrder>379</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pie_SliceHeights.cpp">
+      <Form>PieSliceHeights</Form>
+      <DependentOn>Pie_SliceHeights.h</DependentOn>
+      <BuildOrder>408</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Point3D_BaseLine.cpp">
+      <Form>Point3DBaseLine</Form>
+      <DependentOn>Point3D_BaseLine.h</DependentOn>
+      <BuildOrder>395</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Point3D_Event.cpp">
+      <Form>Point3DEvent</Form>
+      <DependentOn>Point3D_Event.h</DependentOn>
+      <BuildOrder>94</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pointer_DrawCanvas.cpp">
+      <Form>PointerDrawCanvas</Form>
+      <DependentOn>Pointer_DrawCanvas.h</DependentOn>
+      <BuildOrder>92</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="PolarRadar_Transparency.cpp">
+      <Form>PolarRadarTransp</Form>
+      <DependentOn>PolarRadar_Transparency.h</DependentOn>
+      <BuildOrder>264</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Polar_ClockWise.cpp">
+      <Form>PolarClockWise</Form>
+      <DependentOn>Polar_ClockWise.h</DependentOn>
+      <BuildOrder>95</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Polar_LabelsInside.cpp">
+      <Form>PolarLabelsInside</Form>
+      <DependentOn>Polar_LabelsInside.h</DependentOn>
+      <BuildOrder>96</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Polar_Smooth.cpp">
+      <Form>PolarSmoothForm</Form>
+      <DependentOn>Polar_Smooth.h</DependentOn>
+      <BuildOrder>418</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Polar_Zones.cpp">
+      <Form>PolarZones</Form>
+      <DependentOn>Polar_Zones.h</DependentOn>
+      <BuildOrder>338</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="PostScript_Demo.cpp">
+      <Form>PostScriptForm</Form>
+      <DependentOn>PostScript_Demo.h</DependentOn>
+      <BuildOrder>301</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Preview_CustomDraw.cpp">
+      <Form>PreviewCustomDraw</Form>
+      <DependentOn>Preview_CustomDraw.h</DependentOn>
+      <BuildOrder>343</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Printing_Bugs.cpp">
+      <Form>PrintingBugsForm</Form>
+      <DependentOn>Printing_Bugs.h</DependentOn>
+      <BuildOrder>141</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="PrintPreview_Multi.cpp">
+      <Form>PrintPreviewMulti</Form>
+      <DependentOn>PrintPreview_Multi.h</DependentOn>
+      <BuildOrder>53</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="PrintPreview_Navigate.cpp">
+      <Form>PrintPreviewNavigate</Form>
+      <DependentOn>PrintPreview_Navigate.h</DependentOn>
+      <BuildOrder>52</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Print_Pages.cpp">
+      <Form>PrintPagesForm</Form>
+      <DependentOn>Print_Pages.h</DependentOn>
+      <BuildOrder>50</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Print_Preview.cpp">
+      <Form>PrintPreviewForm</Form>
+      <DependentOn>Print_Preview.h</DependentOn>
+      <BuildOrder>51</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Print_PreviewDialog.cpp">
+      <Form>PrintPreviewDialog</Form>
+      <DependentOn>Print_PreviewDialog.h</DependentOn>
+      <BuildOrder>225</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Property_Aliases.cpp">
+      <Form>PropertyAliases</Form>
+      <DependentOn>Property_Aliases.h</DependentOn>
+      <BuildOrder>368</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Pyramid_Series.cpp">
+      <Form>PyramidForm</Form>
+      <DependentOn>Pyramid_Series.h</DependentOn>
+      <BuildOrder>165</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="QualityControl.cpp">
+      <Form>FormQuality</Form>
+      <DependentOn>QualityControl.h</DependentOn>
+      <BuildOrder>246</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release501_FixedBugs.cpp">
+      <Form>Release501Fixed</Form>
+      <DependentOn>Release501_FixedBugs.h</DependentOn>
+      <BuildOrder>287</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release501_NewFeatures.cpp">
+      <Form>Release501Misc</Form>
+      <DependentOn>Release501_NewFeatures.h</DependentOn>
+      <BuildOrder>286</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release502_FixedBugs.cpp">
+      <Form>Release502Fixed</Form>
+      <DependentOn>Release502_FixedBugs.h</DependentOn>
+      <BuildOrder>284</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release502_NewFeatures.cpp">
+      <Form>Release502Misc</Form>
+      <DependentOn>Release502_NewFeatures.h</DependentOn>
+      <BuildOrder>283</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release503_FixedBugs.cpp">
+      <Form>Release503Fixed</Form>
+      <DependentOn>Release503_FixedBugs.h</DependentOn>
+      <BuildOrder>296</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release503_NewFeatures.cpp">
+      <Form>Release503Misc</Form>
+      <DependentOn>Release503_NewFeatures.h</DependentOn>
+      <BuildOrder>295</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release6_FixedBugs.cpp">
+      <Form>Release6Fixed</Form>
+      <DependentOn>Release6_FixedBugs.h</DependentOn>
+      <BuildOrder>371</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release6_Misc.cpp">
+      <Form>MiscVersion6</Form>
+      <DependentOn>Release6_Misc.h</DependentOn>
+      <BuildOrder>370</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release7_FixedBugs.cpp">
+      <Form>Release7Fixed</Form>
+      <DependentOn>Release7_FixedBugs.h</DependentOn>
+      <BuildOrder>399</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Release7_Misc.cpp">
+      <Form>MiscVersion7</Form>
+      <DependentOn>Release7_Misc.h</DependentOn>
+      <BuildOrder>398</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Removed_Properties.cpp">
+      <Form>RemovedProperties</Form>
+      <DependentOn>Removed_Properties.h</DependentOn>
+      <BuildOrder>114</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Reporting_Tools.cpp">
+      <Form>ChartReports</Form>
+      <DependentOn>Reporting_Tools.h</DependentOn>
+      <BuildOrder>210</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="RichText_Drawing.cpp">
+      <Form>RichTextDrawing</Form>
+      <DependentOn>RichText_Drawing.h</DependentOn>
+      <BuildOrder>312</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Right_Wall.cpp">
+      <Form>RightWallForm</Form>
+      <DependentOn>Right_Wall.h</DependentOn>
+      <BuildOrder>18</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="RSI_Function.cpp">
+      <Form>RSICalcForm</Form>
+      <DependentOn>RSI_Function.h</DependentOn>
+      <BuildOrder>62</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series3D_AddArray.cpp">
+      <Form>AddArray3D</Form>
+      <DependentOn>Series3D_AddArray.h</DependentOn>
+      <BuildOrder>340</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series3D_RangePalette.cpp">
+      <Form>Series3DRangePalette</Form>
+      <DependentOn>Series3D_RangePalette.h</DependentOn>
+      <BuildOrder>107</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Area.cpp">
+      <Form>AreaSeriesForm</Form>
+      <DependentOn>SeriesType_Area.h</DependentOn>
+      <BuildOrder>71</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Arrow.cpp">
+      <Form>ArrowSeriesForm</Form>
+      <DependentOn>SeriesType_Arrow.h</DependentOn>
+      <BuildOrder>200</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Bar.cpp">
+      <Form>BarSeriesForm</Form>
+      <DependentOn>SeriesType_Bar.h</DependentOn>
+      <BuildOrder>194</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Bezier.cpp">
+      <Form>BezierSeriesForm</Form>
+      <DependentOn>SeriesType_Bezier.h</DependentOn>
+      <BuildOrder>72</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Bubble.cpp">
+      <Form>BubbleSeriesForm</Form>
+      <DependentOn>SeriesType_Bubble.h</DependentOn>
+      <BuildOrder>199</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Candle.cpp">
+      <Form>CandleForm</Form>
+      <DependentOn>SeriesType_Candle.h</DependentOn>
+      <BuildOrder>203</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Clock.cpp">
+      <Form>ClockSeriesForm</Form>
+      <DependentOn>SeriesType_Clock.h</DependentOn>
+      <BuildOrder>213</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Contour.cpp">
+      <Form>ContourSeriesForm</Form>
+      <DependentOn>SeriesType_Contour.h</DependentOn>
+      <BuildOrder>81</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_FastLine.cpp">
+      <Form>FastLineForm</Form>
+      <DependentOn>SeriesType_FastLine.h</DependentOn>
+      <BuildOrder>196</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Gantt.cpp">
+      <Form>GanttSeriesForm</Form>
+      <DependentOn>SeriesType_Gantt.h</DependentOn>
+      <BuildOrder>201</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_HorizArea.cpp">
+      <Form>HorizAreaSeriesForm</Form>
+      <DependentOn>SeriesType_HorizArea.h</DependentOn>
+      <BuildOrder>362</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_HorizBar.cpp">
+      <Form>HorizBarSeriesForm</Form>
+      <DependentOn>SeriesType_HorizBar.h</DependentOn>
+      <BuildOrder>197</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Line.cpp">
+      <Form>LineSeriesForm</Form>
+      <DependentOn>SeriesType_Line.h</DependentOn>
+      <BuildOrder>193</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Pie.cpp">
+      <Form>PieSeriesForm</Form>
+      <DependentOn>SeriesType_Pie.h</DependentOn>
+      <BuildOrder>195</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Point.cpp">
+      <Form>PointSeriesForm</Form>
+      <DependentOn>SeriesType_Point.h</DependentOn>
+      <BuildOrder>198</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Point3D.cpp">
+      <Form>Point3DSeriesForm</Form>
+      <DependentOn>SeriesType_Point3D.h</DependentOn>
+      <BuildOrder>93</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Polar.cpp">
+      <Form>PolarForm</Form>
+      <DependentOn>SeriesType_Polar.h</DependentOn>
+      <BuildOrder>206</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Radar.cpp">
+      <Form>RadarForm</Form>
+      <DependentOn>SeriesType_Radar.h</DependentOn>
+      <BuildOrder>207</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Surface.cpp">
+      <Form>SurfaceSeriesForm</Form>
+      <DependentOn>SeriesType_Surface.h</DependentOn>
+      <BuildOrder>99</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Tower.cpp">
+      <Form>TowerSeriesForm</Form>
+      <DependentOn>SeriesType_Tower.h</DependentOn>
+      <BuildOrder>366</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="SeriesType_Volume.cpp">
+      <Form>VolumeForm</Form>
+      <DependentOn>SeriesType_Volume.h</DependentOn>
+      <BuildOrder>204</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Bar3D.cpp">
+      <Form>Bar3DForm</Form>
+      <DependentOn>Series_Bar3D.h</DependentOn>
+      <BuildOrder>214</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_BarNegativeStacked.cpp">
+      <Form>BarStackNegative</Form>
+      <DependentOn>Series_BarNegativeStacked.h</DependentOn>
+      <BuildOrder>75</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_BarSize.cpp">
+      <Form>BarSizeSeriesForm</Form>
+      <DependentOn>Series_BarSize.h</DependentOn>
+      <BuildOrder>299</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_BigCandle.cpp">
+      <Form>BigCandleForm</Form>
+      <DependentOn>Series_BigCandle.h</DependentOn>
+      <BuildOrder>219</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Bubble3D.cpp">
+      <Form>Bubble3DSeriesForm</Form>
+      <DependentOn>Series_Bubble3D.h</DependentOn>
+      <BuildOrder>391</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Calendar.cpp">
+      <Form>CalendarSeriesForm</Form>
+      <DependentOn>Series_Calendar.h</DependentOn>
+      <BuildOrder>167</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_DataSet.cpp">
+      <Form>SeriesDataSetForm</Form>
+      <DependentOn>Series_DataSet.h</DependentOn>
+      <BuildOrder>252</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_DeltaPoint.cpp">
+      <Form>DeltaPointForm</Form>
+      <DependentOn>Series_DeltaPoint.h</DependentOn>
+      <BuildOrder>218</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Depth.cpp">
+      <Form>SeriesDepth</Form>
+      <DependentOn>Series_Depth.h</DependentOn>
+      <BuildOrder>109</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Designer.cpp">
+      <Form>SeriesDesigner</Form>
+      <DependentOn>Series_Designer.h</DependentOn>
+      <BuildOrder>171</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Error.cpp">
+      <Form>ErrorSeriesForm</Form>
+      <DependentOn>Series_Error.h</DependentOn>
+      <BuildOrder>208</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Funnel.cpp">
+      <Form>FunnelSeriesForm</Form>
+      <DependentOn>Series_Funnel.h</DependentOn>
+      <BuildOrder>168</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Gauge.cpp">
+      <Form>GaugeDemo</Form>
+      <DependentOn>Series_Gauge.h</DependentOn>
+      <BuildOrder>364</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Groups.cpp">
+      <Form>SeriesGroupsForm</Form>
+      <DependentOn>Series_Groups.h</DependentOn>
+      <BuildOrder>419</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_HorizHisto.cpp">
+      <Form>HorizHistoForm</Form>
+      <DependentOn>Series_HorizHisto.h</DependentOn>
+      <BuildOrder>392</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_ImageBar.cpp">
+      <Form>ImageBarForm</Form>
+      <DependentOn>Series_ImageBar.h</DependentOn>
+      <BuildOrder>216</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_ImagePoint.cpp">
+      <Form>ImagePointForm</Form>
+      <DependentOn>Series_ImagePoint.h</DependentOn>
+      <BuildOrder>217</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_MouseEnter.cpp">
+      <Form>SeriesMouseEnter</Form>
+      <DependentOn>Series_MouseEnter.h</DependentOn>
+      <BuildOrder>322</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_MyPoint.cpp">
+      <Form>MyPointSeriesForm</Form>
+      <DependentOn>Series_MyPoint.h</DependentOn>
+      <BuildOrder>215</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_PointFigure.cpp">
+      <Form>PointFigureDemo</Form>
+      <DependentOn>Series_PointFigure.h</DependentOn>
+      <BuildOrder>363</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_PolarBar.cpp">
+      <Form>PolarBarForm</Form>
+      <DependentOn>Series_PolarBar.h</DependentOn>
+      <BuildOrder>417</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Shape.cpp">
+      <Form>ShapeSeriesForm</Form>
+      <DependentOn>Series_Shape.h</DependentOn>
+      <BuildOrder>202</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_SortLabels.cpp">
+      <Form>SeriesSortLabel</Form>
+      <DependentOn>Series_SortLabels.h</DependentOn>
+      <BuildOrder>323</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_TextSource.cpp">
+      <Form>SeriesTextSourceForm</Form>
+      <DependentOn>Series_TextSource.h</DependentOn>
+      <BuildOrder>138</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_ValueList.cpp">
+      <Form>DynArrays</Form>
+      <DependentOn>Series_ValueList.h</DependentOn>
+      <BuildOrder>120</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_Vector3D.cpp">
+      <Form>Vector3DSeriesForm</Form>
+      <DependentOn>Series_Vector3D.h</DependentOn>
+      <BuildOrder>365</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_XMLSource.cpp">
+      <Form>XMLSourceDemo</Form>
+      <DependentOn>Series_XMLSource.h</DependentOn>
+      <BuildOrder>350</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Series_XMLSourceWeb.cpp">
+      <Form>XMLSourceWeb</Form>
+      <DependentOn>Series_XMLSourceWeb.h</DependentOn>
+      <BuildOrder>351</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Shape_Image.cpp">
+      <Form>ShapeImage</Form>
+      <DependentOn>Shape_Image.h</DependentOn>
+      <BuildOrder>97</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Shape_VertAlign.cpp">
+      <Form>ShapeVertAlign</Form>
+      <DependentOn>Shape_VertAlign.h</DependentOn>
+      <BuildOrder>98</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Smith_Series.cpp">
+      <Form>SmithForm</Form>
+      <DependentOn>Smith_Series.h</DependentOn>
+      <BuildOrder>164</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Stochastic_Function.cpp">
+      <Form>StochasticForm</Form>
+      <DependentOn>Stochastic_Function.h</DependentOn>
+      <BuildOrder>148</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_FastBrush.cpp">
+      <Form>SurfaceFastBrush</Form>
+      <DependentOn>Surface_FastBrush.h</DependentOn>
+      <BuildOrder>410</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_Hole.cpp">
+      <Form>SurfaceHolesForm</Form>
+      <DependentOn>Surface_Hole.h</DependentOn>
+      <BuildOrder>205</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_Irregular.cpp">
+      <Form>SurfaceFloat</Form>
+      <DependentOn>Surface_Irregular.h</DependentOn>
+      <BuildOrder>102</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_Palette.cpp">
+      <Form>SurfacePaletteForm</Form>
+      <DependentOn>Surface_Palette.h</DependentOn>
+      <BuildOrder>105</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_Sides.cpp">
+      <Form>SurfaceSidesDemo</Form>
+      <DependentOn>Surface_Sides.h</DependentOn>
+      <BuildOrder>100</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_Smooth.cpp">
+      <Form>SurfaceSmooth</Form>
+      <DependentOn>Surface_Smooth.h</DependentOn>
+      <BuildOrder>101</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_Smoothing.cpp">
+      <Form>SurfaceSmoothing</Form>
+      <DependentOn>Surface_Smoothing.h</DependentOn>
+      <BuildOrder>411</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_Transparency.cpp">
+      <Form>SurfaceTransp</Form>
+      <DependentOn>Surface_Transparency.h</DependentOn>
+      <BuildOrder>339</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_WirePalette.cpp">
+      <Form>SurfaceWire</Form>
+      <DependentOn>Surface_WirePalette.h</DependentOn>
+      <BuildOrder>104</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Surface_XYZFloat.cpp">
+      <Form>SurfaceFloatOther</Form>
+      <DependentOn>Surface_XYZFloat.h</DependentOn>
+      <BuildOrder>103</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tee9New.cpp">
+      <BuildOrder>0</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="TeeAxisLabelTool.cpp">
+      <DependentOn>TeeAxisLabelTool.h</DependentOn>
+      <BuildOrder>261</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="TeeBarSizeSeries.cpp">
+      <DependentOn>TeeBarSizeSeries.h</DependentOn>
+      <BuildOrder>300</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="TeeChartWizardDemo.cpp">
+      <Form>ChartWizardDemo</Form>
+      <DependentOn>TeeChartWizardDemo.h</DependentOn>
+      <BuildOrder>285</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="TeeCommander_Demo.cpp">
+      <Form>TeeCommanderDemo</Form>
+      <DependentOn>TeeCommander_Demo.h</DependentOn>
+      <BuildOrder>253</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="TeeCross.cpp">
+      <DependentOn>TeeCross.h</DependentOn>
+      <BuildOrder>224</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="TeeCustomShape.cpp">
+      <Form>CustomShape</Form>
+      <DependentOn>TeeCustomShape.h</DependentOn>
+      <BuildOrder>117</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Template_Chart.cpp">
+      <Form>TemplateChart</Form>
+      <DependentOn>Template_Chart.h</DependentOn>
+      <BuildOrder>183</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Title_ClickEvent.cpp">
+      <Form>TitleClickEvent</Form>
+      <DependentOn>Title_ClickEvent.h</DependentOn>
+      <BuildOrder>23</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Title_CustomPos.cpp">
+      <Form>TitleCustomPos</Form>
+      <DependentOn>Title_CustomPos.h</DependentOn>
+      <BuildOrder>22</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Title_GenFormat.cpp">
+      <Form>TitleGenFormat</Form>
+      <DependentOn>Title_GenFormat.h</DependentOn>
+      <BuildOrder>24</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tools_ColorBand.cpp">
+      <Form>ColorBandToolForm</Form>
+      <DependentOn>Tools_ColorBand.h</DependentOn>
+      <BuildOrder>125</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tools_ColorLine.cpp">
+      <Form>ColorLineForm</Form>
+      <DependentOn>Tools_ColorLine.h</DependentOn>
+      <BuildOrder>127</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tools_Custom.cpp">
+      <Form>AxisLabelToolDemo</Form>
+      <DependentOn>Tools_Custom.h</DependentOn>
+      <BuildOrder>130</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tools_DrawLine.cpp">
+      <Form>DrawLineToolDemo</Form>
+      <DependentOn>Tools_DrawLine.h</DependentOn>
+      <BuildOrder>122</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tools_Image.cpp">
+      <Form>ImageToolForm</Form>
+      <DependentOn>Tools_Image.h</DependentOn>
+      <BuildOrder>129</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tools_Nearest.cpp">
+      <Form>NearestToolDemo</Form>
+      <DependentOn>Tools_Nearest.h</DependentOn>
+      <BuildOrder>123</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tools_SeriesAnim.cpp">
+      <Form>SeriesAnimDemo</Form>
+      <DependentOn>Tools_SeriesAnim.h</DependentOn>
+      <BuildOrder>347</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_3DTranspose.cpp">
+      <Form>TransposeToolDemo</Form>
+      <DependentOn>Tool_3DTranspose.h</DependentOn>
+      <BuildOrder>345</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_Annotation.cpp">
+      <Form>AnnotationToolForm</Form>
+      <DependentOn>Tool_Annotation.h</DependentOn>
+      <BuildOrder>265</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_AnnotationCallout.cpp">
+      <Form>AnnotationCO</Form>
+      <DependentOn>Tool_AnnotationCallout.h</DependentOn>
+      <BuildOrder>320</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_AnnotationClick.cpp">
+      <Form>AnnotationClickForm</Form>
+      <DependentOn>Tool_AnnotationClick.h</DependentOn>
+      <BuildOrder>298</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_AxisArrow.cpp">
+      <Form>AxisArrowToolDemo</Form>
+      <DependentOn>Tool_AxisArrow.h</DependentOn>
+      <BuildOrder>121</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_AxisScroll.cpp">
+      <Form>AxisScrollToolDemo</Form>
+      <DependentOn>Tool_AxisScroll.h</DependentOn>
+      <BuildOrder>415</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_Cursor.cpp">
+      <Form>CursorToolDemo</Form>
+      <DependentOn>Tool_Cursor.h</DependentOn>
+      <BuildOrder>118</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_CursorProg.cpp">
+      <Form>CursorToolProg</Form>
+      <DependentOn>Tool_CursorProg.h</DependentOn>
+      <BuildOrder>266</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_CursorSynchro.cpp">
+      <Form>CursorSynchro</Form>
+      <DependentOn>Tool_CursorSynchro.h</DependentOn>
+      <BuildOrder>267</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_DragMarks.cpp">
+      <Form>DragMarksToolDemo</Form>
+      <DependentOn>Tool_DragMarks.h</DependentOn>
+      <BuildOrder>119</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_DragPoint.cpp">
+      <Form>DragPointToolDemo</Form>
+      <DependentOn>Tool_DragPoint.h</DependentOn>
+      <BuildOrder>132</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_DrawLineDragged.cpp">
+      <Form>DrawLineOnDragged</Form>
+      <DependentOn>Tool_DrawLineDragged.h</DependentOn>
+      <BuildOrder>268</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_ExtraLegend.cpp">
+      <Form>ExtraLegendDemo</Form>
+      <DependentOn>Tool_ExtraLegend.h</DependentOn>
+      <BuildOrder>346</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_Lighting.cpp">
+      <Form>LightToolForm</Form>
+      <DependentOn>Tool_Lighting.h</DependentOn>
+      <BuildOrder>380</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_MarksTip.cpp">
+      <Form>MarkTipsToolDemo</Form>
+      <DependentOn>Tool_MarksTip.h</DependentOn>
+      <BuildOrder>124</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_PageNumDemo.cpp">
+      <Form>PageNumToolDemo</Form>
+      <DependentOn>Tool_PageNumDemo.h</DependentOn>
+      <BuildOrder>131</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_Pie.cpp">
+      <Form>PieToolDemo</Form>
+      <DependentOn>Tool_Pie.h</DependentOn>
+      <BuildOrder>349</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_Rotate.cpp">
+      <Form>RotateToolForm</Form>
+      <DependentOn>Tool_Rotate.h</DependentOn>
+      <BuildOrder>128</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_RotateOutline.cpp">
+      <Form>RotateOutline</Form>
+      <DependentOn>Tool_RotateOutline.h</DependentOn>
+      <BuildOrder>321</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Tool_SurfaceNearest.cpp">
+      <Form>SurfaceNearestForm</Form>
+      <DependentOn>Tool_SurfaceNearest.h</DependentOn>
+      <BuildOrder>381</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="TriSurface_Hidding.cpp">
+      <Form>TriSurfaceHidding</Form>
+      <DependentOn>TriSurface_Hidding.h</DependentOn>
+      <BuildOrder>271</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="TriSurface_Series.cpp">
+      <Form>TriSurfaceForm</Form>
+      <DependentOn>TriSurface_Series.h</DependentOn>
+      <BuildOrder>154</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ValueList_FindMinMax.cpp">
+      <Form>FindMinMaxValues</Form>
+      <DependentOn>ValueList_FindMinMax.h</DependentOn>
+      <BuildOrder>139</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="ValueList_Modified.cpp">
+      <Form>ValueListModified</Form>
+      <DependentOn>ValueList_Modified.h</DependentOn>
+      <BuildOrder>140</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Volume_Origin.cpp">
+      <Form>VolumeOrigin</Form>
+      <DependentOn>Volume_Origin.h</DependentOn>
+      <BuildOrder>279</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Wall_AutoHide.cpp">
+      <Form>WallAutoHide</Form>
+      <DependentOn>Wall_AutoHide.h</DependentOn>
+      <BuildOrder>414</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Wall_Transparency.cpp">
+      <Form>WallTransparency</Form>
+      <DependentOn>Wall_Transparency.h</DependentOn>
+      <BuildOrder>314</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="WaterFall_Series.cpp">
+      <Form>WaterFallForm</Form>
+      <DependentOn>WaterFall_Series.h</DependentOn>
+      <BuildOrder>163</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Welcome.cpp">
+      <Form>WelcomeForm</Form>
+      <DependentOn>Welcome.h</DependentOn>
+      <BuildOrder>3</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Welcome_All.cpp">
+      <Form>WelcomeAllForm</Form>
+      <DependentOn>Welcome_All.h</DependentOn>
+      <BuildOrder>147</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="WindRose_AngleInc.cpp">
+      <Form>WindAngleInc</Form>
+      <DependentOn>WindRose_AngleInc.h</DependentOn>
+      <BuildOrder>106</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="WindRose_Series.cpp">
+      <Form>WindRoseForm</Form>
+      <DependentOn>WindRose_Series.h</DependentOn>
+      <BuildOrder>209</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="XYZ_Gridding.cpp">
+      <Form>XYZGridding</Form>
+      <DependentOn>XYZ_Gridding.h</DependentOn>
+      <BuildOrder>341</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Zoom_Direction.cpp">
+      <Form>ZoomDirection</Form>
+      <DependentOn>Zoom_Direction.h</DependentOn>
+      <BuildOrder>56</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Zoom_MinPix.cpp">
+      <Form>ZoomMinPixel</Form>
+      <DependentOn>Zoom_MinPix.h</DependentOn>
+      <BuildOrder>55</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Zoom_Pen.cpp">
+      <Form>ZoomPen</Form>
+      <DependentOn>Zoom_Pen.h</DependentOn>
+      <BuildOrder>54</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="Zoom_Scroll.cpp">
+      <Form>ZoomScrollForm</Form>
+      <DependentOn>Zoom_Scroll.h</DependentOn>
+      <BuildOrder>256</BuildOrder>
+    </CppCompile>
+    <ResFiles Include="Tee9New.res">
+      <BuildOrder>1</BuildOrder>
+    </ResFiles>
+    <DelphiCompile Include="TeeDesignOptions.pas">
+      <Form>OptionsForm</Form>
+      <BuildOrder>424</BuildOrder>
+    </DelphiCompile>
+    <DelphiCompile Include="TeeExpForm.pas">
+      <Form>TeeDlgWizard</Form>
+      <BuildOrder>423</BuildOrder>
+    </DelphiCompile>
+    <FormResources Include="Area_Gradient.dfm" />
+    <FormResources Include="Area_Origin.dfm" />
+    <FormResources Include="Area_Stairs.dfm" />
+    <FormResources Include="Area_Transparency.dfm" />
+    <FormResources Include="Assign_Picture.dfm" />
+    <FormResources Include="Axes_DrawBevels.dfm" />
+    <FormResources Include="Axes_GridBands.dfm" />
+    <FormResources Include="Axes_LabelsFormat.dfm" />
+    <FormResources Include="Axes_Offsets.dfm" />
+    <FormResources Include="Axes_ZPosition.dfm" />
+    <FormResources Include="AxisTitle_Visible.dfm" />
+    <FormResources Include="Axis_Behind.dfm" />
+    <FormResources Include="Axis_Custom.dfm" />
+    <FormResources Include="Axis_DepthDateTime.dfm" />
+    <FormResources Include="Axis_DepthTop.dfm" />
+    <FormResources Include="Axis_Exponent.dfm" />
+    <FormResources Include="Axis_FirstLastLabels.dfm" />
+    <FormResources Include="Axis_Isometric.dfm" />
+    <FormResources Include="Axis_Items.dfm" />
+    <FormResources Include="Axis_LabelAlign.dfm" />
+    <FormResources Include="Axis_LabelsAlternate.dfm" />
+    <FormResources Include="Axis_LabelsFormat.dfm" />
+    <FormResources Include="Axis_Millisec.dfm" />
+    <FormResources Include="Axis_MinorGrid.dfm" />
+    <FormResources Include="Axis_MultiRuntime.dfm" />
+    <FormResources Include="Axis_MultiScroll.dfm" />
+    <FormResources Include="Axis_OpaqueZone.dfm" />
+    <FormResources Include="BackWall_Gradient.dfm" />
+    <FormResources Include="BackWall_Image.dfm" />
+    <FormResources Include="BarJoin_Series.dfm" />
+    <FormResources Include="Bar_3DDepth.dfm" />
+    <FormResources Include="Bar_Cylinder.dfm" />
+    <FormResources Include="Bar_Gradient.dfm" />
+    <FormResources Include="Bar_Image.dfm" />
+    <FormResources Include="Bar_SelfStack.dfm" />
+    <FormResources Include="Bar_SideAll.dfm" />
+    <FormResources Include="Bar_StackGroup.dfm" />
+    <FormResources Include="Bar_TickLines.dfm" />
+    <FormResources Include="Base.dfm" />
+    <FormResources Include="Base_CustomPos.dfm" />
+    <FormResources Include="Base_DBChart.dfm" />
+    <FormResources Include="Basic_Features.dfm" />
+    <FormResources Include="BoxPlot_Series.dfm" />
+    <FormResources Include="BoxSeries_CustomValues.dfm" />
+    <FormResources Include="Brush_Styles.dfm" />
+    <FormResources Include="Bubble_Gradient.dfm" />
+    <FormResources Include="Bubble_Transparency.dfm" />
+    <FormResources Include="Calendar_Buttons.dfm" />
+    <FormResources Include="Candle_AxisLabels.dfm" />
+    <FormResources Include="Candle_CustomColors.dfm" />
+    <FormResources Include="Candle_HighLowPen.dfm" />
+    <FormResources Include="Candle_OnGetPointer.dfm" />
+    <FormResources Include="Candle_OpenClose.dfm" />
+    <FormResources Include="Canvas_180Rotation.dfm" />
+    <FormResources Include="Canvas_AntiAlias.dfm" />
+    <FormResources Include="Canvas_Cone.dfm" />
+    <FormResources Include="Canvas_DotPen.dfm" />
+    <FormResources Include="Canvas_GrayScale.dfm" />
+    <FormResources Include="Canvas_OrthoAngle.dfm" />
+    <FormResources Include="Canvas_PyramidTrunc.dfm" />
+    <FormResources Include="Canvas_RotatedEllipse.dfm" />
+    <FormResources Include="Canvas_RotCenter.dfm" />
+    <FormResources Include="Canvas_SmoothStretch.dfm" />
+    <FormResources Include="Canvas_Transparency.dfm" />
+    <FormResources Include="Changes_Misc.dfm" />
+    <FormResources Include="Changes_Package.dfm" />
+    <FormResources Include="ChartEditor_3DGallery.dfm" />
+    <FormResources Include="ChartEditor_Dialog.dfm" />
+    <FormResources Include="ChartEditor_HideDataSets.dfm" />
+    <FormResources Include="ChartEditor_PageNum.dfm" />
+    <FormResources Include="ChartEditor_Runtime.dfm" />
+    <FormResources Include="ChartGrid_Colors.dfm" />
+    <FormResources Include="ChartGrid_Grid3D.dfm" />
+    <FormResources Include="ChartImage_Demo.dfm" />
+    <FormResources Include="ChartListBox_Demo.dfm" />
+    <FormResources Include="ChartListBox_Editor.dfm" />
+    <FormResources Include="ChartListBox_Radio.dfm" />
+    <FormResources Include="Chart_Actions.dfm" />
+    <FormResources Include="Chart_Axes.dfm" />
+    <FormResources Include="Chart_Clipboard.dfm" />
+    <FormResources Include="Chart_Commander.dfm" />
+    <FormResources Include="Chart_EditorPanel.dfm" />
+    <FormResources Include="Chart_FreeAllSeries.dfm" />
+    <FormResources Include="Chart_Gallery.dfm" />
+    <FormResources Include="Chart_Grid.dfm" />
+    <FormResources Include="Chart_ListBox.dfm" />
+    <FormResources Include="Chart_MultiClipboard.dfm" />
+    <FormResources Include="Chart_MultiLanguage.dfm" />
+    <FormResources Include="Chart_OnBeforeDraw.dfm" />
+    <FormResources Include="Chart_Other.dfm" />
+    <FormResources Include="Chart_PageNavigator.dfm" />
+    <FormResources Include="Chart_Palettes.dfm" />
+    <FormResources Include="Chart_PrintPreview.dfm" />
+    <FormResources Include="Chart_RoundPanel.dfm" />
+    <FormResources Include="Chart_ScrollBar.dfm" />
+    <FormResources Include="Chart_Shadow.dfm" />
+    <FormResources Include="Chart_SubGallery.dfm" />
+    <FormResources Include="Chart_SubTitles.dfm" />
+    <FormResources Include="Chart_Themes.dfm" />
+    <FormResources Include="Chart_Transparent.dfm" />
+    <FormResources Include="Chart_WebSource.dfm" />
+    <FormResources Include="Circled_Gradient.dfm" />
+    <FormResources Include="Clock_Editors.dfm" />
+    <FormResources Include="ColorBand_Clicked.dfm" />
+    <FormResources Include="ColorBand_Transparent.dfm" />
+    <FormResources Include="ColorGrid_Bitmap.dfm" />
+    <FormResources Include="ColorGrid_Clicked.dfm" />
+    <FormResources Include="ColorGrid_Marks.dfm" />
+    <FormResources Include="ColorGrid_Realtime.dfm" />
+    <FormResources Include="ColorGrid_Series.dfm" />
+    <FormResources Include="ColorGrid_Transparent.dfm" />
+    <FormResources Include="ColorLine_DragRepaint.dfm" />
+    <FormResources Include="ColorLine_Draw3D.dfm" />
+    <FormResources Include="ColorRange_Bug.dfm" />
+    <FormResources Include="ComboFlat_Demo.dfm" />
+    <FormResources Include="Commander_Custom.dfm" />
+    <FormResources Include="Commander_CustomEditor.dfm" />
+    <FormResources Include="Contour_Foot.dfm" />
+    <FormResources Include="Contour_Levels.dfm" />
+    <FormResources Include="Contour_OnBeforeDraw.dfm" />
+    <FormResources Include="Contour_Palette.dfm" />
+    <FormResources Include="Contour_SmoothSegments.dfm" />
+    <FormResources Include="Contour_View2D.dfm" />
+    <FormResources Include="CurveFitting_Coef.dfm" />
+    <FormResources Include="CurveFitting_Dynamic.dfm" />
+    <FormResources Include="Customers.dfm" />
+    <FormResources Include="DBChart_AnyDataSet.dfm" />
+    <FormResources Include="DBChart_CrossTab.dfm" />
+    <FormResources Include="DBChart_CrossTabSource.dfm" />
+    <FormResources Include="DBChart_LocateRecord.dfm" />
+    <FormResources Include="DBChart_MasterDetail.dfm" />
+    <FormResources Include="DBChart_Order.dfm" />
+    <FormResources Include="DBChart_SingleRecord.dfm" />
+    <FormResources Include="DBChart_Speed.dfm" />
+    <FormResources Include="DBChart_Summary.dfm" />
+    <FormResources Include="DBChart_SummaryOrder.dfm" />
+    <FormResources Include="DesignTime_Options.dfm" />
+    <FormResources Include="Donut_Series.dfm" />
+    <FormResources Include="Drag_Bars.dfm" />
+    <FormResources Include="Draw3D_Canvas.dfm" />
+    <FormResources Include="DrawLine_Style.dfm" />
+    <FormResources Include="Editor_Color.dfm" />
+    <FormResources Include="Editor_Formatting.dfm" />
+    <FormResources Include="ErrorBar_Negative.dfm" />
+    <FormResources Include="Exponential_Trend.dfm" />
+    <FormResources Include="Export_Charts.dfm" />
+    <FormResources Include="Export_Email.dfm" />
+    <FormResources Include="Export_Excel.dfm" />
+    <FormResources Include="Export_GIF.dfm" />
+    <FormResources Include="Export_HTML.dfm" />
+    <FormResources Include="Export_JPEG.dfm" />
+    <FormResources Include="Export_Metafile.dfm" />
+    <FormResources Include="Export_PCX.dfm" />
+    <FormResources Include="Export_PDF.dfm" />
+    <FormResources Include="Export_PNG.dfm" />
+    <FormResources Include="Export_SVG.dfm" />
+    <FormResources Include="Export_Text.dfm" />
+    <FormResources Include="Export_VML.dfm" />
+    <FormResources Include="Export_XML.dfm" />
+    <FormResources Include="FastLine_DrawAll.dfm" />
+    <FormResources Include="FastLine_Nulls.dfm" />
+    <FormResources Include="FastLine_Realtime.dfm" />
+    <FormResources Include="Font_Gradient.dfm" />
+    <FormResources Include="FourCharts.dfm" />
+    <FormResources Include="Function_Add.dfm" />
+    <FormResources Include="Function_ADX.dfm" />
+    <FormResources Include="Function_Average.dfm" />
+    <FormResources Include="Function_AverageNulls.dfm" />
+    <FormResources Include="Function_Bollinger.dfm" />
+    <FormResources Include="Function_CCI.dfm" />
+    <FormResources Include="Function_CLV.dfm" />
+    <FormResources Include="Function_Compression.dfm" />
+    <FormResources Include="Function_Correlation.dfm" />
+    <FormResources Include="Function_Count.dfm" />
+    <FormResources Include="Function_CrossPoints.dfm" />
+    <FormResources Include="Function_Cumulative.dfm" />
+    <FormResources Include="Function_CurveFitting.dfm" />
+    <FormResources Include="Function_Custom.dfm" />
+    <FormResources Include="Function_Divide.dfm" />
+    <FormResources Include="Function_DownSampling.dfm" />
+    <FormResources Include="Function_ExpAve.dfm" />
+    <FormResources Include="Function_ExpMovAve.dfm" />
+    <FormResources Include="Function_High.dfm" />
+    <FormResources Include="Function_Low.dfm" />
+    <FormResources Include="Function_Median.dfm" />
+    <FormResources Include="Function_Mode.dfm" />
+    <FormResources Include="Function_Momentum.dfm" />
+    <FormResources Include="Function_MovAve.dfm" />
+    <FormResources Include="Function_MovAveWeighted.dfm" />
+    <FormResources Include="Function_Multiply.dfm" />
+    <FormResources Include="Function_OBV.dfm" />
+    <FormResources Include="Function_Performance.dfm" />
+    <FormResources Include="Function_Perimeter.dfm" />
+    <FormResources Include="Function_PVO.dfm" />
+    <FormResources Include="Function_RootMeanSq.dfm" />
+    <FormResources Include="Function_RSI.dfm" />
+    <FormResources Include="Function_Smoothing.dfm" />
+    <FormResources Include="Function_StdDeviation.dfm" />
+    <FormResources Include="Function_Subtract.dfm" />
+    <FormResources Include="Function_Trend.dfm" />
+    <FormResources Include="Function_Variance.dfm" />
+    <FormResources Include="Gallery_Alternate.dfm" />
+    <FormResources Include="Gallery_Panel.dfm" />
+    <FormResources Include="Gallery_Smooth.dfm" />
+    <FormResources Include="Gantt_MouseDrag.dfm" />
+    <FormResources Include="Gradient_MidColor.dfm" />
+    <FormResources Include="Gradient_RadialCenter.dfm" />
+    <FormResources Include="GridToChart_Demo.dfm" />
+    <FormResources Include="HighLow_Series.dfm" />
+    <FormResources Include="Histogram_Series.dfm" />
+    <FormResources Include="Histogram_Transparency.dfm" />
+    <FormResources Include="HorizLine_Series.dfm" />
+    <FormResources Include="Inspector_Demo.dfm" />
+    <FormResources Include="Internet_Charts.dfm" />
+    <FormResources Include="Legend_AddText.dfm" />
+    <FormResources Include="Legend_CheckBox.dfm" />
+    <FormResources Include="Legend_CurrentPage.dfm" />
+    <FormResources Include="Legend_CustomPos.dfm" />
+    <FormResources Include="Legend_FontColor.dfm" />
+    <FormResources Include="Legend_GenFormat.dfm" />
+    <FormResources Include="Legend_Image.dfm" />
+    <FormResources Include="Legend_Multi.dfm" />
+    <FormResources Include="Legend_Scroll.dfm" />
+    <FormResources Include="Legend_Scrollbar.dfm" />
+    <FormResources Include="Legend_Series.dfm" />
+    <FormResources Include="Legend_Symbol.dfm" />
+    <FormResources Include="Legend_SymbolBorder.dfm" />
+    <FormResources Include="Legend_SymbolFlags.dfm" />
+    <FormResources Include="Legend_TextStyle.dfm" />
+    <FormResources Include="Legend_Title.dfm" />
+    <FormResources Include="Legend_VertSpa.dfm" />
+    <FormResources Include="Legend_Widths.dfm" />
+    <FormResources Include="Line_Clickable.dfm" />
+    <FormResources Include="Line_ColorEachLine.dfm" />
+    <FormResources Include="Line_Outline.dfm" />
+    <FormResources Include="Line_Pattern.dfm" />
+    <FormResources Include="Line_Stack.dfm" />
+    <FormResources Include="MACD_Function.dfm" />
+    <FormResources Include="Main.dfm" />
+    <FormResources Include="Map_Series.dfm" />
+    <FormResources Include="Margins_Units.dfm" />
+    <FormResources Include="Marks_Angle.dfm" />
+    <FormResources Include="Marks_Callout.dfm" />
+    <FormResources Include="Marks_DrawEvery.dfm" />
+    <FormResources Include="Marks_GenFormat.dfm" />
+    <FormResources Include="Marks_Multi.dfm" />
+    <FormResources Include="Marks_PerPoint.dfm" />
+    <FormResources Include="Marks_Positions.dfm" />
+    <FormResources Include="Marks_Shadow.dfm" />
+    <FormResources Include="Marks_Symbols.dfm" />
+    <FormResources Include="Marks_XYStyle.dfm" />
+    <FormResources Include="MarkTips_MouseDelay.dfm" />
+    <FormResources Include="MomentumDiv_Function.dfm" />
+    <FormResources Include="Mouse_Wheel.dfm" />
+    <FormResources Include="OpenGL_Canvas.dfm" />
+    <FormResources Include="OpenGL_Editor.dfm" />
+    <FormResources Include="OpenGL_Football.dfm" />
+    <FormResources Include="OpenGL_Surface.dfm" />
+    <FormResources Include="OpenGL_TriSurface.dfm" />
+    <FormResources Include="Order_Info.dfm" />
+    <FormResources Include="Pie_AutoMarkPosition.dfm" />
+    <FormResources Include="Pie_Gradient.dfm" />
+    <FormResources Include="Pie_Multi.dfm" />
+    <FormResources Include="Pie_OtherLegend.dfm" />
+    <FormResources Include="Pie_Semi.dfm" />
+    <FormResources Include="Pie_Shadow.dfm" />
+    <FormResources Include="Pie_ShadowEllipse.dfm" />
+    <FormResources Include="Pie_SliceHeights.dfm" />
+    <FormResources Include="Point3D_BaseLine.dfm" />
+    <FormResources Include="Point3D_Event.dfm" />
+    <FormResources Include="Pointer_DrawCanvas.dfm" />
+    <FormResources Include="PolarRadar_Transparency.dfm" />
+    <FormResources Include="Polar_ClockWise.dfm" />
+    <FormResources Include="Polar_LabelsInside.dfm" />
+    <FormResources Include="Polar_Smooth.dfm" />
+    <FormResources Include="Polar_Zones.dfm" />
+    <FormResources Include="PostScript_Demo.dfm" />
+    <FormResources Include="Preview_CustomDraw.dfm" />
+    <FormResources Include="Printing_Bugs.dfm" />
+    <FormResources Include="PrintPreview_Multi.dfm" />
+    <FormResources Include="PrintPreview_Navigate.dfm" />
+    <FormResources Include="Print_Pages.dfm" />
+    <FormResources Include="Print_Preview.dfm" />
+    <FormResources Include="Print_PreviewDialog.dfm" />
+    <FormResources Include="Property_Aliases.dfm" />
+    <FormResources Include="Pyramid_Series.dfm" />
+    <FormResources Include="QualityControl.dfm" />
+    <FormResources Include="Release501_FixedBugs.dfm" />
+    <FormResources Include="Release501_NewFeatures.dfm" />
+    <FormResources Include="Release502_FixedBugs.dfm" />
+    <FormResources Include="Release502_NewFeatures.dfm" />
+    <FormResources Include="Release503_FixedBugs.dfm" />
+    <FormResources Include="Release503_NewFeatures.dfm" />
+    <FormResources Include="Release6_FixedBugs.dfm" />
+    <FormResources Include="Release6_Misc.dfm" />
+    <FormResources Include="Release7_FixedBugs.dfm" />
+    <FormResources Include="Release7_Misc.dfm" />
+    <FormResources Include="Removed_Properties.dfm" />
+    <FormResources Include="Reporting_Tools.dfm" />
+    <FormResources Include="RichText_Drawing.dfm" />
+    <FormResources Include="Right_Wall.dfm" />
+    <FormResources Include="RSI_Function.dfm" />
+    <FormResources Include="Series3D_AddArray.dfm" />
+    <FormResources Include="Series3D_RangePalette.dfm" />
+    <FormResources Include="SeriesType_Area.dfm" />
+    <FormResources Include="SeriesType_Arrow.dfm" />
+    <FormResources Include="SeriesType_Bar.dfm" />
+    <FormResources Include="SeriesType_Bezier.dfm" />
+    <FormResources Include="SeriesType_Bubble.dfm" />
+    <FormResources Include="SeriesType_Candle.dfm" />
+    <FormResources Include="SeriesType_Clock.dfm" />
+    <FormResources Include="SeriesType_Contour.dfm" />
+    <FormResources Include="SeriesType_FastLine.dfm" />
+    <FormResources Include="SeriesType_Gantt.dfm" />
+    <FormResources Include="SeriesType_HorizArea.dfm" />
+    <FormResources Include="SeriesType_HorizBar.dfm" />
+    <FormResources Include="SeriesType_Line.dfm" />
+    <FormResources Include="SeriesType_Pie.dfm" />
+    <FormResources Include="SeriesType_Point.dfm" />
+    <FormResources Include="SeriesType_Point3D.dfm" />
+    <FormResources Include="SeriesType_Polar.dfm" />
+    <FormResources Include="SeriesType_Radar.dfm" />
+    <FormResources Include="SeriesType_Surface.dfm" />
+    <FormResources Include="SeriesType_Tower.dfm" />
+    <FormResources Include="SeriesType_Volume.dfm" />
+    <FormResources Include="Series_Bar3D.dfm" />
+    <FormResources Include="Series_BarNegativeStacked.dfm" />
+    <FormResources Include="Series_BarSize.dfm" />
+    <FormResources Include="Series_BigCandle.dfm" />
+    <FormResources Include="Series_Bubble3D.dfm" />
+    <FormResources Include="Series_Calendar.dfm" />
+    <FormResources Include="Series_DataSet.dfm" />
+    <FormResources Include="Series_DeltaPoint.dfm" />
+    <FormResources Include="Series_Depth.dfm" />
+    <FormResources Include="Series_Designer.dfm" />
+    <FormResources Include="Series_Error.dfm" />
+    <FormResources Include="Series_Funnel.dfm" />
+    <FormResources Include="Series_Gauge.dfm" />
+    <FormResources Include="Series_Groups.dfm" />
+    <FormResources Include="Series_HorizHisto.dfm" />
+    <FormResources Include="Series_ImageBar.dfm" />
+    <FormResources Include="Series_ImagePoint.dfm" />
+    <FormResources Include="Series_MouseEnter.dfm" />
+    <FormResources Include="Series_MyPoint.dfm" />
+    <FormResources Include="Series_PointFigure.dfm" />
+    <FormResources Include="Series_PolarBar.dfm" />
+    <FormResources Include="Series_Shape.dfm" />
+    <FormResources Include="Series_SortLabels.dfm" />
+    <FormResources Include="Series_TextSource.dfm" />
+    <FormResources Include="Series_ValueList.dfm" />
+    <FormResources Include="Series_Vector3D.dfm" />
+    <FormResources Include="Series_XMLSource.dfm" />
+    <FormResources Include="Series_XMLSourceWeb.dfm" />
+    <FormResources Include="Shape_Image.dfm" />
+    <FormResources Include="Shape_VertAlign.dfm" />
+    <FormResources Include="Smith_Series.dfm" />
+    <FormResources Include="Stochastic_Function.dfm" />
+    <FormResources Include="Surface_FastBrush.dfm" />
+    <FormResources Include="Surface_Hole.dfm" />
+    <FormResources Include="Surface_Irregular.dfm" />
+    <FormResources Include="Surface_Palette.dfm" />
+    <FormResources Include="Surface_Sides.dfm" />
+    <FormResources Include="Surface_Smooth.dfm" />
+    <FormResources Include="Surface_Smoothing.dfm" />
+    <FormResources Include="Surface_Transparency.dfm" />
+    <FormResources Include="Surface_WirePalette.dfm" />
+    <FormResources Include="Surface_XYZFloat.dfm" />
+    <FormResources Include="TeeChartWizardDemo.dfm" />
+    <FormResources Include="TeeCommander_Demo.dfm" />
+    <FormResources Include="TeeCustomShape.dfm" />
+    <FormResources Include="TeeDesignOptions.dfm" />
+    <FormResources Include="TeeExpForm.dfm" />
+    <FormResources Include="Template_Chart.dfm" />
+    <FormResources Include="Title_ClickEvent.dfm" />
+    <FormResources Include="Title_CustomPos.dfm" />
+    <FormResources Include="Title_GenFormat.dfm" />
+    <FormResources Include="Tools_ColorBand.dfm" />
+    <FormResources Include="Tools_ColorLine.dfm" />
+    <FormResources Include="Tools_Custom.dfm" />
+    <FormResources Include="Tools_DrawLine.dfm" />
+    <FormResources Include="Tools_Image.dfm" />
+    <FormResources Include="Tools_Nearest.dfm" />
+    <FormResources Include="Tools_SeriesAnim.dfm" />
+    <FormResources Include="Tool_3DTranspose.dfm" />
+    <FormResources Include="Tool_Annotation.dfm" />
+    <FormResources Include="Tool_AnnotationCallout.dfm" />
+    <FormResources Include="Tool_AnnotationClick.dfm" />
+    <FormResources Include="Tool_AxisArrow.dfm" />
+    <FormResources Include="Tool_AxisScroll.dfm" />
+    <FormResources Include="Tool_Cursor.dfm" />
+    <FormResources Include="Tool_CursorProg.dfm" />
+    <FormResources Include="Tool_CursorSynchro.dfm" />
+    <FormResources Include="Tool_DragMarks.dfm" />
+    <FormResources Include="Tool_DragPoint.dfm" />
+    <FormResources Include="Tool_DrawLineDragged.dfm" />
+    <FormResources Include="Tool_ExtraLegend.dfm" />
+    <FormResources Include="Tool_Lighting.dfm" />
+    <FormResources Include="Tool_MarksTip.dfm" />
+    <FormResources Include="Tool_PageNumDemo.dfm" />
+    <FormResources Include="Tool_Pie.dfm" />
+    <FormResources Include="Tool_Rotate.dfm" />
+    <FormResources Include="Tool_RotateOutline.dfm" />
+    <FormResources Include="Tool_SurfaceNearest.dfm" />
+    <FormResources Include="TriSurface_Hidding.dfm" />
+    <FormResources Include="TriSurface_Series.dfm" />
+    <FormResources Include="ValueList_FindMinMax.dfm" />
+    <FormResources Include="ValueList_Modified.dfm" />
+    <FormResources Include="Volume_Origin.dfm" />
+    <FormResources Include="Wall_AutoHide.dfm" />
+    <FormResources Include="Wall_Transparency.dfm" />
+    <FormResources Include="WaterFall_Series.dfm" />
+    <FormResources Include="Welcome.dfm" />
+    <FormResources Include="Welcome_All.dfm" />
+    <FormResources Include="WindRose_AngleInc.dfm" />
+    <FormResources Include="WindRose_Series.dfm" />
+    <FormResources Include="XYZ_Gridding.dfm" />
+    <FormResources Include="Zoom_Direction.dfm" />
+    <FormResources Include="Zoom_MinPix.dfm" />
+    <FormResources Include="Zoom_Pen.dfm" />
+    <FormResources Include="Zoom_Scroll.dfm" />
+    <BuildConfiguration Include="Debug Build">
+      <Key>Cfg_1</Key>
+    </BuildConfiguration>
+    <BuildConfiguration Include="Release Build">
+      <Key>Cfg_2</Key>
+    </BuildConfiguration>
+  </ItemGroup>
+</Project>
