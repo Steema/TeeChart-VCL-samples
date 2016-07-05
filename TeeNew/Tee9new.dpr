@@ -631,7 +631,8 @@ uses
   Tools_Clustering in 'Tools_Clustering.pas' {ClusteringDemo},
   XE2_OnlyAvail in 'XE2_OnlyAvail.pas' {XE2OnlyAvail},
   Tool_ScrollPager in 'Tool_ScrollPager.pas' {Tool_ScrollPagerForm},
-  Tool_CustomLegendSGrid in 'Tool_CustomLegendSGrid.pas' {TTool_CustomLegendSGridForm};
+  Tool_CustomLegendSGrid in 'Tool_CustomLegendSGrid.pas' {TTool_CustomLegendSGridForm},
+  Legend_Tester in 'Legend_Tester.pas' {LegendTester};
 
 {$R *.res}
 

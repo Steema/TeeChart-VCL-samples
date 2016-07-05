@@ -14,7 +14,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeTools, TeeAnimations;
+  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeTools, TeeAnimations,
+  TeeAnimate;
 
 type
   TSeriesAnimationDelay = class(TBaseForm)
@@ -39,6 +40,7 @@ type
     Playing : Boolean;
 
     procedure StopAnimation;
+    procedure AnimationEnd(Sender:TTeeAnimation; var FreeAnimation:Boolean);
   public
     { Public declarations }
   end;
@@ -75,14 +77,17 @@ begin
     Button1.Caption:='Stop';
 
     ChartTool1.Execute;
-    StopAnimation;
   end;
 end;
 
 procedure TSeriesAnimationDelay.StopAnimation;
 begin
-  ChartTool1.Stop;
-  Playing:=False;
+  if Playing then
+  begin
+    Playing:=False;
+    ChartTool1.Stop;
+  end;
+
   Button1.Caption:='Execute !';
 end;
 
@@ -96,7 +101,13 @@ begin
   begin
     Steps:=100;
     Delay:=10;
+    Animation.OnEnd:=AnimationEnd;
   end;
+end;
+
+procedure TSeriesAnimationDelay.AnimationEnd(Sender:TTeeAnimation; var FreeAnimation:Boolean);
+begin
+  StopAnimation;
 end;
 
 procedure TSeriesAnimationDelay.Button2Click(Sender: TObject);
