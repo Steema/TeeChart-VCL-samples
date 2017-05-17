@@ -43,7 +43,7 @@ We can also add a Button component, which is the one that we値l use to start the
 Now let's give it functionality; we値l do the next steps through code.
 
 The first thing we do via code, is create a method where we値l reset and initialize all the Series values, named "ResetValues", this will be the code:
-
+```
 procedure TActivityGaugeForm.ResetValues;
 
 var i : integer;
@@ -59,8 +59,9 @@ begin
     Chart1[i].ValueColor[0] := Series1.Pen.Color;
   end;
 end;
+```
 We値l call this method from the CreateForm event of Application, and also every time Button1 is clicked :
-
+```
 procedure TActivityGaugeForm.FormCreate(Sender: TObject);
 begin
   ResetValues;
@@ -72,8 +73,9 @@ begin
   Timer1.Enabled := true;
   Button1.Enabled := false;
 end;
+```
 Now, the only missing thing is to add the code that generates the Series animation inside its corresponding Timer event :
-
+```
 procedure TActivityGaugeForm.Timer1Timer(Sender: TObject);
 begin
   Series1.YValue[0] := Series1.YValue[0]-1;
@@ -115,6 +117,7 @@ begin
     Button1.Enabled := true;
   end;
 end;
+```
 We have everything. Now it's time to run the application and see the result. You should see something similar to:
 
 ![screenshot](https://github.com/Steema/TeeChart-VCL-for-VCL-Delphi-CBuilder--applications-samples/blob/master/ActivityGauge/images/Result.gif?raw=true "TeeChart VCL for VCL Delphi Builder")
