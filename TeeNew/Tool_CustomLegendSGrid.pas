@@ -97,8 +97,6 @@ begin
       end;
     end;
 
-  CustomLegendTool.Height := 120;
-
   with Chart1 do
   begin
     Legend.Visible:=false;
@@ -145,10 +143,10 @@ begin
       ColWidths[0] := 120;
       for i:=1 to ColCount-1 do
         ColWidths[i] := 80;
-
-      Height := 105;
-      Width := 526;
     end;
+
+    Height := 105;
+    Width := 526;
   end;
 end;
 
@@ -166,7 +164,7 @@ begin
         Name := 'Arial';
         Size := 10;
       end;
-      CustomLegendTool.Grid.Canvas.TextRect(Rect, Rect.Left+60, Rect.Top+1, days[ARow-1]);
+      CustomLegendTool.Grid.Canvas.TextRect(Rect, Rect.Left, Rect.Top+1, days[ARow-1]);
     end;
   end
   else
@@ -178,7 +176,7 @@ begin
         Name := 'Arial';
         Size := 10;
       end;
-      CustomLegendTool.Grid.Canvas.TextRect(Rect, Rect.Left+35, Rect.Top+3, jobs[ACol-1]);
+      CustomLegendTool.Grid.Canvas.TextRect(Rect, Rect.Left, Rect.Top+3, jobs[ACol-1]);
     end
     else
     begin
@@ -186,24 +184,39 @@ begin
       CustomLegendTool.Grid.Canvas.Pen.Style:=psClear;
       CustomLegendTool.Grid.Canvas.Brush.Color:=Chart1[seriesIndex].Color;
       CustomLegendTool.Grid.Canvas.Rectangle(Rect);
-      TeeDrawCheckBox(Rect.Left+39, rect.Top+3, CustomLegendTool.Grid.Canvas, Chart1[seriesIndex].Active, clWhite);
+      TeeDrawCheckBox(Rect.Left+((Rect.Right-Rect.Left) div 2)-7, rect.Top+3, CustomLegendTool.Grid.Canvas, Chart1[seriesIndex].Active, clWhite);
       CustomLegendTool.Grid.Canvas.Pen.Style:=psSolid;
       CustomLegendTool.Grid.Canvas.Brush.Color:=clNone;
     end;
   end;
 end;
 
-procedure TTool_CustomLegendSGridForm.ClickTool(Sender:TAnnotationTool; Button:TMouseButton; Shift: TShiftState; X, Y: Integer);
-var seriesIndex, nCol, nRow: Integer;
-begin
-  with CustomLegendTool.Grid do
-    MouseToCell(X-ColWidths[0]+30, Y-RowHeights[0], nCol, nRow);
+type TCustomGridAccess=class(TCustomGrid);
 
-  if (nCol > 0) and (nCol<CustomLegendTool.Grid.ColCount) and
-     (nRow > 0) and (nRow<CustomLegendTool.Grid.RowCount) then
+procedure TTool_CustomLegendSGridForm.ClickTool(Sender:TAnnotationTool; Button:TMouseButton; Shift: TShiftState; X, Y: Integer);
+var seriesIndex, nCol, nRow, tmpY, tmpX: Integer;
+begin
+  //CustomLegendTool.Grid.MouseToCell(X, Y, nCol, nRow);
+  tmpY:=CustomLegendTool.Top;
+  for nRow:=0 to CustomLegendTool.Grid.RowCount-1 do
   begin
-    seriesIndex:=(nRow-1) + length(days)*(nCol-1);
-    Chart1[seriesIndex].Active:=not Chart1[seriesIndex].Active;
+    if Y<tmpY+CustomLegendTool.Grid.RowHeights[nRow] then
+    begin
+      tmpX:=CustomLegendTool.Left;
+      for nCol:=0 to CustomLegendTool.Grid.ColCount-1 do
+      begin
+        if X<tmpX+CustomLegendTool.Grid.ColWidths[nCol] then
+        begin
+          seriesIndex:=(nRow-1) + length(days)*(nCol-1);
+          Chart1[seriesIndex].Active:=not Chart1[seriesIndex].Active;
+          exit;
+        end
+        else
+          Inc(tmpX,CustomLegendTool.Grid.ColWidths[nCol]);
+      end;
+    end
+    else
+      Inc(tmpY, CustomLegendTool.Grid.RowHeights[nRow]);
   end;
 end;
 

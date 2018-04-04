@@ -644,7 +644,7 @@ begin
   {$ENDIF}
 
   Application.Initialize;
-  Application.Title := 'TeeChart Pro 2015 - What''s New !';
+  Application.Title := 'TeeChart Pro - What''s New !';
   Application.CreateForm(TTeeNewForm, TeeNewForm);
   Application.Run;
 end.

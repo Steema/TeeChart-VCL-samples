@@ -14,7 +14,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  {$IFDEF D10}
+  {$IFDEF D9}
   Types,
   {$ENDIF}
   Base, TeeProcs, TeEngine, Chart, Series;
@@ -71,19 +71,25 @@ var tmp:Integer;
     XPos,YPos:Integer;
 begin
   P:=Chart1.GetCursorPos;
+
   tmp:=Series1.Clicked(P.X,P.Y);
+
   if tmp<>-1 then
   begin
     AColor:=Series1.ValueColor[tmp];
     R:=PaintBox1.ClientRect;
+
     XPos:=(R.Left+R.Right) div 2;
     YPos:=(R.Top+R.Bottom) div 2;
+
     ACanvas:=TTeeCanvas3D.Create;
     try
       ACanvas.ReferenceCanvas:=PaintBox1.Canvas;
+
       With TPointerAccess(Series1.Pointer) do
       begin
         PrepareCanvas(ACanvas,AColor);
+
         DrawPointer(ACanvas,Chart1.View3D,
                     XPos,YPos,
                     HorizSize,VertSize,

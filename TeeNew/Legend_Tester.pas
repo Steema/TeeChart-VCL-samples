@@ -41,6 +41,9 @@ type
     Label3: TLabel;
     ETitle: TEdit;
     CBTitleVisible: TCheckBox;
+    GLegendTextStyle: TGroupBox;
+    CBLegendTextStyle: TComboBox;
+    CBMultiLine: TCheckBox;
     procedure FormCreate(Sender: TObject);
     procedure CBView3DClick(Sender: TObject);
     procedure BEditorClick(Sender: TObject);
@@ -57,6 +60,8 @@ type
     procedure CBSymbolPosChange(Sender: TObject);
     procedure ETitleChange(Sender: TObject);
     procedure CBTitleVisibleClick(Sender: TObject);
+    procedure CBLegendTextStyleChange(Sender: TObject);
+    procedure CBMultiLineClick(Sender: TObject);
   private
     { Private declarations }
     procedure Populate(GCount: Integer; SCount: Integer);
@@ -84,6 +89,7 @@ begin
   Chart1.Legend.DividingLines.Visible:=true;
 
   ETitleChange(Self);
+  CBTitleVisibleClick(Sender);
   
   UDGroupCount.Position:=3;
   UDSeriesCount.Position:=5;
@@ -105,6 +111,16 @@ begin
   Chart1.Legend.HorizJustify:=TLegendJustify(CBJustify.ItemIndex);
 end;
 
+procedure TLegendTester.CBLegendTextStyleChange(Sender: TObject);
+begin
+  Chart1.Legend.TextStyle:=TLegendTextStyle(CBLegendTextStyle.ItemIndex);
+end;
+
+procedure TLegendTester.CBMultiLineClick(Sender: TObject);
+begin
+  RBLengthsClick(Sender);
+end;
+
 procedure TLegendTester.ESeriesCountChange(Sender: TObject);
 begin
   Populate(UDGroupCount.Position, UDSeriesCount.Position);
@@ -117,21 +133,57 @@ end;
 
 procedure TLegendTester.RBLengthsClick(Sender: TObject);
 var i: Integer;
-const longstr='This is a long title for ';
+    tmpS: string;
+const longstr='This is a long string for ';
 begin
-  for i:=0 to Chart1.SeriesCount-1 do
-    if (RBLengths.ItemIndex=0) or
-       ((RBLengths.ItemIndex=2) and (i mod 4 = 0)) then
-       Chart1[i].Title:=longstr+'Series'+IntToStr(i+1)
-    else
-       Chart1[i].Title:='Series'+IntToStr(i+1);
+  if Chart1.SeriesCount=1 then
+    for i:=0 to Chart1[0].Count-1 do
+    begin
+      tmpS:=IntToStr(i+1);
+
+      if (CBMultiLine.Checked) and (i mod 3 = 0) then
+         tmpS:=sLineBreak+tmpS;
+
+      tmpS:='ValueIndex '+tmpS;
+
+      if (RBLengths.ItemIndex=0) or
+         ((RBLengths.ItemIndex=2) and (i mod 4 = 0)) then
+         tmpS:=longstr+tmpS;
+
+      Chart1[0].Labels[i]:=tmpS;
+    end
+  else
+    for i:=0 to Chart1.SeriesCount-1 do
+    begin
+      tmpS:=IntToStr(i+1);
+
+      if (CBMultiLine.Checked) and (i mod 3 = 0) then
+         tmpS:=sLineBreak+tmpS;
+
+      tmpS:='Series'+tmpS;
+
+      if (RBLengths.ItemIndex=0) or
+         ((RBLengths.ItemIndex=2) and (i mod 4 = 0)) then
+         tmpS:=longstr+tmpS;
+
+      Chart1[i].Title:=tmpS;
+    end;
 
   for i:=0 to Chart1.SeriesGroups.Count-1 do
+  begin
+    tmpS:=IntToStr(i+1);
+
+    if (CBMultiLine.Checked) and (i mod 3 = 0) then
+       tmpS:=sLineBreak+tmpS;
+
+    tmpS:='Group'+tmpS;
+
     if (RBLengths.ItemIndex=0) or
        ((RBLengths.ItemIndex=2) and (i mod 4 = 0)) then
-       Chart1.SeriesGroups[i].Name:=longstr+'Group'+IntToStr(i+1)
-    else
-       Chart1.SeriesGroups[i].Name:='Group'+IntToStr(i+1)
+       tmpS:=longstr+tmpS;
+
+    Chart1.SeriesGroups[i].Name:=tmpS;
+  end;
 end;
 
 procedure TLegendTester.RGLegendStyleClick(Sender: TObject);
@@ -188,10 +240,13 @@ begin
     Chart1.SeriesGroups.Add;
 
   for i:=0 to SCount-1 do
-  begin
-    Chart1.AddSeries(TLineSeries).FillSampleValues(100);
-    Chart1.SeriesGroups[i mod GCount].Add(Chart1[i])
-  end;
+    with Chart1.AddSeries(TLineSeries) do
+    begin
+      FillSampleValues(10);
+
+      if GCount>0 then
+        Chart1.SeriesGroups[i mod GCount].Add(Chart1[i])
+    end;
 
   RBLengthsClick(Self);
 end;

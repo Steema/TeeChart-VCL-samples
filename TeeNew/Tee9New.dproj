@@ -3,11 +3,11 @@
         <ProjectGuid>{BA802C8B-E056-40DD-92FD-40F08EB7DD6A}</ProjectGuid>
         <MainSource>Tee9new.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
-        <TargetedPlatforms>1025</TargetedPlatforms>
+        <Config Condition="'$(Config)'==''">Release</Config>
+        <TargetedPlatforms>1153</TargetedPlatforms>
         <AppType>Application</AppType>
         <FrameworkType>VCL</FrameworkType>
-        <ProjectVersion>18.0</ProjectVersion>
+        <ProjectVersion>18.2</ProjectVersion>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -52,48 +52,54 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <DCC_MinStackSize>4096</DCC_MinStackSize>
-        <DCC_S>false</DCC_S>
-        <DCC_F>false</DCC_F>
-        <DCC_UNSAFE_CAST>true</DCC_UNSAFE_CAST>
-        <DebugSourcePath>$(BDS)\units;$(TCROOT)\TeeChartVCL\Sources;$(DebugSourcePath)</DebugSourcePath>
-        <DCC_UNSAFE_TYPE>true</DCC_UNSAFE_TYPE>
         <DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
-        <DCC_UsePackage>Borland.VclX;Borland.VclRtl;Borland.VclDbRtl;Borland.VclBdeRtl;Borland.Vcl;Borland.Delphi;Borland.VclDbCtrls;rtl;vclx;vcl;bdertl;vclactnband;TeeLanguage89;TeePro89;TeeUI89;Tee89;TeeGL89;TeeDB89;$(DCC_UsePackage)</DCC_UsePackage>
-        <DCC_K>false</DCC_K>
         <DCC_DebugInformation>1</DCC_DebugInformation>
-        <VerInfo_MajorVer>8</VerInfo_MajorVer>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <DCC_SYMBOL_PLATFORM>false</DCC_SYMBOL_PLATFORM>
-        <VerInfo_Locale>1033</VerInfo_Locale>
-        <DCC_N>true</DCC_N>
         <DCC_E>false</DCC_E>
-        <VerInfo_Keys>FileVersion=8.0.0.46;CompanyName=Steema Software;FileDescription=TeeNew;LegalCopyright=Copyright (c) 2001-2006 by David Berneda;ProductName=TeeChart Pro;ProductVersion=8.0.0.0;Comments=www.steema.com</VerInfo_Keys>
-        <VerInfo_Build>46</VerInfo_Build>
-        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+        <DCC_N>true</DCC_N>
+        <DCC_S>false</DCC_S>
         <DCC_Namespace>Borland.Vcl;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;VCLTee;System.Win;$(DCC_Namespace)</DCC_Namespace>
-        <DCC_UNSAFE_CODE>true</DCC_UNSAFE_CODE>
-        <SanitizedProjectName>Tee9New</SanitizedProjectName>
+        <DCC_MinStackSize>4096</DCC_MinStackSize>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_UnitSearchPath>$(TCROOT)\TeeChartVCL\Sources;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DebugSourcePath>$(BDS)\units;$(TCROOT)\TeeChartVCL\Sources;$(DebugSourcePath)</DebugSourcePath>
+        <DCC_UsePackage>Borland.VclX;Borland.VclRtl;Borland.VclDbRtl;Borland.VclBdeRtl;Borland.Vcl;Borland.Delphi;Borland.VclDbCtrls;rtl;vclx;vcl;bdertl;vclactnband;TeeLanguage89;TeePro89;TeeUI89;Tee89;TeeGL89;TeeDB89;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_SYMBOL_PLATFORM>false</DCC_SYMBOL_PLATFORM>
         <DCC_UNIT_PLATFORM>false</DCC_UNIT_PLATFORM>
+        <DCC_UNSAFE_TYPE>true</DCC_UNSAFE_TYPE>
+        <DCC_UNSAFE_CODE>true</DCC_UNSAFE_CODE>
+        <DCC_UNSAFE_CAST>true</DCC_UNSAFE_CAST>
+        <SanitizedProjectName>Tee9New</SanitizedProjectName>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_MajorVer>8</VerInfo_MajorVer>
+        <VerInfo_Build>46</VerInfo_Build>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>FileVersion=8.0.0.46;CompanyName=Steema Software;FileDescription=TeeNew;LegalCopyright=Copyright (c) 2001-2006 by David Berneda;ProductName=TeeChart Pro;ProductVersion=8.0.0.0;Comments=www.steema.com</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
-        <Icon_MainIcon>Tee9New_Icon.ico</Icon_MainIcon>
-        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
-        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <Icon_MainIcon>Tee9New_Icon.ico</Icon_MainIcon>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
-        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <Icon_MainIcon>Tee9New_Icon.ico</Icon_MainIcon>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <Icon_MainIcon>Tee9New_Icon.ico</Icon_MainIcon>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
-        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
-        <DCC_DebugInformation>0</DCC_DebugInformation>
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
         <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
@@ -101,17 +107,14 @@
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
-        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
-        <DCC_Optimize>false</DCC_Optimize>
         <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_iOSDevice64)'!=''">
         <BT_BuildType>Debug</BT_BuildType>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <VerInfo_Build>0</VerInfo_Build>
-        <VerInfo_MajorVer>1</VerInfo_MajorVer>
-        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>
@@ -1933,6 +1936,9 @@
         <DCCReference Include="Tool_CustomLegendSGrid.pas">
             <Form>TTool_CustomLegendSGridForm</Form>
         </DCCReference>
+        <DCCReference Include="Legend_Tester.pas">
+            <Form>LegendTester</Form>
+        </DCCReference>
         <BuildConfiguration Include="Debug">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -1954,14 +1960,12 @@
                     <Source Name="MainSource">Tee9new.dpr</Source>
                 </Source>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k230.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp230.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k230.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp230.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="e:_program_files_borland_bds_3.0_Bin_dcldss90.bpl">Borland Decision Cube Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="iOSDevice64">True</Platform>
+                <Platform value="Linux64">True</Platform>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">False</Platform>
             </Platforms>

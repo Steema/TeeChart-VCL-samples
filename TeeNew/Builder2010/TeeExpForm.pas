@@ -1,8 +1,8 @@
-{********************************************}
-{  TeeChart Wizard                           }
-{  Copyright (c) 1995-2013 by David Berneda  }
-{  All Rights Reserved                       }
-{********************************************}
+{*********************************************}
+{  TeeChart Wizard                            }
+{  Copyright (c) 1995-2018 by Steema Software }
+{  All Rights Reserved                        }
+{*********************************************}
 unit TeeExpForm;
 {$I TeeDefs.inc}
 

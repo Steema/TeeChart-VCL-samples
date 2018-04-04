@@ -166,7 +166,8 @@ begin
   CustomLegendTool.Shape.Font.Color := clBlue;
   CustomLegendTool.Shape.Text := chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+
     chr(13)+chr(13)+ ' Text if desired !!!!';
-  CustomLegendTool.Height := 140;
+  CustomLegendTool.Height := 100;
+  CustomLegendTool.Width := 400;
 end;
 
 procedure TTool_CustomLegendForm.StringGrid1DrawCell(Sender: TObject; ACol, ARow: Integer;

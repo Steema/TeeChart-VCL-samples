@@ -65,6 +65,7 @@ begin
   begin
     Clear;
     AddArray([12, 14, 18, 18.5, 18.6, 18.6, 19, 24]);
+    RecalcStats;
     UseCustomValues := False; // by default, use internal calculating algorithms
   end;
   UpdateDisplay;

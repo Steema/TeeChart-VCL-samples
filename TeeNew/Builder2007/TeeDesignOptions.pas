@@ -1,8 +1,8 @@
-{******************************************}
-{   Design-Time Options Editor Dialog      }
-{ Copyright (c) 2003-2013 by David Berneda }
-{        All Rights Reserved               }
-{******************************************}
+{********************************************}
+{   Design-Time Options Editor Dialog        }
+{ Copyright (c) 2003-2018 by Steema Software }
+{        All Rights Reserved                 }
+{********************************************}
 unit TeeDesignOptions;
 {$I TeeDefs.inc}
 

@@ -1,8 +1,8 @@
-{******************************************}
-{    TeeChart. DBChart CrossTabs           }
-{ Copyright (c) 1995-2010 by David Berneda }
-{    All Rights Reserved                   }
-{******************************************}
+{********************************************}
+{    TeeChart. DBChart CrossTabs             }
+{ Copyright (c) 1995-2018 by Steema Software }
+{    All Rights Reserved                     }
+{********************************************}
 unit DBChart_CrossTab;
 {$I TeeDefs.inc}
 
@@ -20,7 +20,7 @@ uses
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   Buttons, Grids, DBGrids, DBCtrls, DBTables,
   {$ENDIF}
-  Base_DBChart, Db, TeeProcs, TeEngine, Chart, Series;
+  Base_DBChart, Db, TeeProcs, TeEngine, Chart, Series, TeeGDIPlus;
 
 type
   TDBChartCrossTab = class(TForm)
