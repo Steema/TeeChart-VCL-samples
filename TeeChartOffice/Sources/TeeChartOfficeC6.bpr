@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="TeeChartOfficeC6.exe"/>
+    <OBJFILES value="TeeChartOfficeC6.obj UnitChartOffice.obj TeeConfig.obj TeeRecentFiles.obj 
+      TeeExpression.obj TeeAxisDivider.obj"/>
+    <RESFILES value="TeeChartOfficeC6.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) UnitChartOffice.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="TeeWorld9C6.lib websnap.lib webdsnap.lib dclocx.lib 
+      nmfast.lib vclie.lib inet.lib inetdb.lib dsnapcon.lib dsnapcrba.lib 
+      xmlrtl.lib ibxpress.lib visualclx.lib dsnap.lib cds.lib indy.lib 
+      dbxcds.lib soaprtl.lib bcbie.lib dbexpress.lib inetdbxpress.lib 
+      inetdbbde.lib bcbsmp.lib visualdbclx.lib bdecds.lib adortl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib tee9c6.lib vcldb.lib adortl.lib bdertl.lib vcldbx.lib 
+      bdecds.lib visualdbclx.lib bcbsmp.lib inetdbbde.lib inetdbxpress.lib 
+      dbexpress.lib bcbie.lib soaprtl.lib dbxcds.lib indy.lib TeeDB9c6.lib 
+      TeeUI9c6.lib TeeImage9c6.lib TeeLanguage9c6.lib TeePro9c6.lib TeeGL9c6.lib 
+      vclx.lib dbrtl.lib cds.lib dsnap.lib visualclx.lib ibxpress.lib xmlrtl.lib 
+      dsnapcrba.lib dsnapcon.lib inetdb.lib inet.lib vclie.lib nmfast.lib 
+      dclocx.lib webdsnap.lib websnap.lib TeeWorld9C6.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi vcldb.bpi vclx.bpi bdertl.bpi vcldbx.bpi 
+      Tee9C6.bpi TeeUI9C6.bpi TeeDB9C6.bpi TeePro9C6.bpi TeeGL9C6.bpi 
+      TeeImage9C6.bpi TeeLanguage9C6.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="TeeChartOfficeC6.cpp"/>
+    <INCLUDEPATH value="$(TEEINCPATH);..\Compiled\BuilderC6\Include;..\Compiled\BuilderC6\Lib;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(TEELIBPATH);..\Compiled\BuilderC6\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\include;$(TEEINCPATH) -I$(BCB)\include\vcl -I$(BCB)\Projects 
+      -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -5 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$C- -$A8 -I$(TEEINCPATH) -U$(TEELIBPATH) -Q -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="TeeChartOfficeC6.res" FORMNAME="" UNITNAME="TeeChartOfficeC6.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TeeChartOfficeC6.cpp" FORMNAME="" UNITNAME="TeeChartOfficeC6" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UnitChartOffice.pas" FORMNAME="MainForm" UNITNAME="UnitChartOffice" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TeeConfig.pas" FORMNAME="" UNITNAME="TeeConfig" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TeeRecentFiles.pas" FORMNAME="" UNITNAME="TeeRecentFiles" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TeeExpression.pas" FORMNAME="" UNITNAME="TeeExpression" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TeeAxisDivider.pas" FORMNAME="" UNITNAME="TeeAxisDivider" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=5
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=David Berneda
+FileDescription=TeeChart Office
+FileVersion=1.5.0.0
+InternalName=TeeChartOffice
+LegalCopyright=Copyright 2001-2013 by David Berneda
+LegalTrademarks=
+OriginalFilename=TeeChartOffice
+ProductName=TeeChartOffice
+ProductVersion=1.0
+Comments=
+
+[Excluded Packages]
+C:\Root\TeeChartVCL\Sources9\DclTee9QR5C6.bpl=TeeChart 9 for QuickReport
+C:\Program Files (x86)\Borland\CBuilder6\Bin\dclclxstd60.bpl=Borland CLX Standard Components
+C:\Program Files (x86)\Borland\CBuilder6\Bin\dcldss60.bpl=Borland Decision Cube Components
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{368284AF-A05D-40AC-85B9-489DAA37BBDA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Desktop\TeeChart_Office_Desktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mobile\TeeChart_Office_Mobile.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TeeChart_Office_Desktop">
+        <MSBuild Projects="Desktop\TeeChart_Office_Desktop.dproj"/>
+    </Target>
+    <Target Name="TeeChart_Office_Desktop:Clean">
+        <MSBuild Projects="Desktop\TeeChart_Office_Desktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TeeChart_Office_Desktop:Make">
+        <MSBuild Projects="Desktop\TeeChart_Office_Desktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TeeChart_Office_Mobile">
+        <MSBuild Projects="Mobile\TeeChart_Office_Mobile.dproj"/>
+    </Target>
+    <Target Name="TeeChart_Office_Mobile:Clean">
+        <MSBuild Projects="Mobile\TeeChart_Office_Mobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TeeChart_Office_Mobile:Make">
+        <MSBuild Projects="Mobile\TeeChart_Office_Mobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TeeChart_Office_Desktop;TeeChart_Office_Mobile"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TeeChart_Office_Desktop:Clean;TeeChart_Office_Mobile:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TeeChart_Office_Desktop:Make;TeeChart_Office_Mobile:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

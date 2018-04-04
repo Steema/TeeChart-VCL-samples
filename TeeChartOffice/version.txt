@@ -1,0 +1,6 @@
+TEECHARTOFFICE
+VERSION
+4.1
+December 27th 2013
+http://teechart.net/files/teechartoffice/TeeChartOffice_41_win32.zip
+http://teechart.net/files/teechartoffice/TeeChartOffice_41_win64.zip
