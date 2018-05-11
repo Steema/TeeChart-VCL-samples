@@ -1,11 +1,13 @@
 *********************************
 
  Welcome to TeeChart-Office !
- www.Steema.com
+ ============================
+#### www.Steema.com
 
 *********************************
 
-.Introduction
+
+Introduction
 -------------
 
 TeeChart-Office is a free charting and plotting tool
@@ -22,13 +24,13 @@ charts with other users and configure the many properties
 it offers.
 
 
-.Ordering
+Ordering
 ---------
 
 TeeChartOffice is FREE !
 
 
-.Technology
+Technology
 -----------
 
 Developed 100% in Object Pascal under Embarcadero (CodeGear / Borland) Delphi.
@@ -37,12 +39,12 @@ Aproximately 496K lines of code.
 TeeChart supports VCL.Win32 / Win64, VCL.Net, FireMonkey for Mac OSX,
 iOS and Android component frameworks.
 
-.Download
+Download
 ---------
 
 Updated versions can be found at Steema.com web site.
 
-.License
+License
 ---------------
 
 See below appendix 1 for Disclaimer license details.
@@ -51,7 +53,7 @@ TeeChart Office is free and freely redistributable,
 provided you do not alter its contents or charge for it.
 
 
-.Source Code
+Source Code
 ------------
 
 Download TeeChart Pro Evaluation versions to
@@ -60,7 +62,7 @@ obtain partial source code of TeeChartOffice.
 Full source code (TeeChart Pro source code) is
 optionally available (not free).
 
-.Installation
+Installation
 -------------
 
 No installation required.
@@ -69,7 +71,7 @@ TeeChartOffice executable is ready to run.
 The first time TeeChartOffice executes, it registers
 itself into Windows Registry the *.tee file extension.
 
-.Requirements
+Requirements
 -------------
 
 For Microsoft Windows:
@@ -83,7 +85,7 @@ TeeChartOffice runs in RedHat, SuSe, Mandrake.
 A library (libQtIntf) to interface with Qt libraries is included.
 
 
-.Special note about PNG graphics format
+Special note about PNG graphics format
 --------------------------------------
 
 Included you can find the free redistributable
@@ -101,7 +103,7 @@ The PNG library is copyright FreeSoftware.com
 Visit http://www.libpng.org for more information.
 
 
-.Support
+Support
 --------
 
 Your questions, suggestions, bug reports, comments, wishes
@@ -113,7 +115,7 @@ through our support page:
 http://www.steema.com/support/TeeChartOffice
 
 
-.Copyright
+Copyright
 ----------
 
 TeeChartOffice is Copyright (c) 2001-2013 by Steema Software.
@@ -124,7 +126,7 @@ TeeChart Pro is Copyright (c) 1995-2013 by Steema Software.
 All Rights Reserved.
 
 
-.Trademarks
+Trademarks
 -----------
 
 Delphi and Kylix are trademarks or registered trademarks
@@ -140,7 +142,7 @@ All other brands and product names are trademarks or
 registered trademarks of their respective owners.
 
 
-.Disclaimer
+Disclaimer
 -----------
 
 The Author cannot and does not guarantee that any functions contained
@@ -187,3 +189,4 @@ OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
 
 ************************************************************
+
