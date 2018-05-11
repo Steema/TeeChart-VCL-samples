@@ -1,3 +1,7 @@
+<a href="https://www.steema.com/product/vcl">
+<img align="right" src="http://www.teechart.net/img/logos/teechart_vcl.png">
+</a>
+
 *********************************
 
  Welcome to TeeChart-Office !
