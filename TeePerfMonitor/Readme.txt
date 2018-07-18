@@ -1,4 +1,4 @@
-TeeChart Pro 8
+TeeChart Pro 
 "Performance Monitor" example
 -------------------------------
 
