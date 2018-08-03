@@ -16,7 +16,7 @@ uses
   TeEngine, Series, TeeProcs, Chart, TeeComma, TeePerfCounter, TeeLisB,
   TeCanvas, StatChar, TeeGauges, CandleCh, TeeTools, TeeThemeEditor,
   TeePNG, TeePCX, TeeGIF, TeeJPEG, TeeVMLCanvas, TeePSCanvas, TeePDFCanvas,
-  TeeSVGCanvas, TeePenDlg, VclTee.TeeGDIPlus;
+  TeeSVGCanvas, TeePenDlg, TeeGDIPlus;
 
 type
   TMainForm = class(TForm)
