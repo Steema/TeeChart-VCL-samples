@@ -130,7 +130,7 @@ end;
 procedure TForm8.CheckAxes;
 begin
   if Series1.LastDisplayedIndex-Series1.FirstDisplayedIndex  > 40 then
-    Chart1.Axes.Bottom.SetMinMax(Series1.XValues[Series1.FirstDisplayedIndex+1],
+    Chart1.Axes.Bottom.SetMinMax(Series1.XValues[Series1.LastDisplayedIndex-40],
                                  Series1.XValues[Series1.LastDisplayedIndex+1]);
 end;
 
