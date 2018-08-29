@@ -2,8 +2,7 @@ program ActivityGaugeSeries;
 
 uses
   Forms,
-  Unit1 in 'Unit1.pas' {Form1},
-  TeeActivityDonut in 'D:\steema\root\TeeChartVCL\Sources9\TeeActivityDonut.pas';
+  Unit1 in 'Unit1.pas' {Form1};
 
 {$R *.res}
 
