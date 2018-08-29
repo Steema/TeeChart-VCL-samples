@@ -1,0 +1,181 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = 'TeeChart showing Piezo vibration sensor data from an Arduino'
+  ClientHeight = 608
+  ClientWidth = 946
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TeeCommander1: TTeeCommander
+    Left = 0
+    Top = 0
+    Width = 946
+    Height = 33
+    Panel = Chart1
+    Align = alTop
+    ParentShowHint = False
+    TabOrder = 0
+  end
+  object Chart1: TChart
+    Left = 121
+    Top = 33
+    Width = 825
+    Height = 575
+    Legend.Font.Color = 4210752
+    Legend.Font.Height = -13
+    Legend.Font.Name = 'Verdana'
+    Legend.Frame.Visible = False
+    Legend.Transparent = True
+    Legend.Visible = False
+    Title.Font.Color = clGray
+    Title.Font.Height = -16
+    Title.Text.Strings = (
+      'TChart logging Arduino Piezo sensor data')
+    BottomAxis.DateTimeFormat = 'mm:ss:zzz'
+    BottomAxis.Grid.Visible = False
+    BottomAxis.LabelsAngle = 90
+    BottomAxis.LabelsFormat.Font.Color = clGray
+    BottomAxis.LabelsFormat.Font.Height = -13
+    BottomAxis.LabelsFormat.Font.Name = 'Verdana'
+    BottomAxis.MinorTicks.Visible = False
+    BottomAxis.Title.Font.Color = 4210752
+    BottomAxis.Title.Font.Height = -15
+    DepthAxis.LabelsFormat.Font.Color = clGray
+    DepthAxis.LabelsFormat.Font.Height = -13
+    DepthAxis.LabelsFormat.Font.Name = 'Verdana'
+    DepthAxis.MinorTicks.Visible = False
+    DepthAxis.Title.Font.Color = 4210752
+    DepthAxis.Title.Font.Height = -15
+    DepthTopAxis.LabelsFormat.Font.Color = clGray
+    DepthTopAxis.LabelsFormat.Font.Height = -13
+    DepthTopAxis.LabelsFormat.Font.Name = 'Verdana'
+    DepthTopAxis.MinorTicks.Visible = False
+    DepthTopAxis.Title.Font.Color = 4210752
+    DepthTopAxis.Title.Font.Height = -15
+    LeftAxis.Axis.Visible = False
+    LeftAxis.LabelsFormat.Font.Color = clGray
+    LeftAxis.LabelsFormat.Font.Height = -13
+    LeftAxis.LabelsFormat.Font.Name = 'Verdana'
+    LeftAxis.MinorTicks.Visible = False
+    LeftAxis.Title.Font.Color = 4210752
+    LeftAxis.Title.Font.Height = -15
+    RightAxis.LabelsFormat.Font.Color = clGray
+    RightAxis.LabelsFormat.Font.Height = -13
+    RightAxis.LabelsFormat.Font.Name = 'Verdana'
+    RightAxis.MinorTicks.Visible = False
+    RightAxis.Title.Font.Color = 4210752
+    RightAxis.Title.Font.Height = -15
+    TopAxis.LabelsFormat.Font.Color = clGray
+    TopAxis.LabelsFormat.Font.Height = -13
+    TopAxis.LabelsFormat.Font.Name = 'Verdana'
+    TopAxis.MinorTicks.Visible = False
+    TopAxis.Title.Font.Color = 4210752
+    TopAxis.Title.Font.Height = -15
+    View3D = False
+    View3DWalls = False
+    Align = alClient
+    Color = clWhite
+    TabOrder = 1
+    DefaultCanvas = 'TGDIPlusCanvas'
+    ColorPaletteIndex = 0
+    object Series1: TLineSeries
+      HoverElement = [heCurrent]
+      Marks.Brush.Color = 14063991
+      Marks.Font.Name = 'Verdana'
+      Marks.RoundSize = 0
+      Marks.Shadow.Visible = False
+      Brush.BackColor = clDefault
+      LinePen.Width = 5
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      XValues.DateTime = True
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object ChartTool1: TColorLineTool
+      Pen.Color = 12615680
+      Pen.Style = psDash
+      Pen.Width = 2
+      Value = 517.602827763496200000
+      AxisID = 2
+      object TAnnotationTool
+        Shape.Alignment = taCenter
+        Shape.CustomPosition = True
+        Shape.Left = 407
+        Shape.Shadow.Visible = False
+        Shape.TextAlignment = taCenter
+        Shape.Top = 435
+        TextAlignment = taCenter
+      end
+    end
+    object ChartTool2: TAnnotationTool
+      PositionUnits = muPercent
+      Shape.CustomPosition = True
+      Shape.Font.Height = -13
+      Shape.Frame.Visible = False
+      Shape.Left = 8
+      Shape.Text = 'Activity threshold'
+      Shape.Top = 25
+    end
+  end
+  object panel1: TPanel
+    Left = 0
+    Top = 33
+    Width = 121
+    Height = 575
+    Align = alLeft
+    TabOrder = 2
+    object Button1: TButton
+      Left = 16
+      Top = 32
+      Width = 81
+      Height = 25
+      Caption = 'Start'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 16
+      Top = 72
+      Width = 81
+      Height = 25
+      Caption = 'Stop'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
+    object Memo1: TMemo
+      Left = 16
+      Top = 128
+      Width = 81
+      Height = 385
+      TabOrder = 2
+      Visible = False
+    end
+  end
+  object ApdComPort1: TApdComPort
+    Baud = 9600
+    PromptForPort = False
+    TraceName = 'APRO.TRC'
+    LogName = 'APRO.LOG'
+    OnTriggerAvail = ApdComPort1TriggerAvail
+    Left = 64
+    Top = 560
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 16
+    Top = 552
+  end
+end
