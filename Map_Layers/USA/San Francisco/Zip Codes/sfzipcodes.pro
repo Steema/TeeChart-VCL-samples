@@ -1,0 +1,8 @@
+[Scale]
+XDiv=301244
+XOff=142.35
+YDiv=171029
+YOff=-25.3
+
+[DB]
+Label=ZIP_CODE
