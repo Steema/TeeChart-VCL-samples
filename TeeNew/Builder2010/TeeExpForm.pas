@@ -1,6 +1,6 @@
 {*********************************************}
 {  TeeChart Wizard                            }
-{  Copyright (c) 1995-2018 by Steema Software }
+{  Copyright (c) 1995-2019 by Steema Software }
 {  All Rights Reserved                        }
 {*********************************************}
 unit TeeExpForm;

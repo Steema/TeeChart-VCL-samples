@@ -1,6 +1,6 @@
 {*********************************************}
 { TeeChart, Windows Performance Counters demo }
-{ Copyright 2004-2018 by Steema Software      }
+{ Copyright 2004-2019 by Steema Software      }
 {*********************************************}
 unit TeePerfCounter;
 {$I TeeDefs.inc}
