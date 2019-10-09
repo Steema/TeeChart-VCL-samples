@@ -20,15 +20,7 @@ uses
   TeeWebGallery in 'TeeWebGallery.pas',
   TeeImportData in 'TeeImportData.pas' {Form1};
 
-{$IFDEF D16}
 {$R *.res}
-{$ELSE}
-{$IFDEF D10}
-{$R TeeChartOffice_D10.res}
-{$ELSE}
-{$R *.res}
-{$ENDIF}
-{$ENDIF}
 
 begin
   Application.Initialize;
