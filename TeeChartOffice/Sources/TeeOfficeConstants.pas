@@ -1,6 +1,6 @@
 {**********************************************}
 {   TeeChart Office - Constant strings         }
-{   Copyright (c) 2001-2019 by Steema Software }
+{   Copyright (c) 2001-2020 by Steema Software }
 {   All Rights Reserved.                       }
 {**********************************************}
 unit TeeOfficeConstants;

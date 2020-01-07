@@ -1,6 +1,6 @@
 {**********************************************}
 {   TeeChart Office - Web Charts Gallery       }
-{   Copyright (c) 2010-2019 by Steema Software }
+{   Copyright (c) 2010-2020 by Steema Software }
 {   All Rights Reserved.                       }
 {**********************************************}
 unit TeeWebGallery;
