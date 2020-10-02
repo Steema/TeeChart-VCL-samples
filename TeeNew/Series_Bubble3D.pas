@@ -39,7 +39,7 @@ procedure TBubble3DSeriesForm.FormCreate(Sender: TObject);
 var t : Integer;
 begin
   inherited;
-
+  Chart1.View3D := True;
   Series1.Clear;
   for t:=1 to 10 do
       Series1.AddBubble(Random(100),Random(100),Random(100),Random(100));

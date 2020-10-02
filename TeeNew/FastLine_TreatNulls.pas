@@ -14,7 +14,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls, Grids,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeeChartGrid;
+  Base, TeeProcs, TeEngine, Chart, Series, TeeChartGrid, TeeGDIPlus;
 
 type
   TFastLineTreatNulls = class(TBaseForm)

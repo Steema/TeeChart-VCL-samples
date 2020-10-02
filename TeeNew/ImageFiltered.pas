@@ -59,13 +59,18 @@ var tmp : TBitmap;
 begin
   // Obtain "filtered" image  (apply filters to picture)
 
+  Chart1.Walls.Visible := True;
+  Chart1.Walls.Back.Visible := True;
+
+  bApply.Enabled := False;
+
   tmp:=ImageFiltered1.Filtered;
   try
     // Assign filtered image to Back Wall of Chart1
 
     Chart1.Walls.Back.Picture.Graphic:=tmp;
   finally
-    tmp.Free;
+    //tmp.Free;
   end;
 end;
 

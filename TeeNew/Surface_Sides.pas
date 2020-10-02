@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeeSurfa;
+  Base, TeeProcs, TeEngine, Chart, Series, TeeSurfa, TeeGDIPlus {, TeeGDIPlus};
 
 type
   TSurfaceSides = class(TBaseForm)
@@ -53,6 +53,7 @@ end;
 procedure TSurfaceSides.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Series1.FillSampleValues(12);
 end;
 

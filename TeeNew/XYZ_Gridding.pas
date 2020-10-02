@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeePoin3, TeeProcs, Chart, TeCanvas, TeeTools;
+  Base, TeEngine, TeeSurfa, TeePoin3, TeeProcs, Chart, TeCanvas, TeeTools,
+  TeeGDIPlus;
 
 type
   TXYZGridding = class(TBaseForm)
@@ -139,6 +140,8 @@ end;
 procedure TXYZGridding.FormCreate(Sender: TObject);
 begin
   inherited;
+
+  Chart1.View3D := True;
   Fill;
 
   Gridding(Series1,Series2,15);

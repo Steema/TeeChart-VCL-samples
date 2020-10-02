@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  TeeProcs, TeEngine, Chart, TeeEdit;
+  TeeProcs, TeEngine, Chart, TeeEdit, TeeGDIPlus;
 
 type
   TBasicFeatures = class(TForm)
@@ -50,9 +50,9 @@ begin
   MyChart.AddSeries( TBarSeries.Create( Self ));
 
   MyChart[0].Clear;
-  MyChart[0].Add( 123, 'ABC', clRed );
-  MyChart[0].Add( 456, 'DEF', clBlue );
-  MyChart[0].Add( 321, 'GHI', clGreen );
+  MyChart[0].Add( 123, 'ABC', clSkyBlue );
+  MyChart[0].Add( 456, 'DEF', TColor($68CFFF) );
+  MyChart[0].Add( 321, 'GHI', TColor($477FFF) );
 
   MyChart[0].Marks.Style:= smsValue;
 end;

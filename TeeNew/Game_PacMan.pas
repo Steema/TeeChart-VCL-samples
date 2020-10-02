@@ -316,7 +316,7 @@ begin
   begin
     ApplyZOrder:=False;
     Legend.Visible:=False;
-    View3D:=True;
+    View3D:=False;
     Axes.Visible:=True;
     BackColor:=clAqua;
   end;

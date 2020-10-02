@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeGDIPlus;
 
 type
   TDepthAxisDateTime = class(TBaseForm)
@@ -38,7 +38,7 @@ implementation
 procedure TDepthAxisDateTime.FormCreate(Sender: TObject);
 begin
   inherited;
-
+  Chart1.View3D := True;
   Series1.XValues.DateTime:=True;
   Series1.ZValues.DateTime:=True;
   Series1.FillSampleValues;

@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeGDIPlus;
 
 type
   TSurfaceWire = class(TBaseForm)
@@ -42,6 +42,8 @@ implementation
 procedure TSurfaceWire.FormCreate(Sender: TObject);
 begin
   inherited;
+
+  Chart1.View3D := True;
   Series1.FillSampleValues(10);
 
   Series1.UsePalette:=True;

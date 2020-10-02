@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeEdiGrad;
+  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeEdiGrad,
+  TeeGDIPlus;
 
 type
   TSeriesLineGradient = class(TBaseForm)

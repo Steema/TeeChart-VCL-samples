@@ -13,7 +13,7 @@ uses
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
   SysUtils, Classes,
-  TeeProcs, TeeDraw3D, TeEngine, Series, Chart;
+  TeeProcs, TeeDraw3D, TeEngine, Series, Chart, TeeGDIPlus;
 
 type
   TWelcomeAllForm = class(TForm)

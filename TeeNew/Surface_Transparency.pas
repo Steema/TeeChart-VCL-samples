@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, ExtCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, TeeTools, TeeSurfa;
+  Base, TeeProcs, TeEngine, Chart, TeeTools, TeeSurfa, TeeGDIPlus;
 
 type
   TSurfaceTransp = class(TBaseForm)
@@ -47,6 +47,7 @@ end;
 procedure TSurfaceTransp.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Series1.FillSampleValues;
   Series1.Transparency:=50;
 end;

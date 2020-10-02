@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series;
+  Base, TeeProcs, TeEngine, Chart, Series, TeeGDIPlus;
 
 type
   TFirstLastLabels = class(TBaseForm)
@@ -54,28 +54,29 @@ procedure TFirstLastLabels.BottomAxisDrawLabel(Sender:TChartAxis; var X,Y,Z:Inte
                                                var Text:String;
                                                var DrawLabel:Boolean);
 begin
+
   if CheckBox1.Checked then
   begin
     // With bottom axis do:
     with Sender do
-    if X=CalcPosValue(Minimum) then  // first label
+    if Abs(X-CalcPosValue(Minimum)) < 20 then  // first label
     begin
       with ParentChart.Canvas do
-      begin
-        TextAlign:=TextAlign - TA_CENTER + TA_LEFT;  // align to left
-        Font.Style:=[fsBold];
-      end;
+        TextAlign:= TA_RIGHT; /// align to right
     end
     else
-    if X=CalcPosValue(Maximum) then  // last label
+    if Abs(X-CalcPosValue(Maximum)) < 20 then  // last label
     begin
       with ParentChart.Canvas do
-      begin
-        TextAlign:=TextAlign - TA_CENTER + TA_RIGHT; // align to right
-        Font.Style:=[fsBold];
-      end;
+        TextAlign:= TA_LEFT; // align to left
     end;
   end;
+
+  //alternatively, use Axis Item list. Can set Automatic False once the values have been set.
+  //Chart1.Axes.Bottom.Items.Automatic := False;
+  //Chart1.Axes.Bottom.Items[0].Format.Alignment := taRightJustify;
+  //Chart1.Axes.Bottom.Items[0].Format.Font.Style := [fsBold];
+
 end;
 
 procedure TFirstLastLabels.CheckBox1Click(Sender: TObject);

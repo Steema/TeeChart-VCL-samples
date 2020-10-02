@@ -15,7 +15,7 @@ uses
   Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls, Grids,
   {$ENDIF}
   Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, FastLine_TreatNulls,
-  TeeChartGrid;
+  TeeChartGrid, TeeGDIPlus;
 
 type
   TPointTreatNulls = class(TFastLineTreatNulls)

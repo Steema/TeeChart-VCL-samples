@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeGDIPlus;
 
 type
   TSurfacePaletteForm = class(TBaseForm)
@@ -54,6 +54,8 @@ end;
 procedure TSurfacePaletteForm.FormCreate(Sender: TObject);
 begin
   inherited;
+
+  Chart1.View3D := True;
 
   Series1.FillSampleValues(30);
   Series1.PaletteStyle := psRainbow;

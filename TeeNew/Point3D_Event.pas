@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeePoin3, Series, TeeProcs, Chart, TeeComma;
+  Base, TeEngine, TeeSurfa, TeePoin3, Series, TeeProcs, Chart, TeeComma,
+  TeeGDIPlus;
 
 type
   TPoint3DEvent = class(TBaseForm)
@@ -59,6 +60,7 @@ end;
 procedure TPoint3DEvent.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Series1.FillSampleValues(20);
 end;
 

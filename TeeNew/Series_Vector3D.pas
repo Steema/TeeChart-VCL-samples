@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, ExtCtrls,
   {$ENDIF}
-  Base, TeCanvas, TeePenDlg, TeeProcs, TeEngine, Chart, TeeSurfa;
+  Base, TeCanvas, TeePenDlg, TeeProcs, TeEngine, Chart, TeeSurfa,
+  TeeGDIPlus;
 
 type
   TVector3DSeriesForm = class(TBaseForm)
@@ -41,7 +42,7 @@ uses
 procedure TVector3DSeriesForm.FormCreate(Sender: TObject);
 begin
   inherited;
-
+  Chart1.View3D := True;
   Series1.FillSampleValues;
   Series1.UsePalette:=True;
 end;

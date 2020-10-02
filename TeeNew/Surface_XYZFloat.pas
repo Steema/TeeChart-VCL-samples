@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeTools;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeTools, TeeGDIPlus;
 
 type
   TSurfaceFloatOther = class(TBaseForm)
@@ -39,6 +39,7 @@ var x,z : Integer;
 begin
   inherited;
 
+  Chart1.View3D := True;
   Series1.IrregularGrid:=True; { <-- IMPORTANT ! means X and Z are float }
 
   for x:=1 to 10 do

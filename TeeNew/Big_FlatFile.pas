@@ -521,6 +521,8 @@ begin
   Series1.Marks.Hide;
   Chart1.View3DOptions.Perspective:=160;
 
+  Chart1.Gradient.Visible := False;
+
   // Allow only right-mouse button scrolling on one direction
   if Series1.YMandatory then
      Chart1.AllowPanning:=pmHorizontal

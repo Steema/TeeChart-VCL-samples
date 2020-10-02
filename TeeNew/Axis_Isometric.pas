@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, 
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas;
+  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeGDIPlus;
 
 type
   TIsometricAxis = class(TBaseForm)
@@ -120,6 +120,7 @@ begin
     Increment:=50;
     LabelsSeparation:=0;
   end;
+
 
   Series1.Clear;
   for t:=1 to 100 do Series1.Add(Random(100));

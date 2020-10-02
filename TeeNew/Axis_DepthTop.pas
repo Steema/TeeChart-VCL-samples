@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ComCtrls, StdCtrls, ExtCtrls, 
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, TeeSurfa;
+  Base, TeeProcs, TeEngine, Chart, TeeSurfa, TeeGDIPlus;
 
 type
   TDepthTopAxisForm = class(TBaseForm)
@@ -50,6 +50,7 @@ end;
 procedure TDepthTopAxisForm.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Series1.FillSampleValues;
 end;
 

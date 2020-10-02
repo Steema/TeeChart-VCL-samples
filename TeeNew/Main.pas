@@ -1,7 +1,7 @@
 {*****************************************}
 { TeeChart version 9                      }
 { Many examples and demos.                }
-{ Copyright 1995-2010 by Steema Software. }
+{ Copyright 1995-2020 by Steema Software. }
 { All Rights Reserved.                    }
 {*****************************************}
 unit Main;
@@ -66,7 +66,7 @@ uses
    Series_LabelsBinding,
    {$ENDIF}
 
-   Base, TeeGDIPlus;
+   Base, TeeGDIPlus, TeePNGImage {, System.ImageList, Vcl.Imaging.pngimage};
 
 Const
   TeeRegistryKey = '\Software\Steema Software\TeeChart Pro v'+TeeChartVersion+' VCL';
@@ -129,20 +129,6 @@ type
     SpeedButton2: TSpeedButton;
     LabelWWW: TLabel;
     Draw3D3: TDraw3D;
-    PageControl1: TPageControl;
-    TabSheet1: TTabSheet;
-    TreeView1: TTreeView;
-    TabSheet2: TTabSheet;
-    TreeView2: TTreeView;
-    TabSearch: TTabSheet;
-    Panel1: TPanel;
-    Label2: TLabel;
-    Label3: TLabel;
-    SearchButton: TSpeedButton;
-    CBSearch: TComboFlat;
-    CBSearchSource: TCheckBox;
-    CBFindAll: TCheckBox;
-    TreeSearch: TTreeView;
     Memo2: TMemo;
     Memo1: TMemo;
     Label4: TLabel;
@@ -160,10 +146,23 @@ type
     Draw3D7: TDraw3D;
     sbNormal: TSpeedButton;
     sbClose: TSpeedButton;
-    BPrevious: TSpeedButton;
-    BNext: TSpeedButton;
     Panel3: TPanel;
     CBoxGDIPlus: TCheckBox;
+    PageControl1: TPageControl;
+    TabSheet2: TTabSheet;
+    TreeView2: TTreeView;
+    TabSearch: TTabSheet;
+    Panel1: TPanel;
+    Label2: TLabel;
+    Label3: TLabel;
+    SearchButton: TSpeedButton;
+    CBSearch: TComboFlat;
+    CBSearchSource: TCheckBox;
+    CBFindAll: TCheckBox;
+    TreeSearch: TTreeView;
+    Image1: TImage;
+    BNext: TSpeedButton;
+    BPrevious: TSpeedButton;
     procedure FormCreate(Sender: TObject);
     procedure TreeView1Change(Sender: TObject; Node: TTreeNode);
     procedure BNextClick(Sender: TObject);
@@ -616,16 +615,14 @@ begin
     sbClose.Hide;
   end;
 
-  StatusBar1.Color := Draw3D3.Gradient.StartColor;
-  Color := Draw3D3.Gradient.StartColor;
+  //StatusBar1.Color := Draw3D3.Gradient.StartColor;
+  //Color := Draw3D3.Gradient.StartColor;
 
-  PageControl1.ActivePage:=TabSheet1;
-  LoadTree(TreeView1,Memo1);
+  PageControl1.ActivePage:=TabSheet2;
   LoadTree(TreeView2,Memo2);
-  TreeView1.Items[0].Item[0].Expand(False);
 
   {$IFNDEF CLX}
-  TreeView1.HotTrack:=True;
+  //TreeView1.HotTrack:=True;
   TreeView2.HotTrack:=True;
 
   {$IFDEF D7}
@@ -750,9 +747,9 @@ end;
 
 Function TTeeNewForm.TheTree:TTreeView;
 begin
-  if PageControl1.ActivePage=TabSheet1 then result:=TreeView1
-  else
   if PageControl1.ActivePage=TabSheet2 then result:=TreeView2
+  {else
+  if PageControl1.ActivePage=TabSheet2 then result:=TreeView2}
                                        else result:=TreeSearch;
 end;
 
@@ -795,9 +792,9 @@ begin
      if Node.Expanded then result:= 1
                       else result:= 0
   else
-  if Node.TreeView=TreeView1 then
+  {if Node.TreeView=TreeView1 then
      result:= 2
-  else
+  else}
      result:= 3;
 end;
 
@@ -945,7 +942,7 @@ procedure TTeeNewForm.FormDestroy(Sender: TObject);
 begin
   StoreSearchCombo;
 
-  ClearTreeNodes(TreeView1);
+  //ClearTreeNodes(TreeView1);
   ClearTreeNodes(TreeView2);
 
   {$IFNDEF LINUX}
@@ -995,13 +992,13 @@ begin
       Close;
     end
     else
-    if not FindItem(TreeView1) then
+    //if not FindItem(TreeView1) then
        if FindItem(TreeView2) then
           PageControl1.ActivePage:=TabSheet2;
 
     Timer2.Enabled:=False;
   end
-  else TreeView1.Selected:=TreeView1.Items[0];
+  else TreeView2.Selected:=TreeView2.Items[0];
 
   {$IFDEF CLX}
   // Fix CLX bug, when showing a TreeView...
@@ -1099,7 +1096,7 @@ var p   : Integer;
         With SelAttributes do
         begin
           Style:=[fsItalic];
-          Color:=ACommentColor;
+          //Color:=ACommentColor;
         end;
 
         SelStart:=0;
@@ -1553,7 +1550,7 @@ begin
 
             tmpForms:=TList.Create;
             try
-              DoSearchTree(TreeView1,0);
+              //DoSearchTree(TreeView1,0);
               DoSearchTree(TreeView2,50);
             finally
               tmpForms.Free;
@@ -2073,7 +2070,7 @@ var tmpSelec : TTeeExportFormat;
               if (not (tmpSelec.Panel is TCustomTeePanelExtended)) or
                  (not TCustomTeePanelExtended(tmpSelec.Panel).Gradient.Visible) then
               begin
-                tmpSelec.Panel.Color:=clWhite;
+                //tmpSelec.Panel.Color:=clWhite;
                 tmpSelec.Panel.BevelInner:=bvNone;
                 tmpSelec.Panel.BevelOuter:=bvNone;
               end;
@@ -2128,8 +2125,8 @@ var tmpSelec : TTeeExportFormat;
     stI:=TStringList.Create;
     stI.Add('<html><head><title>'+Caption+'</title></head><body>');
 
-    PageControl1.ActivePage:=TabSheet1;
-    Process(TreeView1);
+    {PageControl1.ActivePage:=TabSheet1;
+    Process(TreeView1);}
 
     PageControl1.ActivePage:=TabSheet2;
     Process(TreeView2);
@@ -2374,7 +2371,7 @@ begin
       APoint.x := (Rect.Right - Rect.Left) div 2 - TextWidth(AText) div 2;
       APoint.y := (Rect.Bottom - Rect.Top) div 2 - TextHeight(AText) div 2;
 
-      Font.Color:=clWindow;
+      //Font.Color:=clWindow;
 
       TextRect(Rect, Rect.Left + APoint.x, Rect.Top + APoint.y, AText);
     end;

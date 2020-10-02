@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, Series, TeeProcs, Chart, TeeTools;
+  Base, TeEngine, Series, TeeProcs, Chart, TeeTools, TeeGDIPlus;
 
 type
   TBarSeriesForm = class(TBaseForm)
@@ -99,6 +99,7 @@ end;
 procedure TBarSeriesForm.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Chart1.SeriesList.FillSampleValues(6);
 end;
 

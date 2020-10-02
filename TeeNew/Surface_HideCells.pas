@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeSurfa, TeeTools;
+  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeSurfa, TeeTools,
+  TeeGDIPlus;
 
 type
   TSurfaceHideCells = class(TBaseForm)

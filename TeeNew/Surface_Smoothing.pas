@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, ExtCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeTools, TeeOpenGL;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeTools, TeeOpenGL,
+  TeeGDIPlus;
 
 type
   TSurfaceSmoothing = class(TBaseForm)
@@ -67,6 +68,8 @@ end;
 procedure TSurfaceSmoothing.FormCreate(Sender: TObject);
 begin
   inherited;
+
+  Chart1.View3D := True;
 
   // Create a Surface with a small number of cells:
   Series1.FillSampleValues(5);   // 5 x 5 surface grid

@@ -27,7 +27,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, TeeSurfa, TeeTools;
+  Base, TeeProcs, TeEngine, Chart, TeeSurfa, TeeTools, TeeGDIPlus;
 
 type
   TSurfaceFloat = class(TBaseForm)
@@ -59,6 +59,8 @@ Var x,z : Integer;
     zval : Array[0..9] of Double;
 begin
   inherited;
+
+  Chart1.View3D := True;
 
   Series1.IrregularGrid:=True;   { <---------- VERY IMPORTANT !!! }
 

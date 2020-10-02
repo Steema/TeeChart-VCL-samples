@@ -14,7 +14,7 @@ uses
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
   Base, TeEngine, TeeSurfa, TeeTriSurface, TeeTools, TeeProcs, Chart,
-  TeeOpenGL;
+  TeeOpenGL, TeeGDIPlus;
 
 type
   TTriSurfaceHidding = class(TBaseForm)
@@ -66,7 +66,7 @@ end;
 procedure TTriSurfaceHidding.FormCreate(Sender: TObject);
 begin
   inherited;
-
+  Chart1.View3D := True;
   Series1.HideTriangles:=CheckBox1.Checked;
   Series1.CacheTriangles:=CheckBox2.Checked;
 

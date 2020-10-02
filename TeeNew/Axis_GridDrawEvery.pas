@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, Series, TeeProcs, Chart, TeCanvas, BubbleCh;
+  Base, TeEngine, Series, TeeProcs, Chart, TeCanvas, BubbleCh, TeeGDIPlus;
 
 type
   TAxisGridDrawEveryForm = class(TBaseForm)
@@ -59,6 +59,7 @@ end;
 procedure TAxisGridDrawEveryForm.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.Axes.Bottom.Grid.Visible := True;
 
   cbAxis.ItemIndex:=0;
   UpDown1.Position:=Chart1.Axes.Left.Grid.DrawEvery;

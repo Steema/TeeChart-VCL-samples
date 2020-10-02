@@ -15,7 +15,7 @@ uses
   Buttons,
   {$ENDIF}
   SysUtils, Classes,
-  TeEngine, TeeSurfa, TeeProcs, Chart, TeeComma;
+  TeEngine, TeeSurfa, TeeProcs, Chart, TeeComma, TeeGDIPlus;
 
 type
   TSurfaceHolesForm = class(TForm)
@@ -89,6 +89,7 @@ begin
   Delta3D:=1;
   Series1.NumXValues:=10;
   Series1.NumZValues:=10;
+  Chart1.View3D := True;
   Chart1.LeftAxis.Increment:=0.1;
   Chart1.BottomAxis.Increment:=1;
   Chart1.BottomAxis.LabelsSeparation:=0;

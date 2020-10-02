@@ -15,7 +15,7 @@ uses
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls, Buttons,
   {$ENDIF}
   Base, TeEngine, Series, TeeProcs, Chart, TeCanvas, TeeSurfa, TeeLegendPalette,
-  TeePenDlg, TeeTools;
+  TeePenDlg, TeeTools, TeeGDIPlus;
 
 type
   TSeriesTypeIsoSurface = class(TBaseForm)
@@ -62,6 +62,8 @@ begin
   end;
 
   ChartTool1.Series:=IsoSurface;
+
+  Chart1.View3D := True;
 
   // Setup buttons:
   ButtonPen1.LinkPen(IsoSurface.BandPen);

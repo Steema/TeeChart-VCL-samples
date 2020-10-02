@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, Series, TeeProcs, Chart, TeCanvas;
+  Base, TeEngine, Series, TeeProcs, Chart, TeCanvas, TeeGDIPlus;
 
 type
   TAxisMaxMinRoundedForm = class(TBaseForm)

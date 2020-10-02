@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, Series, TeeProcs, Chart, TeeTools, TeeDataTableTool;
+  Base, TeEngine, Series, TeeProcs, Chart, TeeTools, TeeDataTableTool,
+  TeeGDIPlus;
 
 type
   TDataTableToolForm = class(TBaseForm)
@@ -56,6 +57,8 @@ begin
   inherited;
   DataTable:=TDataTableTool.Create(Self);
   DataTable.ParentChart:=Chart1;
+
+  DataTable.Font.Size := 10;
 
   Series1.ValueFormat:='#,###';
   Series2.ValueFormat:='#,###';

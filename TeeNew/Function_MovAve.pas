@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeCanvas, TeeProcs, TeEngine, Chart, StatChar, CurvFitt, Series;
+  Base, TeCanvas, TeeProcs, TeEngine, Chart, StatChar, CurvFitt, Series,
+  TeeGDIPlus;
 
 type
   TMovAveFunctionForm = class(TBaseForm)

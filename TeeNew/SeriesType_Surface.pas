@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeCanvas, TeeProcs, TeEngine, Chart, TeeSurfa, TeeTools;
+  Base, TeCanvas, TeeProcs, TeEngine, Chart, TeeSurfa, TeeTools,
+  TeeGDIPlus;
 
 type
   TSurfaceSeriesForm = class(TBaseForm)
@@ -54,6 +55,8 @@ procedure TSurfaceSeriesForm.FormCreate(Sender: TObject);
 begin
   inherited;
   SurfaceSeries1.FillSampleValues(30);
+
+  Chart1.View3D := True;
 
   // Optional settings to accelerate display:
   Chart1.Axes.FastCalc:=True;

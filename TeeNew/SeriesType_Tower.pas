@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart, EditChar, TeCanvas, TeeTools;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, EditChar, TeCanvas, TeeTools,
+  TeeGDIPlus;
 
 type
   TTowerSeriesForm = class(TBaseForm)
@@ -45,7 +46,7 @@ procedure TTowerSeriesForm.FormCreate(Sender: TObject);
 var x,z:Integer;
 begin
   inherited;
-
+  Chart1.View3D := True;
   Series1.Clear;
   for x:=1 to 10 do
       for z:=1 to 10 do

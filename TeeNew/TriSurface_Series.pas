@@ -14,7 +14,7 @@ uses
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
   Base, TeCanvas, TeEngine, TeeSurfa, TeeTriSurface, TeeProcs,
-  Chart, TeePenDlg;
+  Chart, TeePenDlg, TeeGDIPlus;
 
 type
   TTriSurfaceForm = class(TBaseForm)
@@ -39,6 +39,7 @@ implementation
 procedure TTriSurfaceForm.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Series1.FillSampleValues(30);
   ButtonPen1.LinkPen(Series1.Border);
   ButtonPen2.LinkPen(Series1.Pen);

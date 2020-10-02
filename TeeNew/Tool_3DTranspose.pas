@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeTransposeTool;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeTransposeTool, TeeGDIPlus;
 
 type
   TTransposeToolDemo = class(TBaseForm)
@@ -46,6 +46,9 @@ procedure TTransposeToolDemo.FormCreate(Sender: TObject);
 var x,z: Integer;
 begin
   inherited;
+
+  Chart1.View3D := True;
+
   // This code is optional.  It can be done at design-time.
 
   // Create tool

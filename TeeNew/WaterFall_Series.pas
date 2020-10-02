@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeCanvas, TeEngine, TeeSurfa, TeeProcs, Chart, TeePenDlg;
+  Base, TeCanvas, TeEngine, TeeSurfa, TeeProcs, Chart, TeePenDlg,
+  TeeGDIPlus;
 
 type
   TWaterFallForm = class(TBaseForm)
@@ -41,6 +42,7 @@ Uses EditChar;
 procedure TWaterFallForm.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Series1.FillSampleValues(20);
   ButtonPen1.LinkPen(Series1.Pen);
   ButtonPen2.LinkPen(Series1.WaterLines);

@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, TeeTools, TeeSurfa, TeePoin3;
+  Base, TeeProcs, TeEngine, Chart, TeeTools, TeeSurfa, TeePoin3,
+  TeeGDIPlus;
 
 type
   TPoint3DSeriesForm = class(TBaseForm)
@@ -53,6 +54,8 @@ implementation
 procedure TPoint3DSeriesForm.FormCreate(Sender: TObject);
 begin
   inherited;
+
+  Chart1.View3D := True;
   DeltaRotate:=-5;
   DeltaElevate:=-4;
 

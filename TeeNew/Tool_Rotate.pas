@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeTools;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeTools, TeeGDIPlus;
 
 type
   TRotateToolForm = class(TBaseForm)
@@ -41,6 +41,7 @@ implementation
 procedure TRotateToolForm.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Series1.FillSampleValues(20);
 end;
 

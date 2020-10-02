@@ -14,13 +14,14 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls, Buttons,
   {$ENDIF}
-  Base, TeEngine, Series, TeeProcs, Chart, TeeVolumePipe;
+  Base, TeEngine, Series, TeeProcs, Chart, TeeVolumePipe, TeeGDIPlus;
 
 type
   TSeriesTypeVolumePipe = class(TBaseForm)
     bEdit: TButton;
     Series1: TVolumePipeSeries;
     procedure bEditClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,6 +42,12 @@ Uses
 procedure TSeriesTypeVolumePipe.bEditClick(Sender: TObject);
 begin
   EditSeries(Self,Series1);
+end;
+
+procedure TSeriesTypeVolumePipe.FormCreate(Sender: TObject);
+begin
+  inherited;
+  Series1.Gradient.Visible := False;
 end;
 
 initialization

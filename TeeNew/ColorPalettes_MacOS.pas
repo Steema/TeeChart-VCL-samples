@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeSurfa;
+  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeSurfa, TeeGDIPlus;
 
 type
   TColorPalettesMacOS = class(TBaseForm)
@@ -70,7 +70,7 @@ end;
 procedure TColorPalettesMacOS.FormCreate(Sender: TObject);
 begin
   inherited;
-
+  Chart1.View3D := True;
   ColorPalettes.AddTo(CBPalettes.Items);
 
   with Series1 do

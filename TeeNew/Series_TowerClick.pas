@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeSurfa;
+  Base, TeeProcs, TeEngine, Chart, Series, TeCanvas, TeeSurfa, TeeGDIPlus;
 
 type
   TSeriesTowerClick = class(TBaseForm)
@@ -41,7 +41,7 @@ implementation
 procedure TSeriesTowerClick.FormCreate(Sender: TObject);
 begin
   inherited;
-
+  Chart1.View3D := True;
   Series1.FillSampleValues(5);
   oldIndex:=-1;
 end;

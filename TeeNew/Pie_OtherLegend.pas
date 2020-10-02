@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls,
   {$ENDIF}
-  Base, TeEngine, Series, TeeProcs, Chart;
+  Base, TeEngine, Series, TeeProcs, Chart, TeeGDIPlus;
 
 type
   TPieOtherLegend = class(TBaseForm)
@@ -60,6 +60,9 @@ begin
     Left:=340;
     Top:=150;
   end;
+
+  Chart1.Invalidate;
+
 end;
 
 procedure TPieOtherLegend.CheckBox1Click(Sender: TObject);

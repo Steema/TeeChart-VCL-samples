@@ -44,6 +44,8 @@ procedure TGallery3DForm.FormCreate(Sender: TObject);
 begin
   inherited;
 
+  Chart1.View3D := True;
+
   Series1.FillSampleValues;
 
   {$IFNDEF TEENOTHEMES}

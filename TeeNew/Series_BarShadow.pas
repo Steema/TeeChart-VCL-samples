@@ -14,7 +14,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls, Buttons,
   {$ENDIF}
-  Base, TeEngine, Series, TeeProcs, Chart, TeCanvas;
+  Base, TeEngine, Series, TeeProcs, Chart, TeCanvas, TeeGDIPlus;
 
 type
   TSeriesBarShadow = class(TBaseForm)

@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls, ComCtrls,
   {$ENDIF}
-  Base, TeEngine, TeeSurfa, TeeProcs, Chart;
+  Base, TeEngine, TeeSurfa, TeeProcs, Chart, TeeGDIPlus {, TeeGDIPlus};
 
 type
   TSurfaceSmooth = class(TBaseForm)
@@ -38,6 +38,7 @@ implementation
 procedure TSurfaceSmooth.FormCreate(Sender: TObject);
 begin
   inherited;
+  Chart1.View3D := True;
   Series1.FillSampleValues(10);
 end;
 

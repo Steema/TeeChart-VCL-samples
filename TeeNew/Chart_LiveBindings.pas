@@ -8,7 +8,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Base, Data.Bind.EngExt,
   Vcl.Bind.DBEngExt, Vcl.Bind.Editors, Data.DB,
   Data.Bind.Components, Data.Bind.DBScope, Data.Bind.DBLinks,
-  VCLTee.Bind.DBLinks, VCLTee.TeEngine, VCLTee.TeeProcs, VCLTee.Chart,
+  VCLTee.Bind.DBLinks, TeEngine, TeeProcs, Chart,
   Vcl.ExtCtrls, Vcl.StdCtrls, Datasnap.DBClient;
 
 type

@@ -13,7 +13,8 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls,
   {$ENDIF}
-  Base, TeeProcs, TeEngine, Chart, Series, TeeFrameTool, TeCanvas;
+  Base, TeeProcs, TeEngine, Chart, Series, TeeFrameTool, TeCanvas,
+  TeeGDIPlus;
 
 type
   TLineTreatNulls = class(TBaseForm)
