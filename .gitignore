@@ -2,3 +2,8 @@
 *.local
 *.otares
 *.exe
+*.~pas
+*.ddp
+*.~dfm
+TeeNew/__history/
+TeeNew/__recovery/
