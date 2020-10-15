@@ -6,27 +6,33 @@ rmdir /s tmp
 
 rem Compile
 
-set d7=c:\program files (x86)\borland\delphi7
-set xe5=c:\program files (x86)\embarcadero\rad studio\12.0
+set rad=E:\Program Files (x86)\Embarcadero\Studio\21.0
+set root=C:\root
+set teechart=%root%\TeeChartVCL
+set teechartoffice=%teechart%\Demos9\VCL\TeeChartOffice
 
+rem 32bit
 cd sources
-"%d7%\bin\dcc32" -B -DFASTMM;PNGIMAGE -Q -R"%d7%\lib" -Uc:\root\teechartvcl\demos9\teemaker\pngimage -Uc:\root\teerecompile\fastmm -U..\..\..\sources9 -I..\..\..\sources9 TeeChartOffice.dpr
+"%rad%\bin\dcc32" -B -Q -U"%rad%\lib\win32\release" -NSSystem;VCLTee;Data;WinAPI;VCL;System.Win;Data.Win;VCL.Imaging -U%teechart%\sources9\vcl -I%teechart%\sources9\vcl TeeChartOffice.dpr
 
 cd ..
 mkdir tmp
 mkdir tmp\32bit
 move sources\TeeChartOffice.exe tmp\32bit
 
-signcode -spc c:\root\teechartvcl\installers\signkeys\steema.spc -v c:\root\teechartvcl\installers\signkeys\steema.pvk tmp\32bit\TeeChartOffice.exe
+rem Sign
+"%root%\TeeAdmin\Keys\signtool" sign /v /f "%root%\TeeAdmin\Keys\steema.pfx" /p starling /d "TeeChart Office" /du "http://www.steema.com" /t "http://timestamp.verisign.com/scripts/timstamp.dll" "%teechartoffice%\tmp\32bit\TeeChartOffice.exe"
 
+rem 64bit
 cd sources
-"%xe5%\bin\dcc64" -B -Q -U"%xe5%\lib\win64\release" -NSSystem;VCLTee;Data;WinAPI;VCL;System.Win;Data.Win;VCL.Imaging -U..\..\..\sources9\vcl -I..\..\..\sources9\vcl TeeChartOffice.dpr
+"%rad%\bin\dcc64" -B -Q -U"%rad%\lib\win64\release" -NSSystem;VCLTee;Data;WinAPI;VCL;System.Win;Data.Win;VCL.Imaging -U%teechart%\sources9\vcl -I%teechart%\sources9\vcl TeeChartOffice.dpr
 cd ..
 
 mkdir tmp\64bit
 move sources\TeeChartOffice.exe tmp\64bit\TeeChartOffice.exe
 
-signcode -spc c:\root\teechartvcl\installers\signkeys\steema.spc -v c:\root\teechartvcl\installers\signkeys\steema.pvk tmp\64bit\TeeChartOffice.exe
+rem Sign 
+"%root%\TeeAdmin\Keys\signtool" sign /v /f "%root%\TeeAdmin\Keys\steema.pfx" /p starling /d "TeeChart Office" /du "http://www.steema.com" /t "http://timestamp.verisign.com/scripts/timstamp.dll" "%teechartoffice%\tmp\64bit\TeeChartOffice.exe"
 
 rem Copy extra files
 
@@ -50,12 +56,11 @@ rem Create zips
 cd tmp
 
 cd 32bit
-c:\root\teerecompile\zip\zip.exe -9 -q -r ..\TeeChartOffice_41_win32.zip *.*
+%root%\teerecompile\zip\zip.exe -9 -q -r ..\TeeChartOffice_45_win32.zip *.*
 
 cd ..
 cd 64bit
-c:\root\teerecompile\zip\zip.exe -9 -q -r ..\TeeChartOffice_41_win64.zip *.*
+%root%\teerecompile\zip\zip.exe -9 -q -r ..\TeeChartOffice_45_win64.zip *.*
 
 cd ..
-
-
+cd ..
