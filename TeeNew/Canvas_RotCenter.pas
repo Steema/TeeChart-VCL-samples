@@ -33,7 +33,6 @@ type
     ActionList1: TActionList;
     SeriesActionActive1: TSeriesActionActive;
     ChartTool1: TRotateTool;
-    ChartTool2: TLegendPaletteTool;
     procedure TrackBar1Change(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -75,8 +74,6 @@ begin
   inherited;
   Series1.FillSampleValues(20);
   Series1.HideCells:=True;
-
-  ChartTool2.Chart.Axes.Left.LabelsFont.Size:=5;
 end;
 
 procedure TRotationCenter.CheckBox1Click(Sender: TObject);

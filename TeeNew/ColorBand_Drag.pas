@@ -44,6 +44,8 @@ begin
 
   ButtonPen1.LinkPen(ChartTool1.StartLine.Pen);
   ButtonPen2.LinkPen(ChartTool1.EndLine.Pen);
+
+  ChartTool1.OnClick:=nil;
 end;
 
 procedure TColorBandDrag.ButtonPen1Click(Sender: TObject);

@@ -21,7 +21,6 @@ uses
 
 type
   TCanvasFontPicture = class(TBaseForm)
-    Series1: TPieSeries;
     Image1: TImage;
     BBrowse: TButton;
     sbZoom: TScrollBar;
@@ -50,10 +49,9 @@ uses
 
 procedure TCanvasFontPicture.FormCreate(Sender: TObject);
 begin
-  Chart1.Gradient.Visible:=True;
-  Chart1.Gradient.EndColor:=clRed;
-
-  Chart1.Title.Font.Size:=48;
+  Chart1.Title.Font.Size:=90;
+  Chart1.Title.Font.Name:='Verdana';
+  Chart1.Title.Font.Style:=[fsBold];
   Chart1.Title.Font.Picture.Assign(Image1.Picture);
   Chart1.Title.Font.OutLine.Visible:=True;
 
@@ -61,9 +59,6 @@ begin
 
   Chart1.View3DOptions.FontZoom:=160;
   Chart1.Chart3DPercent:=50;
-
-  Series1.Gradient.Visible:=True;
-  Series1.Marks.Callout.Length:=50;
 end;
 
 procedure TCanvasFontPicture.sbZoomChange(Sender: TObject);
