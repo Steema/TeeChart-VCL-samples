@@ -66,7 +66,7 @@ uses
    Series_LabelsBinding,
    {$ENDIF}
 
-   Base, TeeGDIPlus, TeePNGImage {, System.ImageList, Vcl.Imaging.pngimage};
+   Base, TeeGDIPlus{, TeePNGImage , System.ImageList, Vcl.Imaging.pngimage};
 
 Const
   TeeRegistryKey = '\Software\Steema Software\TeeChart Pro v'+TeeChartVersion+' VCL';
