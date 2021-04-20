@@ -1,6 +1,6 @@
 {**********************************************}
 {   TTeeCommander Editor dialog                }
-{   Copyright (c) 2010-2020 by Steema Software }
+{   Copyright (c) 2010-2021 by Steema Software }
 {**********************************************}
 unit TeeCommanderEditor;
 {$I TeeDefs.inc}

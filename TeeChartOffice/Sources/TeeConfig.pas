@@ -1,6 +1,6 @@
 {**********************************************}
 {   TeeChart Office - Configuration            }
-{   Copyright (c) 2010-2020 by Steema Software }
+{   Copyright (c) 2010-2021 by Steema Software }
 {**********************************************}
 unit TeeConfig;
 {$I TeeDefs.inc}

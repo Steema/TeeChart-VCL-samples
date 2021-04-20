@@ -1,6 +1,6 @@
 {************************************************}
 {   TeeChart Office - DataSet Creation / Editing }
-{   Copyright (c) 2015-2020 by Steema Software   }
+{   Copyright (c) 2015-2021 by Steema Software   }
 {   All Rights Reserved.                         }
 {************************************************}
 unit TeeNewDataSet;

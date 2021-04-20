@@ -1,6 +1,6 @@
 {**********************************************}
 {   TeePac a Pac-Man like Game                 }
-{   Copyright (c) 1996-2020 by Steema Software }
+{   Copyright (c) 1996-2021 by Steema Software }
 {**********************************************}
 unit Game_PacMan;
 {$I TeeDefs.inc}
