@@ -22,7 +22,7 @@ uses
    {$IFNDEF D9} // Delphi 2005 error: VERSIONINFO resource duplicated at midas.res
    {$IFDEF D6}  // Delphi 5 does not include MidasLib.dcu
    {$IFNDEF CPUX64}
-   MidasLib,
+   //MidasLib,
    {$ENDIF}
    {$ENDIF}
    {$ENDIF}
@@ -66,7 +66,8 @@ uses
    Series_LabelsBinding,
    {$ENDIF}
 
-   Base, TeeGDIPlus{, TeePNGImage , System.ImageList, Vcl.Imaging.pngimage};
+   //Base, TeeGDIPlus, TeePNGImage {, System.ImageList, Vcl.Imaging.pngimage};
+   Base, TeeGDIPlus, System.ImageList, Vcl.Imaging.pngimage, frxClass;
 
 Const
   TeeRegistryKey = '\Software\Steema Software\TeeChart Pro v'+TeeChartVersion+' VCL';
@@ -1456,8 +1457,8 @@ var tmpProg  : TProgressBar;
            else
               result:=SearchInForm(tmpForm);
          finally
-//           StrPCopy(St,tmpForm.ClassName);
-//           OutputDebugString(St);
+  //           StrPCopy(St,tmpForm.ClassName);
+  //           OutputDebugString(St);
            tmpForm.Free;
          end;
 
@@ -1482,15 +1483,23 @@ var tmpProg  : TProgressBar;
    end;
 
   var t   : Integer;
-      tmp : Integer;
+      tmp,i : Integer;
   begin
     with Tree do
     for t:=0 to Items.Count-1 do
     begin
+      try
       tmp:=Offset+Round(t*50/Items.Count);
       if tmpProg.Position<>tmp then tmpProg.Position:=tmp;
+      except
+        i:=t;
+      end;
 
+      try
       if FoundTextInNode(Items[t]) then AddResult(Items[t]);
+      except
+        i:=t;
+      end;
     end;
   end;
 
@@ -1540,7 +1549,7 @@ begin
 
           FindAllWords:=CBFindAll.Checked;
 
-          tmpProg:=TProgressBar.Create(nil);
+          tmpProg:=TProgressBar.Create(self);
           try
             tmpProg.Top:=3;
             tmpProg.Width:=PageControl1.Width;
@@ -1556,7 +1565,7 @@ begin
               tmpForms.Free;
             end;
             tmpProg.Position:=100;
-            
+
           finally
             tmpProg.Free;
           end;
