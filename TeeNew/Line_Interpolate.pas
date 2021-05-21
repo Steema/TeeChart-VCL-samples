@@ -94,7 +94,7 @@ begin
     begin
       ys := Chart1[i].GetVertAxis.CalcYPosValue(InterpolateLineSeries(Chart1[i],xval));
       Chart1.Canvas.Brush.Color := Chart1[i].Color;
-      Chart1.Canvas.Ellipse(xs-4,ys-4,xs+4,ys+4);
+      TLineSeries(Chart1[i]).Pointer.Draw(xs,ys);
     end;
   end;
 end;
@@ -112,7 +112,7 @@ begin
     Clear;
     for i:=0 to Chart1.SeriesCount - 1 do
         Add(Chart1[i].Name + ': Y('+FloatToStrF(XValue, ffNumber, 8, 2)+')= ' +
-            FloatToStrF(InterpolateLineSeries(Chart1[i],XValue), ffNumber, 8, 2)+#13#10);
+            FloatToStrF(InterpolateLineSeries(Chart1[i],XValue), ffNumber, 8, 2));
   end;
 end;
 

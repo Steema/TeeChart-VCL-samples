@@ -67,7 +67,7 @@ uses
    {$ENDIF}
 
    //Base, TeeGDIPlus, TeePNGImage {, System.ImageList, Vcl.Imaging.pngimage};
-   Base, TeeGDIPlus, System.ImageList, Vcl.Imaging.pngimage, frxClass;
+   Base, TeeGDIPlus;//, System.ImageList, Vcl.Imaging.pngimage, frxClass;
 
 Const
   TeeRegistryKey = '\Software\Steema Software\TeeChart Pro v'+TeeChartVersion+' VCL';

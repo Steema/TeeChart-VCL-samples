@@ -61,6 +61,7 @@ procedure TConesForm.FormCreate(Sender: TObject);
 begin
   inherited;
   Series1.FillSampleValues(5);
+  ScrollBar1Change(Self);
 end;
 
 procedure TConesForm.ComboBox1Change(Sender: TObject);
