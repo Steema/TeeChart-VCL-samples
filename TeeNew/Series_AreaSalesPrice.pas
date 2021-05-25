@@ -29,8 +29,6 @@ type
     procedure FormResize(Sender: TObject);
     procedure Chart1UndoZoom(Sender: TObject);
     procedure Chart1Zoom(Sender: TObject);
-    procedure ChartTool3FilterSeries(Sender: TDataTableTool;
-      Series: TChartSeries; var Accept: Boolean);
   private
     { Private declarations }
     Average : TLineSeries;
@@ -53,7 +51,7 @@ uses TeeFunci;
 
 var
   Console: array [0..5] of String = ('PlayStation 2', 'Nintendo DS', 'Game Boy', 'PlayStation 4', 'PlayStation', 'Wii');
-  Units: array [0..5] of Integer = (157680000, 154900000, 118690000, 115560000, 102500000, 101640000);
+  Units: array [0..5] of Double = (157.68, 154.9, 118.69, 115.56, 102.5, 101.64);
   Price: array [0..5] of Double = (457, 208, 190, 447, 513, 324);
 
 procedure TAreaSalesPrice.AddCustomLabels;
@@ -65,15 +63,18 @@ begin
   for i:=0 to Series1.Count-2 do
   begin
     value:=Series1.XValue[i] + ((Series1.XValue[i+1] - Series1.XValue[i]) / 2);
-    (Chart1.Axes.Bottom.Items.Add(value, Console[i])).Format.Font.Style:=[fsBold];
+    with (Chart1.Axes.Bottom.Items.Add(value, Console[i]+sLineBreak+'('+FormatFloat('#,##0.##',Units[i])+')')) do
+    begin
+      Format.TextAlignment:=taCenter;
+      Format.Font.Assign(Chart1.Axes.Bottom.LabelsFont);
+      Format.Font.Style:=[fsBold];
+    end;
   end;
 end;
 
 procedure TAreaSalesPrice.FormCreate(Sender: TObject);
 var i           : Integer;
     tmp         : Double;
-    unitsSeries : TFastLineSeries;
-    salesSeries : TFastLineSeries;
 begin
   inherited;
 
@@ -106,29 +107,33 @@ begin
   Chart1.Axes.Left.Increment:=50;
   Chart1.Axes.Left.Title.Font.Style:=[fsBold];
   Chart1.Axes.Left.Title.Caption:='Price adjusted to inflation (in $)';
+  Chart1.Axes.Left.Title.Position:=tpStart;
 
   Chart1.Axes.Bottom.Grid.Visible:=false;
+  Chart1.Axes.Bottom.Title.Font.Style:=[fsBold];
+  Chart1.Axes.Bottom.Title.Caption:='Units sold per console (in millions)';
+  Chart1.Axes.Bottom.Title.Position:=tpStart;
+  Chart1.Axes.Bottom.LabelsSize:=45;
+  Chart1.Axes.Bottom.LabelsFormat.TextAlignment:=taCenter;
 
   Chart1.Legend.Visible:=false;
 
-  AddCustomLabels;
-
-  //Add series to display customized data in the DataTable tool
-  //They are not visible because they are out of the range of the left axis
-  salesSeries:=TFastLineSeries.Create(Self);
-  Chart1.AddSeries(salesSeries);
-  salesSeries.Title:='Sales (in $)';
-
-  unitsSeries:=TFastLineSeries.Create(Self);
-  Chart1.AddSeries(unitsSeries);
-  unitsSeries.Title:='Units Sold';
-
-  for i:=1 to Series1.Count - 1 do
+  With ChartTool1 do
   begin
-    tmp:=Series1.XValue[i]-Series1.XValue[i-1];
-    salesSeries.AddXY(Series1.XValue[i], tmp * Price[i-1]);
-    unitsSeries.AddXY(Series1.XValue[i], tmp);
+    Text:='Total = ' + FormatFloat('#,###,##0',Series1.MaxXValue) + ' milions of consoles sold';
+    Shape.Font.Style:=[fsBold];
+    Shape.Transparent:=true;
   end;
+
+  With ChartTool2 do
+  begin
+    Text:='Average price $' + FormatFloat('#,##0.##', Average.MaxYValue);
+    Shape.Font.Style:=[fsBold];
+    Shape.Font.Color:=clRed;
+    Shape.Transparent:=true;
+  end;
+
+  AddCustomLabels;
 end;
 
 procedure TAreaSalesPrice.Series1GetMarkText(Sender: TChartSeries;
@@ -195,32 +200,17 @@ begin
 
   With ChartTool1 do
   begin
-    Text:='Total = ' + FloatToStr(Series1.MaxXValue) + ' consoles sold';
-    Shape.Font.Style:=[fsBold];
-    Shape.Transparent:=true;
     Shape.CustomPosition:=true;
-    Shape.Left:=tmp - 50;
+    Shape.Left:=Series1.CalcXPos(Series1.Count-1) - Shape.Width;
     Shape.Top:=Chart1.ChartRect.Top + 20;
   end;
 
   With ChartTool2 do
   begin
-    Text:='Average price $' + FormatFloat('#,##0.##', Average.MaxYValue);
-
-    Shape.Font.Style:=[fsBold];
-    Shape.Font.Color:=clRed;
-    Shape.Transparent:=true;
     Shape.CustomPosition:=true;
-    Shape.Left:=tmp;
+    Shape.Left:=Series1.CalcXPos(Series1.Count-1) - Shape.Width;
     Shape.Top:=Average.CalcYPos(0) - 15;
   end;
-end;
-
-procedure TAreaSalesPrice.ChartTool3FilterSeries(Sender: TDataTableTool;
-  Series: TChartSeries; var Accept: Boolean);
-begin
-  inherited;
-  if Chart1.SeriesList.IndexOf(Series) < 2 then Accept:=False;
 end;
 
 initialization
