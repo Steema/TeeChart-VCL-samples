@@ -22,7 +22,6 @@ type
     Series1: TAreaSeries;
     ChartTool1: TAnnotationTool;
     ChartTool2: TAnnotationTool;
-    ChartTool3: TDataTableTool;
     procedure FormCreate(Sender: TObject);
     procedure Series1GetMarkText(Sender: TChartSeries; ValueIndex: Integer;
       var MarkText: String);
@@ -53,9 +52,9 @@ implementation
 uses TeeFunci;
 
 var
-  Console: array [0..4] of String = ('Wii', 'PS3', 'X360', 'PSP', 'DS');
-  Units: array [0..4] of Integer = (217235, 162239, 101889, 161156, 609136);
-  Price: array [0..4] of Double = (249, 299, 249, 169, 149);
+  Console: array [0..5] of String = ('PlayStation 2', 'Nintendo DS', 'Game Boy', 'PlayStation 4', 'PlayStation', 'Wii');
+  Units: array [0..5] of Integer = (157680000, 154900000, 118690000, 115560000, 102500000, 101640000);
+  Price: array [0..5] of Double = (457, 208, 190, 447, 513, 324);
 
 procedure TAreaSalesPrice.AddCustomLabels;
 var i: Integer;
@@ -103,10 +102,10 @@ begin
   Series1.AddXY(tmp, Price[High(Price)]);
   Average.XValue[Average.Count-1]:=tmp;
 
-  Chart1.Axes.Left.SetMinMax(0, 350);
+  Chart1.Axes.Left.SetMinMax(0, 600);
   Chart1.Axes.Left.Increment:=50;
   Chart1.Axes.Left.Title.Font.Style:=[fsBold];
-  Chart1.Axes.Left.Title.Caption:='Price (' + {$IFDEF D15}FormatSettings.{$ENDIF}CurrencyString + ')';
+  Chart1.Axes.Left.Title.Caption:='Price adjusted to inflation (in $)';
 
   Chart1.Axes.Bottom.Grid.Visible:=false;
 
@@ -118,7 +117,7 @@ begin
   //They are not visible because they are out of the range of the left axis
   salesSeries:=TFastLineSeries.Create(Self);
   Chart1.AddSeries(salesSeries);
-  salesSeries.Title:='Sales (in ' + {$IFDEF D15}FormatSettings.{$ENDIF}CurrencyString + ')';
+  salesSeries.Title:='Sales (in $)';
 
   unitsSeries:=TFastLineSeries.Create(Self);
   Chart1.AddSeries(unitsSeries);
@@ -140,7 +139,7 @@ begin
   inherited;
 
   if ValueIndex<Series1.Count-1 then
-     MarkText:=MarkText + ' ' + {$IFDEF D15}FormatSettings.{$ENDIF}CurrencyString
+     MarkText:='$'+MarkText
   else
      MarkText:=''; //"Dummy" point mark removed
 end;
@@ -208,8 +207,7 @@ begin
 
   With ChartTool2 do
   begin
-    Text:='Average price ' + FloatToStr(Average.MaxYValue) + ' ' +
-           {$IFDEF D15}FormatSettings.{$ENDIF}CurrencyString;
+    Text:='Average price $' + FormatFloat('#,##0.##', Average.MaxYValue);
 
     Shape.Font.Style:=[fsBold];
     Shape.Font.Color:=clRed;
