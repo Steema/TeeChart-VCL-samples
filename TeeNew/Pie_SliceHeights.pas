@@ -45,7 +45,7 @@ var t : Integer;
 begin
   for t:=0 to Series1.Count-1 do
   if CheckBox1.Checked then
-     Series1.SliceHeight[t]:= Round( t*100/Series1.Count ) // vary height
+     Series1.SliceHeight[t]:= Max(1,Round( t*100/Series1.Count )) // vary height
   else
      Series1.SliceHeight[t]:=100;  // total height for all slices
 end;
