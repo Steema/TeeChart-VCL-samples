@@ -1483,23 +1483,14 @@ var tmpProg  : TProgressBar;
    end;
 
   var t   : Integer;
-      tmp,i : Integer;
+      tmp : Integer;
   begin
     with Tree do
     for t:=0 to Items.Count-1 do
     begin
-      try
       tmp:=Offset+Round(t*50/Items.Count);
       if tmpProg.Position<>tmp then tmpProg.Position:=tmp;
-      except
-        i:=t;
-      end;
-
-      try
       if FoundTextInNode(Items[t]) then AddResult(Items[t]);
-      except
-        i:=t;
-      end;
     end;
   end;
 
