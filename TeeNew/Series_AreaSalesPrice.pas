@@ -129,8 +129,6 @@ begin
     salesSeries.AddXY(Series1.XValue[i], tmp * Price[i-1]);
     unitsSeries.AddXY(Series1.XValue[i], tmp);
   end;
-
-  ChartTool3.Active:=False;
 end;
 
 procedure TAreaSalesPrice.Series1GetMarkText(Sender: TChartSeries;
