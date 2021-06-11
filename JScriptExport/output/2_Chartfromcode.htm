@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<title>Chart1</title>
+<script src="http://www.steema.com/files/public/teechart/html5/latest/src/teechart.js" type="text/javascript"></script>
+<script type="text/javascript">
+var Chart1;
+function draw() {
+  Chart1=new Tee.Chart("Canvas1");
+  Chart1.panel.format.fill="#F0F0F0";
+  Chart1.panel.format.round.x=0;
+  Chart1.panel.format.round.y=0;
+  Chart1.panel.format.stroke.fill="";
+  Chart1.panel.format.stroke.cap="round";
+  Chart1.panel.format.gradient.colors=["#EAEAEA","#EAEAEA","#FFFFFF"];
+  Chart1.panel.format.gradient.stops=[0,0.5,1];
+  Chart1.panel.format.gradient.direction="topbottom";
+  Chart1.panel.format.gradient.visible=true;
+  Chart1.panel.margins.left=3;
+  Chart1.panel.margins.right=3;
+  Chart1.panel.margins.top=4;
+  Chart1.panel.margins.bottom=4;
+  Chart1.walls.back.format.fill="#C0C0C0";
+  Chart1.walls.back.format.round.x=0;
+  Chart1.walls.back.format.round.y=0;
+  Chart1.walls.back.format.gradient.colors=["#EAEAEA","#FFFFFF"];
+  Chart1.walls.back.format.gradient.stops=[0,1];
+  Chart1.walls.back.format.gradient.direction="topbottom";
+  Chart1.walls.back.format.gradient.visible=true;
+  Chart1.walls.back.format.stroke.fill="#000000";
+  Chart1.walls.back.format.stroke.cap="round";
+  Chart1.walls.back.format.shadow.visible=false;
+  Chart1.title.text="TChart";
+  Chart1.title.format.round.x=0;
+  Chart1.title.format.round.y=0;
+  Chart1.title.format.fill="";
+  Chart1.title.format.stroke.fill="";
+  Chart1.title.format.font.style="10.667px Verdana";
+  Chart1.title.format.font.fill="#0000FF";
+  Chart1.title.format.shadow.color="#000000";
+  Chart1.title.format.shadow.width=3;
+  Chart1.title.format.shadow.height=3;
+  Chart1.axes.left.automatic=false;
+  Chart1.axes.left.maximum=242.5;
+  Chart1.axes.left.minimum=0;
+  Chart1.axes.left.labels.format.font.style="10.667px Verdana";
+  Chart1.axes.left.format.stroke.fill="#404040";
+  Chart1.axes.left.format.stroke.size=2;
+  Chart1.axes.left.format.stroke.cap="butt";
+  Chart1.axes.left.grid.format.stroke.fill="#A9A9A9";
+  Chart1.axes.left.grid.format.stroke.cap="round";
+  Chart1.axes.top.visible=false;
+  Chart1.axes.top.labels.format.font.style="10.667px Verdana";
+  Chart1.axes.top.format.stroke.fill="#404040";
+  Chart1.axes.top.format.stroke.size=2;
+  Chart1.axes.top.format.stroke.cap="butt";
+  Chart1.axes.top.grid.format.stroke.fill="#A9A9A9";
+  Chart1.axes.top.grid.format.stroke.cap="round";
+  Chart1.axes.right.visible=false;
+  Chart1.axes.right.labels.format.font.style="10.667px Verdana";
+  Chart1.axes.right.format.stroke.fill="#404040";
+  Chart1.axes.right.format.stroke.size=2;
+  Chart1.axes.right.format.stroke.cap="butt";
+  Chart1.axes.right.grid.format.stroke.fill="#A9A9A9";
+  Chart1.axes.right.grid.format.stroke.cap="round";
+  Chart1.axes.bottom.labels.format.font.style="10.667px Verdana";
+  Chart1.axes.bottom.format.stroke.fill="#404040";
+  Chart1.axes.bottom.format.stroke.size=2;
+  Chart1.axes.bottom.format.stroke.cap="butt";
+  Chart1.axes.bottom.grid.format.stroke.fill="#A9A9A9";
+  Chart1.axes.bottom.grid.format.stroke.cap="round";
+  var Series1=Chart1.addSeries(new Tee.Bar());
+  Series1.title="Series1";
+  Series1.format.fill="#4466A3";
+  Series1.format.stroke.cap="round";
+  Series1.colorEach="no";
+  Series1.data.values=[100,222.5,140,135,87.5,122.5];
+  Series1.marks.visible=true;
+  Series1.marks.format.fill="#FFFFE1";
+  Series1.marks.format.round.x=4;
+  Series1.marks.format.round.y=4;
+  Series1.marks.format.font.style="10.667px Arial";
+  Series1.marks.format.stroke.fill="#000000";
+  Series1.marks.format.stroke.cap="round";
+  Series1.marks.format.shadow.color="#808080";
+  Series1.marks.format.shadow.width=3;
+  Series1.marks.format.shadow.height=3;
+  Series1.marks.style="";
+  Series1.format.gradient.visible=false;
+  Series1.format.round.x=0;
+  Series1.format.round.y=0;
+  Chart1.legend.position="right";
+  Chart1.legend.format.fill="#FFFFFF";
+  Chart1.legend.format.round.x=0;
+  Chart1.legend.format.round.y=0;
+  Chart1.legend.format.font.style="10.667px Verdana";
+  Chart1.legend.format.stroke.fill="#000000";
+  Chart1.legend.format.stroke.cap="round";
+  Chart1.legend.format.shadow.color="#000000";
+  Chart1.legend.format.shadow.width=3;
+  Chart1.legend.format.shadow.height=3;
+  Chart1.legend.symbol.format.gradient.colors=["#FFFFFF","#FFFF00"];
+  Chart1.legend.symbol.format.gradient.stops=[0,1];
+  Chart1.legend.symbol.format.gradient.direction="bottomtop";
+  Chart1.legend.symbol.format.gradient.visible=false;
+  Chart1.legend.symbol.format.stroke.cap="round";
+  Chart1.legend.symbol.format.shadow.color="#C0C0C0";
+  Chart1.legend.symbol.format.shadow.width=1;
+  Chart1.legend.symbol.format.shadow.height=1;
+  Chart1.zoom.mouseButton=0;
+  Chart1.zoom.format.stroke.fill="#C0C0C0";
+  Chart1.zoom.format.stroke.size=3;
+  Chart1.zoom.format.stroke.cap="butt";
+  Chart1.scroll.mouseButton=2;
+  Chart1.draw();
+}
+</script>
+</HEAD>
+<BODY onload="draw()">
+<canvas id="Canvas1" width="1500" height="700">
+This browser does not seem to support HTML5 Canvas.
+</canvas>
+</BODY>
+</HTML>
