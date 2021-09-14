@@ -19,9 +19,9 @@ uses
 type
   TAreaSalesPrice = class(TBaseForm)
     TeeCommander1: TTeeCommander;
-    Series1: TAreaSeries;
     ChartTool1: TAnnotationTool;
     ChartTool2: TAnnotationTool;
+    Series1: TAreaSeries;
     procedure FormCreate(Sender: TObject);
     procedure Series1GetMarkText(Sender: TChartSeries; ValueIndex: Integer;
       var MarkText: String);
@@ -192,12 +192,7 @@ begin
 end;
 
 procedure TAreaSalesPrice.SetUpAnnotations;
-var tmp: Integer;
 begin
-  tmp:=Series1.CalcXPos(Series1.Count-2) +
-      ((Series1.CalcXPos(Series1.Count-1) -
-      Series1.CalcXPos(Series1.Count-2)) div 2);
-
   With ChartTool1 do
   begin
     Shape.CustomPosition:=true;

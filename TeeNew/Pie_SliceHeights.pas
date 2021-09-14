@@ -13,7 +13,7 @@ uses
   {$ELSE}
   Graphics, Controls, Forms, Dialogs, StdCtrls, ExtCtrls,
   {$ENDIF}
-  Base, TeEngine, Series, TeeDonut, TeeProcs, Chart;
+  Base, TeEngine, Series, TeeDonut, TeeProcs, Chart, Math;
 
 type
   TPieSliceHeights = class(TBaseForm)
